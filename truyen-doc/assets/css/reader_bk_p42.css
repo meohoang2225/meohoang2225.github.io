@@ -1,0 +1,588 @@
+/* =========================================================
+   READER 4.2
+   Reader Experience
+   ========================================================= */
+/* =========================================================
+   READER CONTAINER
+   ========================================================= */
+.reader-container {
+    width: min(
+        calc(100% - 32px),
+        900px
+    );
+    margin: 0 auto;
+    padding:
+        24px
+        0
+        60px;
+}
+/* =========================================================
+   BOOK HEADER
+   ========================================================= */
+.reader-book {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.book-title {
+    display: inline-block;
+    color: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.book-title:hover {
+    text-decoration: underline;
+}
+.chapter-progress {
+    margin-top: 6px;
+    font-size: 14px;
+    opacity: 0.65;
+}
+/* =========================================================
+   READER SETTINGS
+   ========================================================= */
+.reader-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+}
+.settings-button {
+    min-width: 40px;
+    min-height: 38px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    color: inherit;
+    cursor: pointer;
+    font-size: 15px;
+}
+.settings-button:hover {
+    background: #f3f3f3;
+}
+.settings-button:active {
+    transform: scale(0.97);
+}
+.settings-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+.theme-button {
+    font-size: 18px;
+}
+.font-size-control {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.font-size-value {
+    min-width: 45px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.settings-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.settings-label {
+    font-size: 13px;
+    opacity: 0.7;
+}
+.settings-select {
+    min-height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    color: inherit;
+    font-size: 14px;
+}
+.settings-select:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+/* =========================================================
+   READER CONTROLS
+   ========================================================= */
+.reader-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+.reader-button {
+    flex: 1;
+    min-height: 44px;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    color: inherit;
+    cursor: pointer;
+    font-size: 14px;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+.reader-button:hover {
+    background: #f5f5f5;
+}
+.reader-button:active {
+    transform: scale(0.98);
+}
+.reader-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.reader-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+/* =========================================================
+   CHAPTER LIST
+   ========================================================= */
+.chapter-list {
+    margin-bottom: 24px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+}
+.chapter-list.hidden {
+    display: none;
+}
+.chapter-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.chapter-list-header button {
+    width: 34px;
+    height: 34px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 1;
+}
+.chapter-list-header button:hover {
+    background: #f1f1f1;
+}
+/* =========================================================
+   CHAPTER SEARCH
+   ========================================================= */
+.chapter-search-wrapper {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+.chapter-search {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    background: #fff;
+    color: inherit;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+.chapter-search:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 1px;
+}
+/* =========================================================
+   CHAPTER ITEMS
+   ========================================================= */
+#chapterListContent {
+    max-height: 420px;
+    overflow-y: auto;
+}
+.chapter-item {
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.chapter-item:last-child {
+    border-bottom: 0;
+}
+.chapter-item:hover {
+    background: #f5f5f5;
+}
+.chapter-item.active {
+    font-weight: 700;
+}
+.chapter-item:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: -2px;
+}
+/* =========================================================
+   READER
+   ========================================================= */
+.reader {
+    --reader-font-size: 18px;
+    --reader-line-height: 1.7;
+    --reader-width: 760px;
+    width: min(
+        100%,
+        var(--reader-width)
+    );
+    margin: 0 auto;
+}
+/* =========================================================
+   CHAPTER TITLE
+   ========================================================= */
+.chapter-title {
+    margin:
+        0
+        0
+        30px;
+    font-size: 30px;
+    line-height: 1.35;
+    text-align: center;
+}
+/* =========================================================
+   CHAPTER CONTENT
+   ========================================================= */
+/*
+ * QUAN TRỌNG:
+ *
+ * Không đặt font-family ở đây.
+ *
+ * Không ép màu chữ.
+ *
+ * Không dùng !important.
+ *
+ * Không ghi đè text-align.
+ *
+ * CKEditor vẫn được quyền quyết định
+ * formatting của nội dung.
+ */
+.chapter-content {
+    font-size: var(--reader-font-size);
+    line-height: var(--reader-line-height);
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+/*
+ * Chỉ đặt khoảng cách mặc định.
+ */
+.chapter-content p {
+    margin:
+        0
+        0
+        1.2em;
+}
+/*
+ * Heading do CKEditor tạo.
+ */
+.chapter-content h2 {
+    margin:
+        1.8em
+        0
+        0.8em;
+    line-height: 1.4;
+}
+.chapter-content h3 {
+    margin:
+        1.6em
+        0
+        0.7em;
+    line-height: 1.4;
+}
+/*
+ * Ảnh
+ */
+.chapter-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin:
+        24px
+        auto;
+    border-radius: 8px;
+}
+/*
+ * Figure
+ */
+.chapter-content figure {
+    max-width: 100%;
+    margin:
+        24px
+        0;
+}
+.chapter-content figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.65;
+}
+/*
+ * Quote
+ */
+.chapter-content blockquote {
+    margin:
+        24px
+        0;
+    padding:
+        12px
+        18px;
+    border-left: 4px solid currentColor;
+    opacity: 0.85;
+}
+/*
+ * List
+ */
+.chapter-content ul,
+.chapter-content ol {
+    margin:
+        0
+        0
+        1.2em;
+    padding-left: 1.5em;
+}
+.chapter-content li {
+    margin-bottom: 0.4em;
+}
+/*
+ * Link
+ */
+.chapter-content a {
+    color: inherit;
+    text-decoration: underline;
+}
+/* =========================================================
+   BOTTOM CONTROLS
+   ========================================================= */
+.reader-controls-bottom {
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+/* =========================================================
+   LOADING / ERROR
+   ========================================================= */
+.loading {
+    padding: 30px 10px;
+    text-align: center;
+    opacity: 0.65;
+}
+.reader-error {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+body.reader-dark {
+    background: #121212;
+    color: #e8e8e8;
+}
+body.reader-dark .reader-settings,
+body.reader-dark .chapter-list,
+body.reader-dark .reader-button,
+body.reader-dark .settings-button,
+body.reader-dark .settings-select,
+body.reader-dark .chapter-search {
+    background: #1e1e1e;
+    color: #e8e8e8;
+    border-color: #3a3a3a;
+}
+body.reader-dark .reader-button:hover,
+body.reader-dark .settings-button:hover,
+body.reader-dark .chapter-item:hover {
+    background: #292929;
+}
+body.reader-dark .chapter-list-header,
+body.reader-dark .chapter-item,
+body.reader-dark .chapter-search-wrapper {
+    border-color: #333;
+}
+body.reader-dark .chapter-list-header button {
+    color: #e8e8e8;
+}
+/*
+ * Một số nội dung CKEditor có màu chữ riêng.
+ *
+ * Ta KHÔNG dùng !important để ép chúng.
+ *
+ * Vì vậy màu do tác giả đặt trong CKEditor
+ * vẫn được giữ nguyên.
+ */
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+@media (max-width: 700px) {
+    .reader-container {
+        width: min(
+            calc(100% - 24px),
+            760px
+        );
+        padding-top: 18px;
+    }
+    .reader-settings {
+        gap: 8px;
+    }
+    .reader-controls {
+        gap: 7px;
+    }
+    .reader-button {
+        min-height: 42px;
+        padding:
+            9px
+            8px;
+        font-size: 13px;
+    }
+    .chapter-title {
+        font-size: 25px;
+        margin-bottom: 24px;
+    }
+}
+/* =========================================================
+   RESPONSIVE — IPHONE
+   ========================================================= */
+@media (max-width: 480px) {
+    .reader-container {
+        width: calc(100% - 20px);
+        padding-top: 14px;
+        padding-bottom: 40px;
+    }
+    .book-title {
+        font-size: 21px;
+    }
+    .chapter-progress {
+        font-size: 13px;
+    }
+    /*
+     * Settings
+     */
+    .reader-settings {
+        display: grid;
+        grid-template-columns:
+            auto
+            1fr
+            auto;
+        align-items: center;
+        gap: 6px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+    .font-size-control {
+        justify-content: center;
+    }
+    .settings-label {
+        display: none;
+    }
+    .settings-select {
+        min-height: 40px;
+    }
+    .settings-button {
+        min-width: 40px;
+        min-height: 40px;
+    }
+    /*
+     * Navigation
+     */
+    .reader-controls {
+        gap: 6px;
+    }
+    .reader-button {
+        min-height: 44px;
+        padding:
+            8px
+            5px;
+        font-size: 12px;
+    }
+    /*
+     * Reader
+     */
+    .reader {
+        width: 100%;
+    }
+    .chapter-title {
+        font-size: 23px;
+        line-height: 1.35;
+        margin-bottom: 22px;
+    }
+    .chapter-content {
+        /*
+         * Giữ cỡ chữ người đọc chọn.
+         */
+        font-size: var(--reader-font-size);
+        line-height: var(--reader-line-height);
+    }
+    .chapter-content p {
+        margin-bottom: 1.15em;
+    }
+    .chapter-content img {
+        max-width: 100%;
+        height: auto;
+        margin:
+            20px
+            auto;
+    }
+    /*
+     * Chapter list
+     */
+    #chapterListContent {
+        max-height: 55vh;
+    }
+    /*
+     * Bottom navigation
+     */
+    .reader-controls-bottom {
+        margin-top: 30px;
+    }
+}
+/* =========================================================
+   RESPONSIVE — SMALL IPHONE
+   ========================================================= */
+@media (max-width: 360px) {
+    .reader-container {
+        width: calc(100% - 16px);
+    }
+    .reader-settings {
+        grid-template-columns:
+            1fr
+            1fr;
+    }
+    .theme-button {
+        justify-self: center;
+    }
+    .font-size-control {
+        width: 100%;
+        justify-content: center;
+    }
+    .settings-control {
+        width: 100%;
+    }
+    .settings-select {
+        width: 100%;
+    }
+    .reader-controls {
+        flex-direction: column;
+    }
+    .reader-button {
+        width: 100%;
+    }
+}

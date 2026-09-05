@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Thư viện truyện</title>
+
+    <meta
+        name="description"
+        content="Thư viện truyện online - Đọc truyện miễn phí"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="stylesheet"
+        href="assets/css/style.css"
+    >
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Reader Storage -->
+    <script src="assets/js/storage.js"></script>
+
+    <!-- Main App -->
+    <script
+        src="assets/js/app.js"
+        defer
+    ></script>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Trang chủ"
+        >
+            📚 Thư viện truyện
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
+<main class="container">
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <section class="page-header">
+
+        <div>
+
+            <h1>Danh sách truyện</h1>
+
+            <p id="novelCount">
+                Đang tải...
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SEARCH + FILTER
+    ====================================================== -->
+
+    <section class="novel-filter">
+
+        <div class="filter-search">
+
+            <label
+                for="novel-search"
+                class="filter-label"
+            >
+                🔎 Tìm kiếm truyện
+            </label>
+
+            <input
+                type="search"
+                id="novel-search"
+                placeholder="Tên truyện hoặc tác giả..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <div class="filter-status">
+
+            <label
+                for="status-filter"
+                class="filter-label"
+            >
+                🏷️ Trạng thái
+            </label>
+
+            <select id="status-filter">
+
+                <option value="">
+                    Tất cả trạng thái
+                </option>
+
+                <option value="Đang ra">
+                    Đang ra
+                </option>
+
+                <option value="Hoàn thành">
+                    Hoàn thành
+                </option>
+
+                <option value="Tạm dừng">
+                    Tạm dừng
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTINUE READING
+         app.js tự render nếu có lịch sử
+    ====================================================== -->
+
+    <section
+        id="continue-reading"
+        class="reader-section"
+    >
+    </section>
+
+
+
+    <!-- =====================================================
+         ALL NOVELS
+    ====================================================== -->
+
+    <section>
+
+        <div class="section-title">
+
+            <h2>📚 Tất cả truyện</h2>
+
+        </div>
+
+
+        <section
+            id="novel-list"
+            class="novel-grid"
+            aria-live="polite"
+        >
+
+            <div class="loading">
+                Đang tải danh sách truyện...
+            </div>
+
+        </section>
+
+
+        <!-- Không có kết quả -->
+
+        <div
+            id="emptyResult"
+            class="empty hidden"
+        >
+            Không tìm thấy truyện phù hợp.
+        </div>
+
+
+        <!-- Pagination -->
+
+        <nav
+            id="pagination"
+            class="pagination"
+            aria-label="Phân trang"
+        >
+        </nav>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         READING HISTORY
+         app.js tự render nếu có lịch sử
+    ====================================================== -->
+
+    <section
+        id="reading-history"
+        class="reader-section"
+    >
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        © 2026 Thư viện truyện
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>

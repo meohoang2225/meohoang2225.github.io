@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 16px;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+
+    background: #f5f5f5;
+
+    color: #222;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+button,
+input {
+    font: inherit;
+}
+
+
+.container {
+    width: min(1100px, calc(100% - 32px));
+
+    margin: 0 auto;
+}
+
+
+/* ==============================
+   Header
+   ============================== */
+
+.site-header {
+    background: #fff;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.header-inner {
+
+    min-height: 64px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.logo {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.header-search {
+    width: 320px;
+}
+
+
+.header-search input {
+
+    width: 100%;
+
+    padding: 10px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+
+.header-search input:focus {
+
+    border-color: #888;
+
+}
+
+
+/* ==============================
+   Main
+   ============================== */
+
+main.container {
+
+    padding-top: 35px;
+
+    padding-bottom: 50px;
+}
+
+
+.page-header {
+
+    margin-bottom: 25px;
+}
+
+
+.page-header h1 {
+
+    margin: 0 0 5px;
+
+    font-size: 28px;
+
+}
+
+
+.page-header p {
+
+    margin: 0;
+
+    color: #777;
+
+}
+
+
+/* ==============================
+   Novel grid
+   ============================== */
+
+.novel-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+.novel-card {
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    display: flex;
+
+    gap: 15px;
+
+    transition:
+        transform .15s,
+        box-shadow .15s;
+}
+
+
+.novel-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 20px rgba(0,0,0,.07);
+
+}
+
+
+.novel-cover-link {
+
+    flex: 0 0 130px;
+
+}
+
+
+.novel-cover {
+
+    display: block;
+
+    width: 130px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    background: #eee;
+
+}
+
+
+.novel-info {
+
+    min-width: 0;
+
+    flex: 1;
+}
+
+
+.novel-info h2 {
+
+    margin: 0 0 8px;
+
+    font-size: 20px;
+
+}
+
+
+.novel-author {
+
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.novel-status {
+
+    display: inline-block;
+
+    font-size: 12px;
+
+    padding: 4px 8px;
+
+    border-radius: 5px;
+
+    background: #eee;
+
+    margin-bottom: 10px;
+
+}
+
+
+.novel-description {
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 0 15px;
+
+}
+
+
+.novel-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.novel-footer span {
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.read-button {
+
+    display: inline-block;
+
+    padding: 8px 12px;
+
+    background: #222;
+
+    color: #fff;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   States
+   ============================== */
+
+.loading,
+.error,
+.empty {
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+.error {
+
+    color: #b00020;
+
+}
+
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+.site-footer {
+
+    padding: 30px 0;
+
+    border-top: 1px solid #ddd;
+
+    color: #777;
+
+    text-align: center;
+
+    font-size: 13px;
+
+}
+
+
+/* ==============================
+   Mobile
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .header-inner {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 12px 0;
+
+    }
+
+
+    .header-search {
+
+        width: 100%;
+
+    }
+
+
+    .novel-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .novel-cover-link {
+
+        flex-basis: 100px;
+
+    }
+
+
+    .novel-cover {
+
+        width: 100px;
+
+        height: 140px;
+
+    }
+
+}

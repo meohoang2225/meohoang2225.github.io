@@ -1,0 +1,14 @@
+{
+  "id": "002",
+  "title": "Chương 2: Bước chân đầu tiên",
+  "content": "<p>Ngày hôm sau.</p><p>Hắn đã đi được rất xa.</p><p>Con đường phía trước vẫn còn dài.</p><p>Nhưng hắn biết, mình không thể quay đầu.</p><p>Đây mới chỉ là bước chân đầu tiên.</p>",
+  "monetization": {
+    "affiliate": {
+      "enabled": false,
+      "url": ""
+    },
+    "ads": {
+      "enabled": true
+    }
+  }
+}

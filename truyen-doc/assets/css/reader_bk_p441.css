@@ -1,0 +1,1167 @@
+/* =========================================================
+   READER.CSS
+   Phase 4.3
+   Mobile-first / iPhone optimized
+   ========================================================= */
+
+
+/* =========================================================
+   READER CONTAINER
+   ========================================================= */
+
+.reader-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px 40px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: var(--header-bg, #ffffff);
+    border-bottom: 1px solid #e5e7eb;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header-inner {
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 16px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 44px;
+
+    color: inherit;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   BACK HOME
+   ========================================================= */
+
+.reader-home {
+    padding: 10px 0 4px;
+}
+
+.back-home {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 36px;
+
+    padding: 6px 10px;
+
+    border-radius: 8px;
+
+    color: #666;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.back-home:hover {
+    background: #f3f4f6;
+    color: #111;
+}
+
+
+/* =========================================================
+   BOOK INFORMATION
+   ========================================================= */
+
+.reader-book {
+    padding: 8px 0 12px;
+
+    text-align: center;
+}
+
+.book-title {
+    display: block;
+
+    margin: 0;
+
+    color: inherit;
+    text-decoration: none;
+
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    overflow-wrap: anywhere;
+}
+
+.book-title:hover {
+    text-decoration: underline;
+}
+
+.chapter-progress {
+    margin-top: 5px;
+
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   READER SETTINGS
+   ========================================================= */
+
+.reader-settings {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 6px;
+
+    padding: 8px 0;
+    margin-bottom: 8px;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.settings-button {
+    min-width: 38px;
+    min-height: 36px;
+
+    padding: 5px 9px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.settings-button:hover {
+    background: #f5f5f5;
+}
+
+.settings-button:active {
+    transform: scale(0.97);
+}
+
+.theme-button {
+    font-size: 17px;
+}
+
+.font-size-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.font-size-value {
+    min-width: 42px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.settings-control {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.settings-label {
+    color: #666;
+
+    font-size: 12px;
+}
+
+.settings-select {
+    min-height: 36px;
+
+    padding: 5px 7px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 7px;
+
+    background: #ffffff;
+    color: #222;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.reader-controls {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    gap: 8px;
+
+    margin: 10px 0;
+}
+
+.reader-button {
+    min-height: 42px;
+
+    padding: 8px 10px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #222;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+.reader-button:hover {
+    background: #f5f5f5;
+}
+
+.reader-button:active {
+    transform: scale(0.98);
+}
+
+.reader-button:disabled,
+.reader-button.disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.reader-controls-bottom {
+    margin-top: 28px;
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CHAPTER LIST
+   ========================================================= */
+
+.chapter-list {
+    margin: 10px 0 16px;
+
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+.chapter-list.hidden {
+    display: none;
+}
+
+.chapter-list-header {
+    min-height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 12px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.chapter-list-header strong {
+    font-size: 15px;
+}
+
+.chapter-list-header button {
+    width: 34px;
+    height: 34px;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: transparent;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.chapter-list-header button:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================================================
+   CHAPTER SEARCH
+   ========================================================= */
+
+.chapter-search-wrapper {
+    padding: 10px;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.chapter-search {
+    width: 100%;
+
+    min-height: 40px;
+
+    padding: 8px 11px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #222;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+.chapter-search:focus {
+    border-color: #999;
+}
+
+
+/* =========================================================
+   CHAPTER ITEMS
+   ========================================================= */
+
+#chapterListContent {
+    max-height: 55vh;
+
+    overflow-y: auto;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.chapter-item {
+    width: 100%;
+
+    display: block;
+
+    padding: 11px 13px;
+
+    border: 0;
+    border-bottom: 1px solid #eeeeee;
+
+    background: #ffffff;
+    color: #333;
+
+    text-align: left;
+
+    font-size: 14px;
+    line-height: 1.4;
+
+    cursor: pointer;
+}
+
+.chapter-item:last-child {
+    border-bottom: 0;
+}
+
+.chapter-item:hover {
+    background: #f7f7f7;
+}
+
+.chapter-item.active {
+    background: #f0f0f0;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   READER
+   ========================================================= */
+
+.reader {
+    --reader-font-size: 18px;
+    --reader-line-height: 1.7;
+    --reader-width: 760px;
+
+    width: min(100%, var(--reader-width));
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   CHAPTER TITLE
+   ========================================================= */
+
+.chapter-title {
+    margin: 22px 0 24px;
+
+    font-size: 26px;
+    line-height: 1.35;
+    font-weight: 700;
+
+    text-align: center;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   CHAPTER CONTENT
+
+   IMPORTANT:
+   Không ép font-family / color / text-align / font-weight.
+
+   CKEditor là nguồn định dạng nội dung.
+   ========================================================= */
+
+.chapter-content {
+    font-size: var(--reader-font-size);
+    line-height: var(--reader-line-height);
+
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
+
+.chapter-content img {
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+
+    margin: 16px auto;
+}
+
+.chapter-content iframe,
+.chapter-content video {
+    max-width: 100%;
+}
+
+.chapter-content table {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+.chapter-content pre {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   LOADING / EMPTY
+   ========================================================= */
+
+.loading {
+    padding: 30px 10px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.empty {
+    padding: 30px 15px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+    margin-top: 40px;
+    padding: 20px 16px;
+
+    border-top: 1px solid #eeeeee;
+
+    color: #777;
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.reader-dark {
+    background: #111111;
+    color: #eeeeee;
+}
+
+body.reader-dark .site-header {
+    --header-bg: rgba(17, 17, 17, 0.92);
+
+    background: rgba(17, 17, 17, 0.92);
+
+    border-bottom-color: #2b2b2b;
+}
+
+body.reader-dark .back-home {
+    color: #aaaaaa;
+}
+
+body.reader-dark .back-home:hover {
+    background: #222222;
+    color: #ffffff;
+}
+
+body.reader-dark .chapter-progress {
+    color: #999999;
+}
+
+body.reader-dark .reader-settings {
+    border-color: #2b2b2b;
+}
+
+body.reader-dark .settings-button,
+body.reader-dark .settings-select {
+    border-color: #3a3a3a;
+
+    background: #1c1c1c;
+    color: #eeeeee;
+}
+
+body.reader-dark .settings-button:hover {
+    background: #292929;
+}
+
+body.reader-dark .settings-label,
+body.reader-dark .font-size-value {
+    color: #999999;
+}
+
+body.reader-dark .reader-button {
+    border-color: #3a3a3a;
+
+    background: #1c1c1c;
+    color: #eeeeee;
+}
+
+body.reader-dark .reader-button:hover {
+    background: #292929;
+}
+
+body.reader-dark .chapter-list {
+    border-color: #333333;
+
+    background: #181818;
+}
+
+body.reader-dark .chapter-list-header {
+    border-bottom-color: #333333;
+}
+
+body.reader-dark .chapter-list-header button:hover {
+    background: #292929;
+}
+
+body.reader-dark .chapter-search-wrapper {
+    border-bottom-color: #333333;
+}
+
+body.reader-dark .chapter-search {
+    border-color: #3a3a3a;
+
+    background: #1c1c1c;
+    color: #eeeeee;
+}
+
+body.reader-dark .chapter-item {
+    border-bottom-color: #303030;
+
+    background: #181818;
+    color: #eeeeee;
+}
+
+body.reader-dark .chapter-item:hover {
+    background: #242424;
+}
+
+body.reader-dark .chapter-item.active {
+    background: #303030;
+}
+
+body.reader-dark .site-footer {
+    border-top-color: #2b2b2b;
+    color: #888888;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+    .reader-container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .reader-home {
+        padding-top: 14px;
+    }
+
+    .book-title {
+        font-size: 22px;
+    }
+
+    .chapter-title {
+        font-size: 30px;
+        margin-top: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .reader-container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 30px;
+    }
+
+    .header-inner {
+        min-height: 48px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .reader-home {
+        padding-top: 7px;
+    }
+
+    .back-home {
+        min-height: 34px;
+
+        padding-left: 7px;
+        padding-right: 7px;
+
+        font-size: 13px;
+    }
+
+    .reader-book {
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+
+    .book-title {
+        font-size: 19px;
+    }
+
+    .chapter-progress {
+        font-size: 12px;
+    }
+
+
+    /* Settings */
+
+    .reader-settings {
+        gap: 5px;
+
+        padding: 7px 0;
+    }
+
+    .settings-button {
+        min-width: 36px;
+        min-height: 34px;
+
+        padding: 4px 7px;
+
+        font-size: 14px;
+    }
+
+    .settings-select {
+        min-height: 34px;
+
+        padding: 4px 5px;
+
+        font-size: 12px;
+    }
+
+    .settings-label {
+        display: none;
+    }
+
+    .font-size-value {
+        min-width: 38px;
+
+        font-size: 12px;
+    }
+
+
+    /* Navigation */
+
+    .reader-controls {
+        gap: 5px;
+
+        margin: 8px 0;
+    }
+
+    .reader-button {
+        min-height: 40px;
+
+        padding: 7px 5px;
+
+        font-size: 12px;
+    }
+
+
+    /* Chapter */
+
+    .chapter-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: 23px;
+        line-height: 1.35;
+    }
+
+    .chapter-content {
+        font-size: var(--reader-font-size);
+    }
+
+
+    /* Bottom navigation */
+
+    .reader-controls-bottom {
+        margin-top: 24px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL IPHONE
+   ========================================================= */
+
+@media (max-width: 360px) {
+
+    .reader-container {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .logo {
+        font-size: 14px;
+    }
+
+    .book-title {
+        font-size: 18px;
+    }
+
+    .reader-settings {
+        gap: 3px;
+    }
+
+    .settings-button {
+        min-width: 34px;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .settings-select {
+        max-width: 66px;
+    }
+
+    .reader-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*
+     * Danh sách chương nằm riêng một hàng
+     */
+
+    #chapterListButton {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    #prevChapter {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #nextChapter {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .reader-controls-bottom {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .chapter-title {
+        font-size: 21px;
+    }
+
+}
+
+/* =========================================================
+   MONETIZATION
+   ========================================================= */
+
+.monetization-slot {
+    width: 100%;
+}
+
+
+/* =========================================================
+   AFFILIATE POPUP
+   ========================================================= */
+
+.affiliate-popup {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.55);
+
+    animation:
+        affiliatePopupFade
+        0.2s
+        ease;
+}
+
+
+.affiliate-popup-box {
+    width: min(
+        100%,
+        420px
+    );
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    background: #fff;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+.affiliate-popup-icon {
+    margin-bottom: 10px;
+
+    font-size: 42px;
+}
+
+
+.affiliate-popup-title {
+    margin: 0 0 10px;
+
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+
+.affiliate-popup-description {
+    margin: 0 0 18px;
+
+    color: #666;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+.affiliate-popup-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.affiliate-popup-button:hover {
+    background: #f5f5f5;
+}
+
+
+.affiliate-popup-continue {
+    width: 100%;
+
+    margin-top: 10px;
+
+    min-height: 42px;
+
+    padding: 9px 16px;
+
+    border: 0;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #666;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+
+.affiliate-popup-continue:hover {
+    background: #f5f5f5;
+}
+
+
+body.affiliate-popup-open {
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ADS
+   ========================================================= */
+
+.ad-slot {
+    width: 100%;
+
+    margin: 14px 0;
+
+    text-align: center;
+}
+
+
+.ad-label {
+    margin-bottom: 5px;
+
+    color: #999;
+
+    font-size: 10px;
+
+    line-height: 1;
+}
+
+
+.ad-container {
+    width: 100%;
+
+    min-height: 50px;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes affiliatePopupFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.reader-dark .affiliate-popup-box {
+    background: #1a1a1a;
+
+    color: #eee;
+}
+
+
+body.reader-dark
+.affiliate-popup-description {
+    color: #aaa;
+}
+
+
+body.reader-dark
+.affiliate-popup-button {
+    border-color: #444;
+
+    background: #222;
+
+    color: #eee;
+}
+
+
+body.reader-dark
+.affiliate-popup-button:hover {
+    background: #2b2b2b;
+}
+
+
+body.reader-dark
+.affiliate-popup-continue {
+    color: #aaa;
+}
+
+
+body.reader-dark
+.affiliate-popup-continue:hover {
+    background: #222;
+}
+
+
+body.reader-dark .ad-label {
+    color: #666;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .affiliate-popup {
+        padding: 16px;
+    }
+
+
+    .affiliate-popup-box {
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+
+    .affiliate-popup-icon {
+        font-size: 36px;
+    }
+
+
+    .affiliate-popup-title {
+        font-size: 20px;
+    }
+
+
+    .affiliate-popup-description {
+        font-size: 13px;
+    }
+
+
+    .affiliate-popup-button {
+        min-height: 44px;
+
+        font-size: 14px;
+    }
+
+
+    .affiliate-popup-continue {
+        min-height: 40px;
+
+        font-size: 13px;
+    }
+
+
+    .ad-slot {
+        margin: 12px 0;
+    }
+
+}

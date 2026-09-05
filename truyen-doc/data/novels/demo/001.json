@@ -1,0 +1,14 @@
+{
+    "id": "001",
+    "title": "Chương 1: Khởi đầu",
+    "content": "<p>Đây là chương đầu tiên của câu chuyện.</p><p>Buổi sáng hôm ấy, trời rất yên tĩnh.</p><p>Không ai biết rằng từ ngày hôm nay, cuộc đời của hắn sẽ hoàn toàn thay đổi.</p><p>Hắn đứng trước cánh cửa, nhìn con đường phía trước.</p><p>Rồi bước đi.</p>",
+    "monetization": {
+        "affiliate": {
+            "enabled": true,
+            "url": "https://s.shopee.vn/7prFjCL5cD"
+        },
+        "ads": {
+            "enabled": true
+        }
+    }
+}

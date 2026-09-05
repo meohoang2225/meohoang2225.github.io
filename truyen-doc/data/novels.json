@@ -1,0 +1,21 @@
+[
+    {
+        "id": "demo",
+        "title": "Vô Địch",
+        "author": "Đạt",
+        "description": "Một câu chuyện demo để kiểm tra hệ thống đọc truyện.",
+        "cover": "images/novels/demo.jpg",
+        "status": "Đang ra",
+        "chapterCount": 2,
+        "updatedAt": "2026-09-01"
+    },{
+        "id": "Thunghiem",
+        "title": "Bên kia mùa hè",
+        "author": "Truyện Đọc",
+        "description": "Một câu chuyện ngắn về những điều ta tưởng đã cũ nhưng vẫn âm thầm lớn lên trong ký ức.",
+        "cover": "",
+        "status": "Đang ra",
+        "chapterCount": 1,
+        "updatedAt": "2026-09-02"
+      }
+]

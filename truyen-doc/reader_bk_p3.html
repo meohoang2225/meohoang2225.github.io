@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Đọc truyện</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reader.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/reader.js" defer></script>
+
+</head>
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            📚 Thư viện truyện
+        </a>
+
+        <a
+            href="index.html"
+            class="back-home"
+        >
+            ← Danh sách truyện
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="reader-container">
+
+
+    <!-- Thông tin truyện -->
+
+    <section class="reader-book">
+
+        <a
+            id="bookTitle"
+            class="book-title"
+            href="#"
+        >
+            Đang tải...
+        </a>
+
+        <div id="chapterProgress" class="chapter-progress">
+            Đang tải...
+        </div>
+
+    </section>
+
+
+    <!-- Thanh điều khiển -->
+
+    <nav class="reader-controls">
+
+        <button
+            id="prevChapter"
+            class="reader-button"
+        >
+            ← Chương trước
+        </button>
+
+
+        <button
+            id="chapterListButton"
+            class="reader-button"
+        >
+            ☰ Danh sách chương
+        </button>
+
+
+        <button
+            id="nextChapter"
+            class="reader-button"
+        >
+            Chương sau →
+        </button>
+
+    </nav>
+
+
+    <!-- Danh sách chương -->
+
+    <section
+        id="chapterList"
+        class="chapter-list hidden"
+    >
+
+        <div class="chapter-list-header">
+            <strong>Danh sách chương</strong>
+
+            <button id="closeChapterList">
+                ×
+            </button>
+        </div>
+
+        <div id="chapterListContent"></div>
+
+    </section>
+
+
+    <!-- Nội dung -->
+
+    <article class="reader">
+
+        <h1 id="chapterTitle" class="chapter-title">
+            Đang tải...
+        </h1>
+
+        <div
+            id="chapterContent"
+            class="chapter-content"
+        >
+            <div class="loading">
+                Đang tải chương...
+            </div>
+        </div>
+
+    </article>
+
+
+    <!-- Điều hướng cuối chương -->
+
+    <nav class="reader-controls reader-controls-bottom">
+
+        <button
+            id="prevChapterBottom"
+            class="reader-button"
+        >
+            ← Chương trước
+        </button>
+
+
+        <button
+            id="nextChapterBottom"
+            class="reader-button"
+        >
+            Chương sau →
+        </button>
+
+    </nav>
+
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="container">
+        © 2026 Thư viện truyện
+    </div>
+
+</footer>
+
+</body>
+</html>

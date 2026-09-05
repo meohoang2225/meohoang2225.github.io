@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Đọc truyện</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reader.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/reader-settings.js"></script>
+    <script src="assets/js/reader.js"></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Trang chủ"
+        >
+            📚 Thư viện truyện
+        </a>
+        <a
+            href="index.html"
+            class="back-home"
+        >
+            ← Danh sách truyện
+        </a>
+    </div>
+</header>
+<main class="reader-container">
+    <!-- THÔNG TIN TRUYỆN -->
+    <section class="reader-book">
+        <a
+            id="bookTitle"
+            class="book-title"
+            href="#"
+        >
+            Đang tải...
+        </a>
+        <div
+            id="chapterProgress"
+            class="chapter-progress"
+        >
+            Đang tải...
+        </div>
+    </section>
+    <!-- =================================================
+         READER SETTINGS
+         ================================================= -->
+    <section
+        class="reader-settings"
+        aria-label="Tùy chỉnh đọc truyện"
+    >
+        <!-- DARK MODE -->
+        <button
+            type="button"
+            id="themeToggle"
+            class="settings-button theme-button"
+            aria-label="Chuyển giao diện"
+            title="Chuyển giao diện"
+        >
+            🌙
+        </button>
+        <!-- FONT SIZE -->
+        <div class="font-size-control">
+            <button
+                type="button"
+                id="fontDecrease"
+                class="settings-button"
+                aria-label="Giảm cỡ chữ"
+                title="Giảm cỡ chữ"
+            >
+                A−
+            </button>
+            <span
+                id="fontSizeValue"
+                class="font-size-value"
+            >
+                18px
+            </span>
+            <button
+                type="button"
+                id="fontIncrease"
+                class="settings-button"
+                aria-label="Tăng cỡ chữ"
+                title="Tăng cỡ chữ"
+            >
+                A+
+            </button>
+        </div>
+        <!-- LINE HEIGHT -->
+        <div class="settings-control">
+            <label
+                for="lineHeightSelect"
+                class="settings-label"
+            >
+                Dòng
+            </label>
+            <select
+                id="lineHeightSelect"
+                class="settings-select"
+                aria-label="Khoảng cách dòng"
+            >
+                <option value="1.5">
+                    1.5
+                </option>
+                <option value="1.6">
+                    1.6
+                </option>
+                <option value="1.7" selected>
+                    1.7
+                </option>
+                <option value="1.8">
+                    1.8
+                </option>
+                <option value="2">
+                    2.0
+                </option>
+            </select>
+        </div>
+        <!-- READER WIDTH -->
+        <div class="settings-control">
+            <label
+                for="readerWidthSelect"
+                class="settings-label"
+            >
+                Rộng
+            </label>
+            <select
+                id="readerWidthSelect"
+                class="settings-select"
+                aria-label="Độ rộng trang đọc"
+            >
+                <option value="680">
+                    Hẹp
+                </option>
+                <option value="760" selected>
+                    Vừa
+                </option>
+                <option value="860">
+                    Rộng
+                </option>
+            </select>
+        </div>
+    </section>
+    <!-- =================================================
+         NAVIGATION TOP
+         ================================================= -->
+    <nav class="reader-controls">
+        <button
+            id="prevChapter"
+            class="reader-button"
+        >
+            ← Chương trước
+        </button>
+        <button
+            id="chapterListButton"
+            class="reader-button"
+        >
+            ☰ Danh sách chương
+        </button>
+        <button
+            id="nextChapter"
+            class="reader-button"
+        >
+            Chương sau →
+        </button>
+    </nav>
+    <!-- =================================================
+         CHAPTER LIST
+         ================================================= -->
+    <section
+        id="chapterList"
+        class="chapter-list hidden"
+    >
+        <div class="chapter-list-header">
+            <strong>
+                Danh sách chương
+            </strong>
+            <button
+                id="closeChapterList"
+                type="button"
+                aria-label="Đóng danh sách chương"
+            >
+                ×
+            </button>
+        </div>
+        <div id="chapterListContent"></div>
+    </section>
+    <!-- =================================================
+         READER
+         ================================================= -->
+    <article class="reader">
+        <h1
+            id="chapterTitle"
+            class="chapter-title"
+        >
+            Đang tải...
+        </h1>
+        <div
+            id="chapterContent"
+            class="chapter-content"
+        >
+            <div class="loading">
+                Đang tải chương...
+            </div>
+        </div>
+    </article>
+    <!-- =================================================
+         NAVIGATION BOTTOM
+         ================================================= -->
+    <nav class="reader-controls reader-controls-bottom">
+        <button
+            id="prevChapterBottom"
+            class="reader-button"
+        >
+            ← Chương trước
+        </button>
+        <button
+            id="nextChapterBottom"
+            class="reader-button"
+        >
+            Chương sau →
+        </button>
+    </nav>
+</main>
+<footer class="site-footer">
+    <div class="container">
+        © 2026 Thư viện truyện
+    </div>
+</footer>
+</body>
+</html>

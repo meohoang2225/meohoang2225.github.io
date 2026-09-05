@@ -1,0 +1,356 @@
+/* ==============================
+   Reader layout
+   ============================== */
+
+.reader-container {
+
+    width: min(850px, calc(100% - 30px));
+
+    margin: 0 auto;
+
+    padding:
+        30px
+        0
+        60px;
+}
+
+
+/* ==============================
+   Book info
+   ============================== */
+
+.reader-book {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+
+.book-title {
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+.chapter-progress {
+
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    color: #999;
+}
+
+
+/* ==============================
+   Controls
+   ============================== */
+
+.reader-controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+}
+
+
+.reader-button {
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    color: #333;
+
+    border-radius: 7px;
+
+    padding: 9px 14px;
+
+    cursor: pointer;
+
+}
+
+
+.reader-button:hover {
+
+    background: #f0f0f0;
+
+}
+
+
+.reader-button:disabled {
+
+    opacity: .4;
+
+    cursor: not-allowed;
+
+}
+
+
+/* ==============================
+   Chapter list
+   ============================== */
+
+.chapter-list {
+
+    background: #fff;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+
+    overflow: hidden;
+}
+
+
+.chapter-list-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 15px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.chapter-list-header button {
+
+    border: 0;
+
+    background: transparent;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+}
+
+
+.chapter-item {
+
+    display: block;
+
+    padding: 11px 15px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 14px;
+
+}
+
+
+.chapter-item:last-child {
+
+    border-bottom: 0;
+
+}
+
+
+.chapter-item:hover {
+
+    background: #f5f5f5;
+
+}
+
+
+.chapter-item.active {
+
+    background: #eee;
+
+    font-weight: 600;
+
+}
+
+
+/* ==============================
+   Article
+   ============================== */
+
+.reader {
+
+    background: #fff;
+
+    border-radius: 10px;
+
+    padding: 45px 55px;
+
+    border: 1px solid #e5e5e5;
+}
+
+
+.chapter-title {
+
+    margin: 0 0 35px;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    line-height: 1.4;
+}
+
+
+.chapter-content {
+
+    font-family:
+
+        Georgia,
+
+        "Times New Roman",
+
+        serif;
+
+    font-size: 19px;
+
+    line-height: 2;
+
+    color: #292929;
+}
+
+
+.chapter-content p {
+
+    margin:
+
+        0 0
+
+        1.25em;
+
+}
+
+
+.chapter-content img {
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+.chapter-content h1,
+.chapter-content h2,
+.chapter-content h3 {
+
+    line-height: 1.5;
+
+    margin-top: 1.5em;
+
+}
+
+
+.chapter-content blockquote {
+
+    margin: 1.5em 0;
+
+    padding-left: 20px;
+
+    border-left: 3px solid #ddd;
+
+    color: #666;
+
+}
+
+
+/* ==============================
+   Bottom navigation
+   ============================== */
+
+.reader-controls-bottom {
+
+    margin-top: 30px;
+
+}
+
+
+/* ==============================
+   Mobile
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .reader-container {
+
+        width: 100%;
+
+        padding:
+            20px
+            0
+            40px;
+    }
+
+
+    .reader-book {
+
+        padding: 0 15px;
+
+    }
+
+
+    .reader-controls {
+
+        padding: 0 12px;
+
+        gap: 7px;
+
+    }
+
+
+    .reader-button {
+
+        flex: 1;
+
+        padding: 9px 5px;
+
+        font-size: 13px;
+
+    }
+
+
+    .reader {
+
+        border-left: 0;
+
+        border-right: 0;
+
+        border-radius: 0;
+
+        padding:
+            30px
+            20px;
+
+    }
+
+
+    .chapter-title {
+
+        font-size: 24px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .chapter-content {
+
+        font-size: 18px;
+
+        line-height: 1.9;
+
+    }
+
+}

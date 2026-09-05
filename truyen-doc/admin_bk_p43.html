@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111827"
+    >
+
+    <title>
+        Admin - Truyện Đọc
+    </title>
+
+
+    <!-- Bootstrap -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+
+    <!-- CKEditor -->
+
+    <link rel="stylesheet" href="assets/ckeditor/48.4.0/ckeditor5.css">
+
+
+    <!-- Admin -->
+
+    <link
+        rel="stylesheet"
+        href="assets/css/admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     LOGIN
+========================================== -->
+
+<div
+    id="login-screen"
+    class="login-screen"
+>
+
+    <div class="login-box">
+
+        <div class="login-logo">
+            📚
+        </div>
+
+        <h1>
+            Truyện Đọc
+        </h1>
+
+        <p>
+            Trang quản trị
+        </p>
+
+
+        <input
+            type="password"
+            id="admin-password"
+            class="form-control form-control-lg"
+            placeholder="Mật khẩu admin"
+            autocomplete="current-password"
+        >
+
+
+        <button
+            id="btn-login"
+            class="btn btn-primary btn-lg w-100 mt-3"
+        >
+            Đăng nhập
+        </button>
+
+
+        <div
+            id="login-error"
+            class="error-message"
+        ></div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     APP
+========================================== -->
+
+<div
+    id="admin-app"
+    class="hidden"
+>
+
+
+    <!-- HEADER -->
+
+    <header class="admin-header">
+
+        <div>
+
+            <div class="admin-title">
+                📚 Truyện Đọc
+            </div>
+
+            <div class="admin-subtitle">
+                Quản trị nội dung
+            </div>
+
+        </div>
+
+
+        <div class="header-actions">
+
+            <span
+                id="github-dot"
+                class="github-dot offline"
+            ></span>
+
+
+            <button
+                id="btn-logout"
+                class="header-button"
+            >
+                Thoát
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <main class="admin-container">
+
+
+        <!-- ==================================
+             GITHUB
+        =================================== -->
+
+        <section class="admin-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        🔗 GitHub
+                    </h2>
+
+                    <p>
+                        Nơi lưu trữ dữ liệu truyện
+                    </p>
+
+                </div>
+
+
+                <span
+                    id="github-status"
+                    class="status offline"
+                >
+                    Chưa kết nối
+                </span>
+
+            </div>
+
+
+            <div class="repo-box">
+
+                <div>
+
+                    <small>
+                        Repository
+                    </small>
+
+                    <strong
+                        id="github-repository"
+                    >
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        Branch
+                    </small>
+
+                    <strong
+                        id="github-branch"
+                    >
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Fine-grained Token
+                </label>
+
+                <input
+                    type="password"
+                    id="github-token"
+                    class="form-control"
+                    placeholder="github_pat_..."
+                    autocomplete="off"
+                >
+
+                <small>
+                    Token chỉ lưu trong phiên hiện tại.
+                </small>
+
+            </div>
+
+
+            <div class="button-row">
+
+                <button
+                    id="btn-github-connect"
+                    class="btn btn-primary"
+                >
+                    🔗 Kết nối
+                </button>
+
+
+                <button
+                    id="btn-github-disconnect"
+                    class="btn btn-outline-secondary"
+                >
+                    Ngắt kết nối
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================
+             NOVEL SELECTOR
+        =================================== -->
+
+        <section class="admin-card">
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        📚 Truyện
+                    </h2>
+
+                    <p>
+                        Chọn truyện cần quản lý
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="novel-selector">
+
+                <select
+                    id="novel-select"
+                    class="form-select form-select-lg"
+                >
+
+                    <option value="">
+                        -- Chọn truyện --
+                    </option>
+
+                </select>
+
+
+                <button
+                    id="btn-new-novel"
+                    class="btn btn-success"
+                >
+                    ＋ Truyện mới
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================
+             NOVEL FORM
+        =================================== -->
+
+        <section
+            id="novel-section"
+            class="admin-card hidden"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        📖 Thông tin truyện
+                    </h2>
+
+                    <p>
+                        Tạo hoặc chỉnh sửa truyện
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    ID truyện
+                </label>
+
+                <input
+                    id="novel-id"
+                    class="form-control"
+                    placeholder="vi-du-truyen"
+                >
+
+                <small>
+                    Chỉ dùng chữ thường, số và dấu -
+                </small>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Tên truyện
+                </label>
+
+                <input
+                    id="novel-title"
+                    class="form-control"
+                    placeholder="Tên truyện"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Tác giả
+                </label>
+
+                <input
+                    id="novel-author"
+                    class="form-control"
+                    placeholder="Tên tác giả"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Trạng thái
+                </label>
+
+                <select
+                    id="novel-status"
+                    class="form-select"
+                >
+
+                    <option value="Đang ra">
+                        Đang ra
+                    </option>
+
+                    <option value="Hoàn thành">
+                        Hoàn thành
+                    </option>
+
+                    <option value="Tạm dừng">
+                        Tạm dừng
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Ảnh bìa
+                </label>
+
+                <div class="cover-row">
+
+                    <input
+                        id="novel-cover"
+                        class="form-control"
+                        placeholder="images/novels/demo.jpg"
+                    >
+
+                    <label
+                        class="btn btn-outline-primary upload-button"
+                    >
+
+                        📷 Chọn
+
+                        <input
+                            type="file"
+                            id="cover-file"
+                            accept="image/*"
+                            hidden
+                        >
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="cover-preview">
+
+                <img
+                    id="cover-preview-image"
+                    alt=""
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Mô tả
+                </label>
+
+                <textarea
+                    id="novel-description"
+                    class="form-control"
+                    rows="5"
+                    placeholder="Giới thiệu truyện..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="button-row">
+
+                <button
+                    id="btn-save-novel"
+                    class="btn btn-success"
+                >
+                    💾 Lưu truyện
+                </button>
+
+
+                <button
+                    id="btn-delete-novel"
+                    class="btn btn-outline-danger"
+                >
+                    🗑 Xóa truyện
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================
+             CHAPTER MANAGEMENT
+        =================================== -->
+
+        <section
+            id="chapter-section"
+            class="admin-card hidden"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        📝 Chương
+                    </h2>
+
+                    <p>
+                        Quản lý các chương
+                    </p>
+
+                </div>
+
+
+                <button
+                    id="btn-new-chapter"
+                    class="btn btn-primary"
+                >
+                    ＋ Chương mới
+                </button>
+
+            </div>
+
+
+            <div
+                id="chapter-list"
+                class="chapter-list"
+            ></div>
+
+        </section>
+
+
+
+        <!-- ==================================
+             CHAPTER EDITOR
+        =================================== -->
+
+        <section
+            id="editor-section"
+            class="admin-card hidden"
+        >
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        ✍️ Soạn chương
+                    </h2>
+
+                    <p id="editor-subtitle">
+                        Chương mới
+                    </p>
+
+                </div>
+
+
+                <span
+                    id="draft-status"
+                    class="draft-status"
+                >
+                    Chưa lưu
+                </span>
+
+            </div>
+
+
+            <input
+                type="hidden"
+                id="chapter-id"
+            >
+
+
+            <div class="form-group">
+
+                <label>
+                    Tên chương
+                </label>
+
+                <input
+                    id="chapter-title"
+                    class="form-control form-control-lg"
+                    placeholder="Chương 1: ..."
+                >
+
+            </div>
+
+
+            <!-- TOOLBAR -->
+
+            <div
+                id="editor-toolbar"
+                class="editor-toolbar"
+            ></div>
+
+
+            <!-- EDITOR -->
+
+            <div
+                id="chapter-editor"
+                class="chapter-editor"
+            ></div>
+
+
+            <!-- IMAGE -->
+
+            <div class="image-tools">
+
+                <label
+                    class="btn btn-outline-primary"
+                >
+
+                    📷 Chèn ảnh
+
+                    <input
+                        type="file"
+                        id="chapter-image"
+                        accept="image/*"
+                        hidden
+                    >
+
+                </label>
+
+
+                <span
+                    id="image-status"
+                ></span>
+
+            </div>
+
+
+            <!-- ACTIONS -->
+
+            <div class="editor-actions">
+
+                <button
+                    id="btn-preview"
+                    class="btn btn-outline-secondary"
+                >
+                    👁 Xem trước
+                </button>
+
+
+                <button
+                    id="btn-cancel-editor"
+                    class="btn btn-outline-secondary"
+                >
+                    Hủy
+                </button>
+
+
+                <button
+                    id="btn-save-chapter"
+                    class="btn btn-success"
+                >
+                    💾 Lưu chương
+                </button>
+
+            </div>
+
+
+            <div
+                id="editor-status"
+                class="editor-status"
+            ></div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- ==========================================
+     PREVIEW MODAL
+========================================== -->
+
+<div
+    id="preview-modal"
+    class="preview-modal hidden"
+>
+
+    <div class="preview-overlay"></div>
+
+
+    <div class="preview-box">
+
+        <div class="preview-header">
+
+            <strong id="preview-title">
+                Xem trước
+            </strong>
+
+
+            <button
+                id="btn-close-preview"
+                class="btn-close"
+            ></button>
+
+        </div>
+
+
+        <article
+            id="preview-content"
+            class="preview-content"
+        ></article>
+
+    </div>
+
+</div>
+
+
+
+<!-- ==========================================
+     TOAST
+========================================== -->
+
+<div
+    id="toast"
+    class="toast-message"
+></div>
+
+
+
+<!-- ==========================================
+     SCRIPTS
+========================================== -->
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+></script>
+
+
+<script src="assets/ckeditor/48.4.0/ckeditor5.umd.js"></script>
+
+
+<script
+    src="assets/js/config.js"
+></script>
+
+
+<script
+    src="assets/js/github-api.js"
+></script>
+
+
+<script
+    src="assets/js/admin.js"
+></script>
+
+
+</body>
+
+</html>

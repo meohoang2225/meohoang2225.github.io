@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thư viện truyện</title>
+
+    <meta name="description" content="Thư viện truyện online">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container header-inner">
+
+        <a href="index.html" class="logo">
+            📚 Thư viện truyện
+        </a>
+
+        <div class="header-search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Tìm kiếm truyện..."
+                autocomplete="off"
+            >
+        </div>
+
+    </div>
+</header>
+
+
+<main class="container">
+
+    <section class="page-header">
+
+        <div>
+            <h1>Danh sách truyện</h1>
+            <p id="novelCount">Đang tải...</p>
+        </div>
+
+    </section>
+
+
+    <section id="novelList" class="novel-grid">
+
+        <div class="loading">
+            Đang tải danh sách truyện...
+        </div>
+
+    </section>
+
+
+    <div id="emptyResult" class="empty hidden">
+        Không tìm thấy truyện phù hợp.
+    </div>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">
+        © 2026 Thư viện truyện
+    </div>
+</footer>
+
+</body>
+</html>
