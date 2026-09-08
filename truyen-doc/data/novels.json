@@ -1,21 +1,31 @@
 [
-    {
-        "id": "demo",
-        "title": "Vô Địch",
-        "author": "Đạt",
-        "description": "Một câu chuyện demo để kiểm tra hệ thống đọc truyện.",
-        "cover": "images/novels/demo.jpg",
-        "status": "Đang ra",
-        "chapterCount": 2,
-        "updatedAt": "2026-09-01"
-    },{
-        "id": "Thunghiem",
-        "title": "Bên kia mùa hè",
-        "author": "Truyện Đọc",
-        "description": "Một câu chuyện ngắn về những điều ta tưởng đã cũ nhưng vẫn âm thầm lớn lên trong ký ức.",
-        "cover": "",
-        "status": "Đang ra",
-        "chapterCount": 1,
-        "updatedAt": "2026-09-02"
-      }
+  {
+    "id": "am-nuoc-dun-soi",
+    "title": "Ấm nước đun sôi tướng quân mộng",
+    "author": "Mèo Hoang",
+    "description": "Cổ trang · Chiến trường · Tình cảm · Gia đình · Thương trường · Hài hước · Mưu quyền",
+    "cover": "",
+    "status": "Đang ra",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "Thunghiem",
+    "title": "Bên kia mùa hè",
+    "author": "Truyện Đọc",
+    "description": "Một câu chuyện ngắn về những điều ta tưởng đã cũ nhưng vẫn âm thầm lớn lên trong ký ức.",
+    "cover": "",
+    "status": "Đang ra",
+    "chapterCount": 1,
+    "updatedAt": "2026-09-02"
+  },
+  {
+    "id": "demo",
+    "title": "Vô Địch",
+    "author": "Đạt",
+    "description": "Một câu chuyện demo để kiểm tra hệ thống đọc truyện.",
+    "cover": "images/novels/demo.jpg",
+    "status": "Đang ra",
+    "chapterCount": 2,
+    "updatedAt": "2026-09-01"
+  }
 ]
