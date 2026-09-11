@@ -147,171 +147,6 @@ main.container {
 
 
 /* ==============================
-   Novel grid
-   ============================== */
-
-.novel-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-    gap: 20px;
-}
-
-
-.novel-card {
-
-    background: #fff;
-
-    border: 1px solid #e5e5e5;
-
-    border-radius: 12px;
-
-    padding: 15px;
-
-    display: flex;
-
-    gap: 15px;
-
-    transition:
-        transform .15s,
-        box-shadow .15s;
-}
-
-
-.novel-card:hover {
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 5px 20px rgba(0,0,0,.07);
-
-}
-
-
-.novel-cover-link {
-
-    flex: 0 0 130px;
-
-}
-
-
-.novel-cover {
-
-    display: block;
-
-    width: 130px;
-
-    height: 180px;
-
-    object-fit: cover;
-
-    border-radius: 7px;
-
-    background: #eee;
-
-}
-
-
-.novel-info {
-
-    min-width: 0;
-
-    flex: 1;
-}
-
-
-.novel-info h2 {
-
-    margin: 0 0 8px;
-
-    font-size: 20px;
-
-}
-
-
-.novel-author {
-
-    color: #666;
-
-    font-size: 14px;
-
-    margin-bottom: 8px;
-
-}
-
-
-.novel-status {
-
-    display: inline-block;
-
-    font-size: 12px;
-
-    padding: 4px 8px;
-
-    border-radius: 5px;
-
-    background: #eee;
-
-    margin-bottom: 10px;
-
-}
-
-
-.novel-description {
-
-    color: #555;
-
-    font-size: 14px;
-
-    line-height: 1.6;
-
-    margin: 0 0 15px;
-
-}
-
-
-.novel-footer {
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 10px;
-
-}
-
-
-.novel-footer span {
-
-    color: #777;
-
-    font-size: 13px;
-
-}
-
-
-.read-button {
-
-    display: inline-block;
-
-    padding: 8px 12px;
-
-    background: #222;
-
-    color: #fff;
-
-    border-radius: 6px;
-
-    font-size: 13px;
-}
-
-
-/* ==============================
    States
    ============================== */
 
@@ -512,9 +347,23 @@ main.container {
 .novel-cover {
     width: 100%;
     aspect-ratio: 2 / 3;
+
     display: block;
-    object-fit: cover;
+    overflow: hidden;
+
     background: #f1f1f1;
+}
+
+.novel-cover img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .novel-info {
@@ -574,6 +423,51 @@ main.container {
 
 
 /* =========================================================
+   CARD READ BUTTON
+========================================================= */
+
+.novel-latest {
+    margin-top: 14px;
+}
+
+.novel-read-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 42px;
+
+    padding: 9px 12px;
+
+    border-radius: 9px;
+
+    background: #222;
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease;
+}
+
+.novel-card:hover .novel-read-button {
+    background: #111;
+}
+
+.novel-card:active .novel-read-button {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
    CONTINUE READING
 ========================================================= */
 
@@ -594,10 +488,26 @@ main.container {
 .continue-cover {
     width: 70px;
     height: 100px;
+
     flex: 0 0 70px;
-    object-fit: cover;
+
+    overflow: hidden;
+
     border-radius: 8px;
+
     background: #f1f1f1;
+}
+
+.continue-cover img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .continue-info {
@@ -618,14 +528,39 @@ main.container {
 }
 
 .continue-button {
-    display: inline-block;
-    padding: 9px 14px;
-    border-radius: 8px;
-    text-decoration: none;
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 42px;
+
+    padding: 9px 16px;
+
+    border: 0;
+    border-radius: 9px;
+
     background: #222;
     color: #fff;
+
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease;
+}
+
+.continue-button:hover {
+    background: #111;
+}
+
+.continue-button:active {
+    transform: scale(0.97);
 }
 
 
@@ -820,7 +755,16 @@ main.container {
     }
 
     .continue-button {
-        padding: 8px 11px;
+        width: 100%;
+        min-height: 44px;
+
+        padding: 9px 12px;
+
+        font-size: 14px;
+    }
+
+    .novel-read-button {
+        min-height: 44px;
         font-size: 13px;
     }
 

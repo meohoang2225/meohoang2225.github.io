@@ -38,10 +38,14 @@
     }
 
     function getNovelUrl(novelId, chapterId) {
-        let url = "reader.html?novel=" + encodeURIComponent(novelId);
+        let url =
+            "reader.html?novel=" +
+            encodeURIComponent(novelId);
 
         if (chapterId) {
-            url += "&chapter=" + encodeURIComponent(chapterId);
+            url +=
+                "&chapter=" +
+                encodeURIComponent(chapterId);
         }
 
         return url;
@@ -82,7 +86,8 @@
     async function loadNovels() {
         try {
             const response = await fetch(
-                CONFIG.data?.novels || "data/novels.json",
+                CONFIG.data?.novels ||
+                "data/novels.json",
                 {
                     cache: "no-cache"
                 }
@@ -95,13 +100,18 @@
                 );
             }
 
-            const data = await response.json();
+            const data =
+                await response.json();
 
-            novels = Array.isArray(data) ? data : [];
+            novels =
+                Array.isArray(data)
+                    ? data
+                    : [];
 
             render();
 
         } catch (error) {
+
             console.error(error);
 
             $("#novel-list").html(`
@@ -119,37 +129,60 @@
      */
 
     function getFilteredNovels() {
-        const search = normalizeText(currentSearch);
 
-        return novels.filter(novel => {
-
-            /*
-             * Status
-             */
-            if (currentStatus !== "all") {
-                if (
-                    normalizeText(novel.status) !==
-                    normalizeText(currentStatus)
-                ) {
-                    return false;
-                }
-            }
-
-            /*
-             * Search
-             */
-            if (!search) {
-                return true;
-            }
-
-            const title = normalizeText(novel.title);
-            const author = normalizeText(novel.author);
-
-            return (
-                title.includes(search) ||
-                author.includes(search)
+        const search =
+            normalizeText(
+                currentSearch
             );
-        });
+
+        return novels.filter(
+            novel => {
+
+                /*
+                 * Status
+                 */
+
+                if (
+                    currentStatus !==
+                    "all"
+                ) {
+
+                    if (
+                        normalizeText(
+                            novel.status
+                        ) !==
+                        normalizeText(
+                            currentStatus
+                        )
+                    ) {
+                        return false;
+                    }
+                }
+
+                /*
+                 * Search
+                 */
+
+                if (!search) {
+                    return true;
+                }
+
+                const title =
+                    normalizeText(
+                        novel.title
+                    );
+
+                const author =
+                    normalizeText(
+                        novel.author
+                    );
+
+                return (
+                    title.includes(search) ||
+                    author.includes(search)
+                );
+            }
+        );
     }
 
     /*
@@ -159,29 +192,49 @@
      */
 
     function render() {
-        const filtered = getFilteredNovels();
 
-        const totalPages = Math.max(
-            1,
-            Math.ceil(filtered.length / ITEMS_PER_PAGE)
-        );
+        const filtered =
+            getFilteredNovels();
 
-        if (currentPage > totalPages) {
-            currentPage = totalPages;
+        const totalPages =
+            Math.max(
+                1,
+                Math.ceil(
+                    filtered.length /
+                    ITEMS_PER_PAGE
+                )
+            );
+
+        if (
+            currentPage >
+            totalPages
+        ) {
+
+            currentPage =
+                totalPages;
         }
 
         const start =
-            (currentPage - 1) * ITEMS_PER_PAGE;
+            (currentPage - 1) *
+            ITEMS_PER_PAGE;
 
-        const pageItems = filtered.slice(
-            start,
-            start + ITEMS_PER_PAGE
+        const pageItems =
+            filtered.slice(
+                start,
+                start +
+                ITEMS_PER_PAGE
+            );
+
+        renderNovels(
+            pageItems
         );
 
-        renderNovels(pageItems);
-        renderPagination(totalPages);
+        renderPagination(
+            totalPages
+        );
 
         renderContinueReading();
+
         renderHistory();
     }
 
@@ -192,13 +245,16 @@
      */
 
     function renderNovels(items) {
-        const container = $("#novel-list");
+
+        const container =
+            $("#novel-list");
 
         if (!container.length) {
             return;
         }
 
         if (!items.length) {
+
             container.html(`
                 <div class="alert alert-light text-center">
                     Không tìm thấy truyện phù hợp.
@@ -210,121 +266,143 @@
 
         let html = "";
 
-        items.forEach(novel => {
+        items.forEach(
+            novel => {
 
-            const progress =
-                window.ReaderStorage
-                    ?.getNovelProgress(novel.id);
+                const progress =
+                    window.ReaderStorage
+                        ?.getNovelProgress(
+                            novel.id
+                        );
 
-            const continueChapter =
-                progress?.chapterId || "";
+                const continueChapter =
+                    progress?.chapterId ||
+                    "";
 
-            const latestChapter =
-                getLatestChapterId(novel);
+                const latestChapter =
+                    getLatestChapterId(
+                        novel
+                    );
 
-            const targetChapter =
-                continueChapter || latestChapter;
+                const targetChapter =
+                    continueChapter ||
+                    latestChapter;
 
-            html += `
-                <article class="novel-card">
+                html += `
+                    <article class="novel-card">
 
-                    <a
-                        href="${getNovelUrl(
-                            novel.id,
-                            targetChapter
-                        )}"
-                        class="novel-card-link"
-                    >
+                        <a
+                            href="${getNovelUrl(
+                                novel.id,
+                                targetChapter
+                            )}"
+                            class="novel-card-link"
+                        >
 
-                        <div class="novel-cover">
-                            <img
-                                src="${escapeHtml(
-                                    getCover(novel)
-                                )}"
-                                alt="${escapeHtml(
-                                    novel.title
-                                )}"
-                                loading="lazy"
-                            >
-                        </div>
+                            <div class="novel-cover">
 
-                        <div class="novel-info">
-
-                            <h2 class="novel-title">
-                                ${escapeHtml(
-                                    novel.title
-                                )}
-                            </h2>
-
-                            <div class="novel-author">
-                                ${escapeHtml(
-                                    novel.author ||
-                                    "Chưa rõ tác giả"
-                                )}
-                            </div>
-
-                            <div class="novel-status">
-                                <span class="status-badge ${getStatusClass(
-                                    novel.status
-                                )}">
-                                    ${escapeHtml(
-                                        getStatusLabel(
-                                            novel.status
+                                <img
+                                    src="${escapeHtml(
+                                        getCover(
+                                            novel
                                         )
+                                    )}"
+                                    alt="${escapeHtml(
+                                        novel.title
+                                    )}"
+                                    loading="lazy"
+                                >
+
+                            </div>
+
+                            <div class="novel-info">
+
+                                <h2 class="novel-title">
+                                    ${escapeHtml(
+                                        novel.title
                                     )}
-                                </span>
-                            </div>
+                                </h2>
 
-                            <div class="novel-description">
-                                ${escapeHtml(
-                                    novel.description || ""
-                                )}
-                            </div>
+                                <div class="novel-author">
+                                    ${escapeHtml(
+                                        novel.author ||
+                                        "Chưa rõ tác giả"
+                                    )}
+                                </div>
 
-                            <div class="novel-meta">
+                                <div class="novel-status">
 
-                                <span>
-                                    📚 ${
-                                        Number(
-                                            novel.chapterCount
-                                        ) || 0
-                                    } chương
-                                </span>
+                                    <span
+                                        class="status-badge ${getStatusClass(
+                                            novel.status
+                                        )}"
+                                    >
+                                        ${escapeHtml(
+                                            getStatusLabel(
+                                                novel.status
+                                            )
+                                        )}
+                                    </span>
+
+                                </div>
+
+                                <div class="novel-description">
+                                    ${escapeHtml(
+                                        novel.description ||
+                                        ""
+                                    )}
+                                </div>
+
+                                <div class="novel-meta">
+
+                                    <span>
+                                        📚 ${
+                                            Number(
+                                                novel.chapterCount
+                                            ) || 0
+                                        } chương
+                                    </span>
+
+                                    ${
+                                        novel.updatedAt
+                                            ? `
+                                            <span>
+                                                🕒 ${escapeHtml(
+                                                    novel.updatedAt
+                                                )}
+                                            </span>
+                                            `
+                                            : ""
+                                    }
+
+                                </div>
 
                                 ${
-                                    novel.updatedAt
+                                    targetChapter
                                         ? `
-                                        <span>
-                                            🕒 ${escapeHtml(
-                                                novel.updatedAt
-                                            )}
-                                        </span>
+                                        <div class="novel-latest">
+
+                                            <span class="novel-read-button">
+                                                ${
+                                                    continueChapter
+                                                        ? "▶ Tiếp tục đọc"
+                                                        : "🆕 Đọc truyện"
+                                                }
+                                            </span>
+
+                                        </div>
                                         `
                                         : ""
                                 }
 
                             </div>
 
-                            ${
-                                targetChapter
-                                    ? `
-                                    <div class="novel-latest">
-                                        ${continueChapter
-                                            ? "▶ Tiếp tục đọc"
-                                            : "🆕 Đọc truyện"
-                                        }
-                                    </div>
-                                    `
-                                    : ""
-                            }
+                        </a>
 
-                        </div>
-
-                    </a>
-
-                </article>
-            `;
-        });
+                    </article>
+                `;
+            }
+        );
 
         container.html(html);
     }
@@ -334,16 +412,20 @@
      * LATEST CHAPTER
      * =====================================================
      *
-     * novels.json có chapterCount nhưng không bắt buộc
-     * phải có latestChapter.
+     * novels.json có chapterCount nhưng
+     * không bắt buộc phải có latestChapter.
      *
-     * Nếu admin sau này ghi latestChapter vào catalog,
-     * chúng ta dùng luôn.
+     * Nếu admin sau này ghi latestChapter
+     * vào catalog, chúng ta dùng luôn.
      */
 
     function getLatestChapterId(novel) {
+
         if (novel.latestChapter) {
-            return String(novel.latestChapter);
+
+            return String(
+                novel.latestChapter
+            );
         }
 
         return "";
@@ -355,32 +437,41 @@
      * =====================================================
      */
 
-    function renderPagination(totalPages) {
-        const container = $("#pagination");
+    function renderPagination(
+        totalPages
+    ) {
+
+        const container =
+            $("#pagination");
 
         if (!container.length) {
             return;
         }
 
         if (totalPages <= 1) {
+
             container.empty();
+
             return;
         }
 
         let html = `
             <nav aria-label="Phân trang">
+
                 <ul class="pagination justify-content-center">
         `;
 
         /*
          * Previous
          */
+
         html += `
             <li class="page-item ${
                 currentPage === 1
                     ? "disabled"
                     : ""
             }">
+
                 <button
                     class="page-link"
                     data-page="${currentPage - 1}"
@@ -392,56 +483,68 @@
                 >
                     ‹
                 </button>
+
             </li>
         `;
 
         /*
          * Pages
          */
-        const pages = buildPaginationPages(
-            currentPage,
-            totalPages
-        );
 
-        pages.forEach(page => {
+        const pages =
+            buildPaginationPages(
+                currentPage,
+                totalPages
+            );
 
-            if (page === "...") {
+        pages.forEach(
+            page => {
+
+                if (page === "...") {
+
+                    html += `
+                        <li class="page-item disabled">
+
+                            <span class="page-link">
+                                …
+                            </span>
+
+                        </li>
+                    `;
+
+                    return;
+                }
+
                 html += `
-                    <li class="page-item disabled">
-                        <span class="page-link">
-                            …
-                        </span>
+                    <li class="page-item ${
+                        page === currentPage
+                            ? "active"
+                            : ""
+                    }">
+
+                        <button
+                            class="page-link"
+                            data-page="${page}"
+                        >
+                            ${page}
+                        </button>
+
                     </li>
                 `;
-
-                return;
             }
-
-            html += `
-                <li class="page-item ${
-                    page === currentPage
-                        ? "active"
-                        : ""
-                }">
-                    <button
-                        class="page-link"
-                        data-page="${page}"
-                    >
-                        ${page}
-                    </button>
-                </li>
-            `;
-        });
+        );
 
         /*
          * Next
          */
+
         html += `
             <li class="page-item ${
                 currentPage === totalPages
                     ? "disabled"
                     : ""
             }">
+
                 <button
                     class="page-link"
                     data-page="${currentPage + 1}"
@@ -453,23 +556,32 @@
                 >
                     ›
                 </button>
+
             </li>
         `;
 
         html += `
                 </ul>
+
             </nav>
         `;
 
         container.html(html);
     }
 
-    function buildPaginationPages(current, total) {
+    function buildPaginationPages(
+        current,
+        total
+    ) {
 
         if (total <= 7) {
+
             return Array.from(
-                { length: total },
-                (_, i) => i + 1
+                {
+                    length: total
+                },
+                (_, i) =>
+                    i + 1
             );
         }
 
@@ -481,21 +593,32 @@
             pages.push("...");
         }
 
-        const start = Math.max(
-            2,
-            current - 1
-        );
+        const start =
+            Math.max(
+                2,
+                current - 1
+            );
 
-        const end = Math.min(
-            total - 1,
-            current + 1
-        );
+        const end =
+            Math.min(
+                total - 1,
+                current + 1
+            );
 
-        for (let i = start; i <= end; i++) {
+        for (
+            let i = start;
+            i <= end;
+            i++
+        ) {
+
             pages.push(i);
         }
 
-        if (current < total - 3) {
+        if (
+            current <
+            total - 3
+        ) {
+
             pages.push("...");
         }
 
@@ -511,7 +634,9 @@
      */
 
     function renderContinueReading() {
-        const container = $("#continue-reading");
+
+        const container =
+            $("#continue-reading");
 
         if (!container.length) {
             return;
@@ -519,55 +644,88 @@
 
         const progress =
             window.ReaderStorage
-                ?.getProgress() || {};
+                ?.getProgress() ||
+            {};
 
-        const entries = Object.entries(progress);
+        const entries =
+            Object.entries(
+                progress
+            );
 
         if (!entries.length) {
+
             container.empty();
+
             return;
         }
 
         /*
          * Lấy lần đọc gần nhất.
          */
-        entries.sort((a, b) => {
-            return new Date(
-                b[1].updatedAt || 0
-            ) - new Date(
-                a[1].updatedAt || 0
-            );
-        });
 
-        const [novelId, data] = entries[0];
+        entries.sort(
+            (a, b) => {
 
-        const novel = novels.find(
-            item =>
-                String(item.id) ===
-                String(novelId)
+                return new Date(
+                    b[1].updatedAt || 0
+                ) -
+                new Date(
+                    a[1].updatedAt || 0
+                );
+            }
         );
 
-        if (!novel || !data.chapterId) {
+        const [
+            novelId,
+            data
+        ] = entries[0];
+
+        const novel =
+            novels.find(
+                item =>
+                    String(
+                        item.id
+                    ) ===
+                    String(
+                        novelId
+                    )
+            );
+
+        if (
+            !novel ||
+            !data.chapterId
+        ) {
+
             container.empty();
+
             return;
         }
 
-        const percent = Math.round(
-            (Number(data.scroll) || 0) * 100
-        );
+        const percent =
+            Math.round(
+                (
+                    Number(
+                        data.scroll
+                    ) || 0
+                ) * 100
+            );
 
         container.html(`
             <div class="continue-card">
 
                 <div class="continue-cover">
+
                     <img
                         src="${escapeHtml(
-                            getCover(novel)
+                            getCover(
+                                novel
+                            )
                         )}"
                         alt="${escapeHtml(
                             novel.title
                         )}"
                     >
+
                 </div>
 
                 <div class="continue-info">
@@ -583,16 +741,20 @@
                     </h2>
 
                     <p>
-                        Chương ${escapeHtml(
-                            data.chapterId
-                        )}
+                        Chương ${
+                            escapeHtml(
+                                data.chapterId
+                            )
+                        }
                     </p>
 
                     <div class="continue-progress">
+
                         <div
                             class="continue-progress-bar"
                             style="width:${percent}%"
                         ></div>
+
                     </div>
 
                     <div class="continue-percent">
@@ -604,9 +766,9 @@
                             novel.id,
                             data.chapterId
                         )}"
-                        class="btn btn-primary"
+                        class="continue-button"
                     >
-                        Tiếp tục đọc
+                        ▶ Tiếp tục đọc
                     </a>
 
                 </div>
@@ -622,7 +784,9 @@
      */
 
     function renderHistory() {
-        const container = $("#reading-history");
+
+        const container =
+            $("#reading-history");
 
         if (!container.length) {
             return;
@@ -630,74 +794,99 @@
 
         const history =
             window.ReaderStorage
-                ?.getHistory() || [];
+                ?.getHistory() ||
+            [];
 
         if (!history.length) {
+
             container.empty();
+
             return;
         }
 
         let html = "";
 
-        history.slice(0, 10).forEach(item => {
+        history
+            .slice(0, 10)
+            .forEach(
+                item => {
 
-            const novel = novels.find(
-                novel =>
-                    String(novel.id) ===
-                    String(item.novelId)
+                    const novel =
+                        novels.find(
+                            novel =>
+                                String(
+                                    novel.id
+                                ) ===
+                                String(
+                                    item.novelId
+                                )
+                        );
+
+                    if (!novel) {
+                        return;
+                    }
+
+                    html += `
+                        <a
+                            href="${getNovelUrl(
+                                item.novelId,
+                                item.chapterId
+                            )}"
+                            class="history-item"
+                        >
+
+                            <div class="history-title">
+                                ${escapeHtml(
+                                    novel.title
+                                )}
+                            </div>
+
+                            <div class="history-chapter">
+                                Chương ${
+                                    escapeHtml(
+                                        item.chapterId
+                                    )
+                                }
+                            </div>
+
+                            <div class="history-time">
+                                ${formatHistoryTime(
+                                    item.readAt
+                                )}
+                            </div>
+
+                        </a>
+                    `;
+                }
             );
 
-            if (!novel) {
-                return;
-            }
-
-            html += `
-                <a
-                    href="${getNovelUrl(
-                        item.novelId,
-                        item.chapterId
-                    )}"
-                    class="history-item"
-                >
-
-                    <div class="history-title">
-                        ${escapeHtml(
-                            novel.title
-                        )}
-                    </div>
-
-                    <div class="history-chapter">
-                        Chương ${escapeHtml(
-                            item.chapterId
-                        )}
-                    </div>
-
-                    <div class="history-time">
-                        ${formatHistoryTime(
-                            item.readAt
-                        )}
-                    </div>
-
-                </a>
-            `;
-        });
-
         if (!html) {
+
             container.empty();
+
             return;
         }
 
         container.html(html);
     }
 
-    function formatHistoryTime(value) {
+    function formatHistoryTime(
+        value
+    ) {
+
         if (!value) {
             return "";
         }
 
-        const date = new Date(value);
+        const date =
+            new Date(value);
 
-        if (Number.isNaN(date.getTime())) {
+        if (
+            Number.isNaN(
+                date.getTime()
+            )
+        ) {
+
             return "";
         }
 
@@ -723,12 +912,16 @@
         /*
          * Search
          */
+
         $(document).on(
             "input",
             "#novel-search",
             function () {
 
-                currentSearch = $(this).val() || "";
+                currentSearch =
+                    $(this).val() ||
+                    "";
+
                 currentPage = 1;
 
                 render();
@@ -738,13 +931,15 @@
         /*
          * Status filter
          */
+
         $(document).on(
             "change",
             "#status-filter",
             function () {
 
                 currentStatus =
-                    $(this).val() || "all";
+                    $(this).val() ||
+                    "all";
 
                 currentPage = 1;
 
@@ -755,6 +950,7 @@
         /*
          * Pagination
          */
+
         $(document).on(
             "click",
             "#pagination [data-page]",
@@ -762,29 +958,41 @@
 
                 const page =
                     Number(
-                        $(this).attr("data-page")
+                        $(this).attr(
+                            "data-page"
+                        )
                     );
 
-                if (!page || page < 1) {
+                if (
+                    !page ||
+                    page < 1
+                ) {
+
                     return;
                 }
 
                 const filtered =
                     getFilteredNovels();
 
-                const totalPages = Math.max(
-                    1,
-                    Math.ceil(
-                        filtered.length /
-                        ITEMS_PER_PAGE
-                    )
-                );
+                const totalPages =
+                    Math.max(
+                        1,
+                        Math.ceil(
+                            filtered.length /
+                            ITEMS_PER_PAGE
+                        )
+                    );
 
-                if (page > totalPages) {
+                if (
+                    page >
+                    totalPages
+                ) {
+
                     return;
                 }
 
-                currentPage = page;
+                currentPage =
+                    page;
 
                 render();
 
@@ -811,12 +1019,19 @@
     });
 
     /*
-     * Public API
+     * =====================================================
+     * PUBLIC API
+     * =====================================================
      */
 
     window.TruyenDocApp = {
-        reload: loadNovels,
-        getNovels: () => novels
+
+        reload:
+            loadNovels,
+
+        getNovels:
+            () => novels
+
     };
 
 })(window, jQuery);
