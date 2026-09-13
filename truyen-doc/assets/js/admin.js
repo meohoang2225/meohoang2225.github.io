@@ -1393,7 +1393,7 @@
 
 
                 const path =
-                    `images/novels/${novelId}/cover.${extension}`;
+                    `${CONFIG.github.sub_domain}/images/novels/${novelId}.${extension}`;
 
 
                 $("#image-status")
