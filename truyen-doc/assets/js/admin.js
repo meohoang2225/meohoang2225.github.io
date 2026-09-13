@@ -29,43 +29,48 @@
 
     let editingChapterId = null;
 
+
     // ===============================
     // SECURITY: Escape HTML
     // ===============================
+
     function escapeHtml(value) {
-        if (value === null || value === undefined) {
+
+        if (
+            value === null ||
+            value === undefined
+        ) {
             return "";
         }
-    
+
         return String(value)
             .replace(/&/g, "&amp;")
             .replace(/</g, "&lt;")
             .replace(/>/g, "&gt;")
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#039;");
+
     }
-    
+
+
     function escapeAttr(value) {
-    
-        if (value === null || value === undefined) {
-    
+
+        if (
+            value === null ||
+            value === undefined
+        ) {
             return "";
-    
         }
-    
+
         return String(value)
-    
             .replace(/&/g, "&amp;")
-    
             .replace(/"/g, "&quot;")
-    
             .replace(/'/g, "&#039;")
-    
             .replace(/</g, "&lt;")
-    
             .replace(/>/g, "&gt;");
-    
+
     }
+
 
     // ==========================================
     // TOAST
@@ -78,7 +83,6 @@
 
         const el =
             $("#toast");
-
 
         el
             .removeClass(
@@ -266,9 +270,7 @@
         if (online) {
 
             status
-                .text(
-                    "Đã kết nối"
-                )
+                .text("Đã kết nối")
                 .removeClass("offline")
                 .addClass("online");
 
@@ -280,9 +282,7 @@
         } else {
 
             status
-                .text(
-                    "Chưa kết nối"
-                )
+                .text("Chưa kết nối")
                 .removeClass("online")
                 .addClass("offline");
 
@@ -720,6 +720,9 @@
                 null;
 
 
+            chapters = [];
+
+
             $("#novel-select")
                 .val("");
 
@@ -798,7 +801,9 @@
                 }
 
 
-                if (!/^[a-z0-9-]+$/.test(id)) {
+                if (
+                    !/^[a-z0-9-]+$/.test(id)
+                ) {
 
                     throw new Error(
                         "ID chỉ được chứa a-z, 0-9 và dấu -."
@@ -887,6 +892,10 @@
                 };
 
 
+                // --------------------------------
+                // SAVE INFO.JSON
+                // --------------------------------
+
                 await GitHubAPI.saveJson(
 
                     path,
@@ -900,13 +909,39 @@
                 );
 
 
-                await updateCatalog(
-                    novel
-                );
-
+                // --------------------------------
+                // ENSURE CHAPTER INDEX
+                // --------------------------------
 
                 await ensureChapterIndex(
                     id
+                );
+
+
+                // --------------------------------
+                // LOAD ACTUAL CHAPTERS
+                // --------------------------------
+
+                await loadChapters(
+                    id
+                );
+
+
+                /*
+                 * Cập nhật novels.json sau khi
+                 * chapters.json đã tồn tại.
+                 *
+                 * Nếu truyện mới:
+                 * chapterCount = 0
+                 * latestChapter = null
+                 *
+                 * Nếu truyện đã có chương:
+                 * lấy số liệu thực tế từ chapters.json.
+                 */
+
+                await updateCatalog(
+                    novel,
+                    chapters
                 );
 
 
@@ -925,9 +960,10 @@
                     .removeClass("hidden");
 
 
-                await loadChapters(
-                    id
-                );
+                /*
+                 * loadChapters() ở trên đã
+                 * render danh sách chương.
+                 */
 
 
                 toast(
@@ -964,8 +1000,23 @@
     // UPDATE CATALOG
     // ==========================================
 
+    /*
+     * chapterList:
+     *
+     * - null:
+     *   Giữ chapterCount/latestChapter
+     *   hiện có trong novels.json.
+     *
+     * - array:
+     *   Tính lại hoàn toàn từ chapters.json.
+     *
+     * Đây là cách an toàn hơn so với
+     * chapterCount++ / chapterCount--.
+     */
+
     async function updateCatalog(
-        novel
+        novel,
+        chapterList = null
     ) {
 
         const path =
@@ -1008,7 +1059,96 @@
         }
 
 
+        /*
+         * Tìm catalog item cũ.
+         */
+
+        const existingIndex =
+            list.findIndex(
+                x =>
+                    String(x.id) ===
+                    String(novel.id)
+            );
+
+
+        const existingItem =
+            existingIndex >= 0
+                ? list[existingIndex]
+                : null;
+
+
+        /*
+         * Giữ dữ liệu cũ mặc định.
+         */
+
+        let chapterCount =
+            existingItem &&
+            Number.isFinite(
+                Number(
+                    existingItem.chapterCount
+                )
+            )
+                ? Number(
+                    existingItem.chapterCount
+                )
+                : 0;
+
+
+        let latestChapter =
+            existingItem &&
+            existingItem.latestChapter !== undefined &&
+            existingItem.latestChapter !== null &&
+            String(
+                existingItem.latestChapter
+            ).trim() !== ""
+                ? String(
+                    existingItem.latestChapter
+                )
+                : null;
+
+
+        /*
+         * Nếu truyền chapters thực tế,
+         * tính lại hoàn toàn.
+         */
+
+        if (
+            Array.isArray(
+                chapterList
+            )
+        ) {
+
+            const sortedChapters =
+                [...chapterList]
+                    .sort(chapterSort);
+
+
+            chapterCount =
+                sortedChapters.length;
+
+
+            latestChapter =
+                chapterCount > 0
+                    ? String(
+                        sortedChapters[
+                            sortedChapters.length - 1
+                        ].id
+                    )
+                    : null;
+
+        }
+
+
+        /*
+         * Catalog item.
+         *
+         * Giữ lại các field cũ nếu có,
+         * sau đó ghi đè bằng dữ liệu mới.
+         */
+
         const item = {
+
+            ...(existingItem || {}),
 
             id:
                 novel.id,
@@ -1028,22 +1168,23 @@
             status:
                 novel.status,
 
+            chapterCount:
+                chapterCount,
+
+            latestChapter:
+                latestChapter,
+
             updatedAt:
                 novel.updatedAt
 
         };
 
 
-        const index =
-            list.findIndex(
-                x =>
-                    x.id === novel.id
-            );
+        if (
+            existingIndex >= 0
+        ) {
 
-
-        if (index >= 0) {
-
-            list[index] =
+            list[existingIndex] =
                 item;
 
         } else {
@@ -1054,6 +1195,10 @@
 
         }
 
+
+        /*
+         * Sort catalog theo tên truyện.
+         */
 
         list.sort(
             (a, b) =>
@@ -1157,6 +1302,9 @@
 
                 selectedNovelId =
                     null;
+
+
+                chapters = [];
 
 
                 await loadNovels();
@@ -1367,6 +1515,7 @@
 
                 chapters = [];
 
+
                 await saveChapterIndex(
                     novelId,
                     []
@@ -1416,9 +1565,10 @@
 
 
         chapters.forEach(
-            (chapter, index) => {
+            (chapter) => {
 
                 const item = $(`
+
                     <div class="chapter-item">
 
                         <div class="chapter-number">
@@ -1458,6 +1608,7 @@
                         </div>
 
                     </div>
+
                 `);
 
 
@@ -1511,167 +1662,196 @@
 
         }
     );
-    
-        // ==========================================
+
+
+
+    // ==========================================
     // MONETIZATION
     // ==========================================
-    
+
     function getMonetizationFromForm() {
-    
+
         const affiliateEnabled =
             $("#affiliate-enabled")
                 .prop("checked");
-    
-    
+
+
         const affiliateUrl =
             $("#affiliate-url")
                 .val()
                 .trim();
-    
-    
+
+
         const adsEnabled =
             $("#ads-enabled")
                 .prop("checked");
-    
-    
+
+
         if (
             affiliateEnabled &&
-            !isValidAffiliateUrl(affiliateUrl)
+            !isValidAffiliateUrl(
+                affiliateUrl
+            )
         ) {
-    
+
             throw new Error(
                 "Affiliate đang bật nhưng Link Affiliate không hợp lệ."
             );
-    
+
         }
-    
-    
+
+
         return {
-    
+
             affiliate: {
-    
+
                 enabled:
                     affiliateEnabled,
-    
+
                 url:
                     affiliateUrl
-    
+
             },
-    
+
             ads: {
-    
+
                 enabled:
                     adsEnabled
-    
+
             }
-    
+
         };
-    
+
     }
+
 
     function isValidAffiliateUrl(
         affiliateUrl
     ) {
-    
-        return affiliateUrl.startsWith("https://") || affiliateUrl.startsWith("http://");
-    
+
+        if (!affiliateUrl) {
+            return false;
+        }
+
+
+        try {
+
+            const parsed =
+                new URL(
+                    affiliateUrl
+                );
+
+
+            return (
+                parsed.protocol ===
+                    "https:" ||
+                parsed.protocol ===
+                    "http:"
+            );
+
+        } catch (error) {
+
+            return false;
+
+        }
+
     }
-    
-    
+
+
     function fillMonetizationForm(
         monetization
     ) {
-    
+
         const data =
             monetization || {};
-    
-    
+
+
         const affiliate =
             data.affiliate || {};
-    
-    
+
+
         const ads =
             data.ads || {};
-    
-    
+
+
         $("#affiliate-enabled")
             .prop(
                 "checked",
                 affiliate.enabled === true
             );
-    
-    
+
+
         $("#affiliate-url")
             .val(
                 affiliate.url || ""
             );
-    
-    
+
+
         $("#ads-enabled")
             .prop(
                 "checked",
                 ads.enabled === true
             );
-    
-    
+
+
         updateAffiliateSettingsVisibility();
-    
+
     }
-    
-    
+
+
     function clearMonetizationForm() {
-    
+
         $("#affiliate-enabled")
             .prop(
                 "checked",
                 false
             );
-    
-    
+
+
         $("#affiliate-url")
             .val("");
-    
-    
+
+
         $("#ads-enabled")
             .prop(
                 "checked",
                 false
             );
-    
-    
+
+
         updateAffiliateSettingsVisibility();
-    
+
     }
-    
-    
+
+
     function updateAffiliateSettingsVisibility() {
-    
+
         const enabled =
             $("#affiliate-enabled")
                 .prop("checked");
-    
-    
+
+
         if (enabled) {
-    
+
             $("#affiliate-settings")
                 .removeClass("hidden");
-    
+
         } else {
-    
+
             $("#affiliate-settings")
                 .addClass("hidden");
-    
+
         }
-    
+
     }
-    
-    
+
+
     $("#affiliate-enabled").on(
         "change",
         function () {
-    
+
             updateAffiliateSettingsVisibility();
-    
+
         }
     );
 
@@ -1729,6 +1909,8 @@
 
 
             await initEditor("");
+
+
             clearMonetizationForm();
 
 
@@ -1852,7 +2034,8 @@
             await initEditor(
                 chapter.content || ""
             );
-            
+
+
             fillMonetizationForm(
                 chapter.monetization || {}
             );
@@ -1932,8 +2115,14 @@
             chapters =
                 chapters.filter(
                     c =>
-                        c.id !== chapterId
+                        String(c.id) !==
+                        String(chapterId)
                 );
+
+
+            chapters.sort(
+                chapterSort
+            );
 
 
             await saveChapterIndex(
@@ -1945,6 +2134,44 @@
             );
 
 
+            /*
+             * --------------------------------
+             * UPDATE NOVELS.JSON
+             * --------------------------------
+             *
+             * Sau khi xóa chapter:
+             *
+             * chapterCount = chapters.length
+             *
+             * latestChapter =
+             * chapter cuối cùng sau sort
+             */
+
+            const novel =
+                novels.find(
+                    n =>
+                        String(n.id) ===
+                        String(novelId)
+                );
+
+
+            if (novel) {
+
+                novel.updatedAt =
+                    today();
+
+
+                await updateCatalog(
+
+                    novel,
+
+                    chapters
+
+                );
+
+            }
+
+
             if (
                 editingChapterId ===
                 chapterId
@@ -1952,6 +2179,7 @@
 
                 $("#editor-section")
                     .addClass("hidden");
+
 
                 editingChapterId =
                     null;
@@ -1962,8 +2190,16 @@
             renderChapters();
 
 
+            /*
+             * Cập nhật catalog trong bộ nhớ
+             * và select nếu cần.
+             */
+
+            await loadNovels();
+
+
             toast(
-                "Đã xóa chương.",
+                "Đã xóa chương và cập nhật danh mục.",
                 "success"
             );
 
@@ -2053,9 +2289,10 @@
 
                 const content =
                     editor.getData();
-                
+
+
                 const monetization =
-            getMonetizationFromForm();
+                    getMonetizationFromForm();
 
 
                 if (
@@ -2124,13 +2361,13 @@
 
                     id:
                         chapterId,
-                
+
                     title,
-                
+
                     content,
-                
+
                     monetization
-                
+
                 };
 
 
@@ -2148,13 +2385,14 @@
 
 
                 // --------------------------------
-                // INDEX
+                // UPDATE CHAPTER INDEX
                 // --------------------------------
 
                 const existing =
                     chapters.findIndex(
                         c =>
-                            c.id === chapterId
+                            String(c.id) ===
+                            String(chapterId)
                     );
 
 
@@ -2199,6 +2437,35 @@
 
 
                 // --------------------------------
+                // UPDATE NOVELS.JSON
+                // --------------------------------
+
+                const novel =
+                    novels.find(
+                        n =>
+                            String(n.id) ===
+                            String(novelId)
+                    );
+
+
+                if (novel) {
+
+                    novel.updatedAt =
+                        today();
+
+
+                    await updateCatalog(
+
+                        novel,
+
+                        chapters
+
+                    );
+
+                }
+
+
+                // --------------------------------
                 // CLEAR DRAFT
                 // --------------------------------
 
@@ -2221,8 +2488,16 @@
                 renderChapters();
 
 
+                /*
+                 * Reload catalog để UI
+                 * luôn đồng bộ với GitHub.
+                 */
+
+                await loadNovels();
+
+
                 toast(
-                    "Đã lưu chương lên GitHub.",
+                    "Đã lưu chương và cập nhật danh mục.",
                     "success"
                 );
 
@@ -2575,9 +2850,7 @@
             } catch (error) {
 
                 $("#image-status")
-                    .text(
-                        ""
-                    );
+                    .text("");
 
 
                 toast(
@@ -2596,202 +2869,385 @@
 
 
 
-// ==========================================
-// CKEDITOR
-// ==========================================
+    // ==========================================
+    // CKEDITOR
+    // ==========================================
 
-    async function initEditor(content = "") {
-        // Destroy editor cũ
+    async function initEditor(
+        content = ""
+    ) {
+
+        /*
+         * Destroy editor cũ
+         */
+
         if (editor) {
+
             try {
+
                 await editor.destroy();
+
             } catch (error) {
-                console.warn("Destroy editor error:", error);
+
+                console.warn(
+                    "Destroy editor error:",
+                    error
+                );
+
             }
-    
+
             editor = null;
+
         }
-    
-        // Xóa toolbar cũ
-        $("#editor-toolbar").empty();
-    
-        // Xóa DOM cũ của editor
-        const editorElement = document.querySelector("#chapter-editor");
-    
+
+
+        /*
+         * Xóa toolbar cũ
+         */
+
+        $("#editor-toolbar")
+            .empty();
+
+
+        /*
+         * Xóa DOM cũ của editor
+         */
+
+        const editorElement =
+            document.querySelector(
+                "#chapter-editor"
+            );
+
+
         if (!editorElement) {
-            throw new Error("Không tìm thấy #chapter-editor");
+
+            throw new Error(
+                "Không tìm thấy #chapter-editor"
+            );
+
         }
-    
+
+
         editorElement.innerHTML = "";
-        editorElement.removeAttribute("contenteditable");
-    
+
+        editorElement.removeAttribute(
+            "contenteditable"
+        );
+
+
         const {
+
             DecoupledEditor,
+
             Essentials,
+
             Paragraph,
+
             Heading,
+
             Bold,
+
             Italic,
+
             Underline,
+
             Strikethrough,
+
             Link,
+
             BlockQuote,
+
             List,
+
             Alignment,
+
             Indent,
+
             Table,
+
             TableToolbar,
+
             HorizontalLine,
+
             RemoveFormat,
+
             Image,
+
             ImageToolbar,
+
             ImageCaption,
+
             ImageStyle
+
         } = CKEDITOR;
-    
+
+
         if (!DecoupledEditor) {
-            throw new Error("CKEditor DecoupledEditor không tồn tại.");
+
+            throw new Error(
+                "CKEditor DecoupledEditor không tồn tại."
+            );
+
         }
-    
-        editor = await DecoupledEditor.create({
-            root: {
-                element: editorElement,
-                initialData: content || "",
-                placeholder: "Bắt đầu viết chương truyện..."
-            },
-    
-            licenseKey: "GPL",
-    
-            plugins: [
-                Essentials,
-                Paragraph,
-                Heading,
-    
-                Bold,
-                Italic,
-                Underline,
-                Strikethrough,
-    
-                Link,
-                BlockQuote,
-    
-                List,
-                Alignment,
-                Indent,
-    
-                Table,
-                TableToolbar,
-    
-                HorizontalLine,
-                RemoveFormat,
-    
-                Image,
-                ImageToolbar,
-                ImageCaption,
-                ImageStyle
-            ],
-    
-            toolbar: {
-                items: [
-                    "undo",
-                    "redo",
-                    "|",
-    
-                    "heading",
-                    "|",
-    
-                    "bold",
-                    "italic",
-                    "underline",
-                    "strikethrough",
-                    "|",
-    
-                    "link",
-                    "blockQuote",
-                    "horizontalLine",
-                    "|",
-    
-                    "bulletedList",
-                    "numberedList",
-                    "|",
-    
-                    "alignment",
-                    "outdent",
-                    "indent",
-                    "|",
-    
-                    "insertTable",
-                    "removeFormat"
+
+
+        editor =
+            await DecoupledEditor.create({
+
+                root: {
+
+                    element:
+                        editorElement,
+
+                    initialData:
+                        content || "",
+
+                    placeholder:
+                        "Bắt đầu viết chương truyện..."
+
+                },
+
+
+                licenseKey:
+                    "GPL",
+
+
+                plugins: [
+
+                    Essentials,
+
+                    Paragraph,
+
+                    Heading,
+
+                    Bold,
+
+                    Italic,
+
+                    Underline,
+
+                    Strikethrough,
+
+                    Link,
+
+                    BlockQuote,
+
+                    List,
+
+                    Alignment,
+
+                    Indent,
+
+                    Table,
+
+                    TableToolbar,
+
+                    HorizontalLine,
+
+                    RemoveFormat,
+
+                    Image,
+
+                    ImageToolbar,
+
+                    ImageCaption,
+
+                    ImageStyle
+
                 ],
-    
-                shouldNotGroupWhenFull: true
-            },
-    
-            table: {
-                contentToolbar: [
-                    "tableColumn",
-                    "tableRow",
-                    "mergeTableCells"
-                ]
-            },
-    
-            image: {
-                toolbar: [
-                    "imageTextAlternative",
-                    "imageStyle:inline",
-                    "imageStyle:block",
-                    "imageStyle:side"
-                ]
-            }
-        });
-    
-        // Đưa toolbar ra ngoài editor
+
+
+                toolbar: {
+
+                    items: [
+
+                        "undo",
+                        "redo",
+                        "|",
+
+                        "heading",
+                        "|",
+
+                        "bold",
+                        "italic",
+                        "underline",
+                        "strikethrough",
+                        "|",
+
+                        "link",
+                        "blockQuote",
+                        "horizontalLine",
+                        "|",
+
+                        "bulletedList",
+                        "numberedList",
+                        "|",
+
+                        "alignment",
+                        "outdent",
+                        "indent",
+                        "|",
+
+                        "insertTable",
+                        "removeFormat"
+
+                    ],
+
+                    shouldNotGroupWhenFull:
+                        true
+
+                },
+
+
+                table: {
+
+                    contentToolbar: [
+
+                        "tableColumn",
+                        "tableRow",
+                        "mergeTableCells"
+
+                    ]
+
+                },
+
+
+                image: {
+
+                    toolbar: [
+
+                        "imageTextAlternative",
+                        "imageStyle:inline",
+                        "imageStyle:block",
+                        "imageStyle:side"
+
+                    ]
+
+                }
+
+            });
+
+
+        /*
+         * Đưa toolbar ra ngoài editor
+         */
+
         $("#editor-toolbar")
             .empty()
-            .append(editor.ui.view.toolbar.element);
-    
-        // Lấy vùng nhập text thực tế
-        const editable = editor.ui.getEditableElement();
-    
+            .append(
+                editor.ui.view.toolbar.element
+            );
+
+
+        /*
+         * Lấy vùng nhập text thực tế
+         */
+
+        const editable =
+            editor.ui.getEditableElement();
+
+
         if (!editable) {
-            throw new Error("Không tìm thấy vùng nhập liệu CKEditor.");
+
+            throw new Error(
+                "Không tìm thấy vùng nhập liệu CKEditor."
+            );
+
         }
-    
-        // Đảm bảo iPhone có thể focus / nhập text
-        editable.setAttribute("contenteditable", "true");
-        editable.setAttribute("spellcheck", "true");
-    
-        editable.style.pointerEvents = "auto";
-        editable.style.userSelect = "text";
-        editable.style.webkitUserSelect = "text";
-        editable.style.webkitUserModify = "read-write";
-    
-        // Focus khi chạm vào vùng editor
+
+
+        /*
+         * Đảm bảo iPhone có thể focus / nhập text
+         */
+
+        editable.setAttribute(
+            "contenteditable",
+            "true"
+        );
+
+
+        editable.setAttribute(
+            "spellcheck",
+            "true"
+        );
+
+
+        editable.style.pointerEvents =
+            "auto";
+
+
+        editable.style.userSelect =
+            "text";
+
+
+        editable.style.webkitUserSelect =
+            "text";
+
+
+        editable.style.webkitUserModify =
+            "read-write";
+
+
+        /*
+         * Focus khi chạm vào vùng editor
+         */
+
         editable.addEventListener(
             "touchstart",
             function () {
+
                 try {
+
                     editor.editing.view.focus();
+
                 } catch (error) {
-                    console.warn("Editor focus error:", error);
+
+                    console.warn(
+                        "Editor focus error:",
+                        error
+                    );
+
                 }
+
             },
-            { passive: true }
+            {
+                passive: true
+            }
         );
-    
-        // Draft autosave
+
+
+        /*
+         * Draft autosave
+         */
+
         editor.model.document.on(
             "change:data",
-            debounce(saveDraft, 500)
+            debounce(
+                saveDraft,
+                500
+            )
         );
-    
-        console.log("CKEditor initialized:", {
-            version: CKEDITOR.version,
-            editable: editable,
-            contenteditable: editable.getAttribute("contenteditable")
-        });
-    
+
+
+        console.log(
+            "CKEditor initialized:",
+            {
+                version:
+                    CKEDITOR.version,
+
+                editable:
+                    editable,
+
+                contenteditable:
+                    editable.getAttribute(
+                        "contenteditable"
+                    )
+            }
+        );
+
+
         return editor;
+
     }
 
 
@@ -2813,47 +3269,47 @@
 
             novelId:
                 selectedNovelId,
-        
+
             chapterId:
                 $("#chapter-id")
                     .val(),
-        
+
             title:
                 $("#chapter-title")
                     .val(),
-        
+
             content:
                 editor.getData(),
-        
-            monetization:
-                {
-                    affiliate: {
-        
-                        enabled:
-                            $("#affiliate-enabled")
-                                .prop("checked"),
-        
-                        url:
-                            $("#affiliate-url")
-                                .val()
-                                .trim()
-        
-                    },
-        
-                    ads: {
-        
-                        enabled:
-                            $("#ads-enabled")
-                                .prop("checked")
-        
-                    }
-        
+
+            monetization: {
+
+                affiliate: {
+
+                    enabled:
+                        $("#affiliate-enabled")
+                            .prop("checked"),
+
+                    url:
+                        $("#affiliate-url")
+                            .val()
+                            .trim()
+
                 },
-        
+
+                ads: {
+
+                    enabled:
+                        $("#ads-enabled")
+                            .prop("checked")
+
+                }
+
+            },
+
             savedAt:
                 new Date()
                     .toISOString()
-        
+
         };
 
 
@@ -2906,9 +3362,11 @@
             }
 
 
-            if (!confirm(
-                "Phát hiện bản nháp chưa lưu. Khôi phục?"
-            )) {
+            if (
+                !confirm(
+                    "Phát hiện bản nháp chưa lưu. Khôi phục?"
+                )
+            ) {
 
                 return false;
 
@@ -2929,7 +3387,8 @@
                 .val(
                     draft.title
                 );
-                
+
+
             fillMonetizationForm(
                 draft.monetization || {}
             );
@@ -3025,6 +3484,7 @@
     ) {
 
         return (
+
             parseInt(
                 String(a.id)
                     .replace(
@@ -3033,8 +3493,11 @@
                     ),
                 10
             ) || 0
+
         ) -
+
         (
+
             parseInt(
                 String(b.id)
                     .replace(
@@ -3043,6 +3506,7 @@
                     ),
                 10
             ) || 0
+
         );
 
     }
@@ -3099,33 +3563,36 @@
         }
 
     }
-    
+
+
     function validateAffiliateUrl(
         url
     ) {
-    
+
         if (!url) {
+
             return false;
+
         }
-    
-    
+
+
         try {
-    
+
             const parsed =
                 new URL(url);
-    
-    
+
+
             return (
                 parsed.protocol === "https:" ||
                 parsed.protocol === "http:"
             );
-    
+
         } catch (error) {
-    
+
             return false;
-    
+
         }
-    
+
     }
 
 
