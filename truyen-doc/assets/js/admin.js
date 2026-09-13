@@ -1568,6 +1568,14 @@
         };
     
     }
+
+    function isValidAffiliateUrl(
+        affiliateUrl
+    ) {
+    
+        return affiliateUrl.startsWith("https://") || affiliateUrl.startsWith("http://");
+    
+    }
     
     
     function fillMonetizationForm(
