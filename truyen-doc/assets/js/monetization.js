@@ -5,7 +5,7 @@
     // CONFIG
     // ==========================================
 
-    const MID_AD_AFTER_PARAGRAPHS = 5;
+    const MID_AD_AFTER_PARAGRAPHS = 20;
 
     const DESKTOP_BREAKPOINT = 768;
 
