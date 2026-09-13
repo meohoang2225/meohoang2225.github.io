@@ -1,0 +1,1133 @@
+/* =========================================================
+   Mèo Hoang - Thư viện truyện - LEGAL PAGES
+   legal.css
+
+   Dùng cho:
+   - Chính sách và quy định chung
+   - Điều khoản sử dụng
+   - Chính sách bảo mật
+
+   Hỗ trợ:
+   - Desktop
+   - Tablet
+   - iPhone / Mobile
+   - Dark mode
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+.legal-page,
+.legal-page *,
+.site-header,
+.site-header *,
+.site-footer,
+.site-footer * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: #f7f7f8;
+    color: #222;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #e5e5e5;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.header-inner {
+    width: 100%;
+    max-width: 1180px;
+
+    min-height: 64px;
+
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    color: #222;
+
+    font-size: 21px;
+    font-weight: 800;
+
+    line-height: 1;
+    text-decoration: none;
+
+    letter-spacing: -0.3px;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.site-logo:hover {
+    color: #222;
+    opacity: 0.78;
+}
+
+
+.site-logo:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   DESKTOP NAV
+========================================================= */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+}
+
+
+.desktop-nav a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 42px;
+
+    color: #555;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.desktop-nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 5px;
+
+    height: 2px;
+
+    background: #222;
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.desktop-nav a:hover {
+    color: #111;
+}
+
+
+.desktop-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.page-container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 42px 20px 70px;
+}
+
+
+/* =========================================================
+   LEGAL CARD
+========================================================= */
+
+.legal-page {
+    width: 100%;
+
+    background: #fff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+
+    padding: 42px 46px;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================================
+   LEGAL HEADER
+========================================================= */
+
+.legal-header {
+    margin-bottom: 38px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+.legal-header h1 {
+    margin: 0 0 10px;
+
+    color: #222;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.5px;
+}
+
+
+.legal-updated {
+    margin: 0;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   LEGAL SECTION
+========================================================= */
+
+.legal-section {
+    margin: 0 0 34px;
+}
+
+
+.legal-section:last-child {
+    margin-bottom: 0;
+}
+
+
+.legal-section h2 {
+    margin: 0 0 12px;
+
+    color: #222;
+
+    font-size: 21px;
+    font-weight: 750;
+
+    line-height: 1.4;
+}
+
+
+.legal-section p {
+    margin: 0 0 13px;
+
+    color: #444;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+.legal-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.legal-section ul {
+    margin: 12px 0 0;
+    padding-left: 24px;
+}
+
+
+.legal-section li {
+    margin: 7px 0;
+
+    color: #444;
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+.legal-section li::marker {
+    color: #777;
+}
+
+
+/* =========================================================
+   LINKS
+========================================================= */
+
+.legal-page a {
+    color: #222;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+
+.legal-page a:hover {
+    color: #555;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    width: 100%;
+
+    margin-top: 0;
+
+    background: #fff;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.footer-inner {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 38px 20px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+/* =========================================================
+   FOOTER BRAND
+========================================================= */
+
+.footer-brand {
+    max-width: 340px;
+}
+
+
+.footer-brand .site-logo {
+    margin-bottom: 12px;
+}
+
+
+.footer-brand p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 9px;
+}
+
+
+.footer-links a {
+    color: #666;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.footer-links a:hover {
+    color: #111;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 18px 20px 24px;
+
+    color: #999;
+
+    border-top: 1px solid #eeeeee;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   FOCUS ACCESSIBILITY
+========================================================= */
+
+.site-header a:focus-visible,
+.site-footer a:focus-visible,
+.legal-page a:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: 3px;
+
+    border-radius: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .page-container {
+        max-width: 760px;
+
+        padding:
+            32px 18px
+            60px;
+    }
+
+
+    .legal-page {
+        padding: 36px 34px;
+    }
+
+
+    .legal-header h1 {
+        font-size: 29px;
+    }
+
+
+    .footer-inner {
+        padding:
+            34px 18px;
+    }
+
+
+    .footer-bottom {
+        padding:
+            18px 18px
+            22px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .site-header {
+        position: relative;
+
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+
+    .header-inner {
+        min-height: 58px;
+
+        padding:
+            0 16px;
+    }
+
+
+    .site-logo {
+        font-size: 19px;
+    }
+
+
+    .desktop-nav {
+        gap: 14px;
+    }
+
+
+    .desktop-nav a {
+        min-height: 38px;
+
+        font-size: 13px;
+    }
+
+
+    .desktop-nav a::after {
+        display: none;
+    }
+
+
+    .page-container {
+        padding:
+            20px 12px
+            40px;
+    }
+
+
+    .legal-page {
+        padding:
+            28px 22px;
+
+        border-radius: 12px;
+    }
+
+
+    .legal-header {
+        margin-bottom: 30px;
+
+        padding-bottom: 22px;
+    }
+
+
+    .legal-header h1 {
+        font-size: 26px;
+
+        line-height: 1.35;
+    }
+
+
+    .legal-updated {
+        font-size: 12px;
+    }
+
+
+    .legal-section {
+        margin-bottom: 29px;
+    }
+
+
+    .legal-section h2 {
+        margin-bottom: 10px;
+
+        font-size: 19px;
+    }
+
+
+    .legal-section p,
+    .legal-section li {
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+
+    .legal-section ul {
+        padding-left: 21px;
+    }
+
+
+    .footer-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 26px;
+
+        padding:
+            30px 18px;
+    }
+
+
+    .footer-brand {
+        max-width: 100%;
+    }
+
+
+    .footer-links {
+        width: 100%;
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+
+    .footer-bottom {
+        padding:
+            16px 18px
+            20px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL IPHONE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .header-inner {
+        min-height: 54px;
+
+        padding:
+            0 13px;
+    }
+
+
+    .site-logo {
+        font-size: 18px;
+    }
+
+
+    .desktop-nav {
+        gap: 10px;
+    }
+
+
+    .desktop-nav a {
+        font-size: 12px;
+    }
+
+
+    .page-container {
+        padding:
+            12px 8px
+            30px;
+    }
+
+
+    .legal-page {
+        padding:
+            24px 17px;
+
+        border-radius: 10px;
+
+        box-shadow:
+            0 2px 10px rgba(
+                0,
+                0,
+                0,
+                0.03
+            );
+    }
+
+
+    .legal-header {
+        margin-bottom: 25px;
+
+        padding-bottom: 19px;
+    }
+
+
+    .legal-header h1 {
+        margin-bottom: 8px;
+
+        font-size: 23px;
+
+        letter-spacing: -0.2px;
+    }
+
+
+    .legal-section {
+        margin-bottom: 26px;
+    }
+
+
+    .legal-section h2 {
+        font-size: 18px;
+    }
+
+
+    .legal-section p,
+    .legal-section li {
+        font-size: 14px;
+
+        line-height: 1.72;
+    }
+
+
+    .legal-section ul {
+        padding-left: 20px;
+    }
+
+
+    .legal-section li {
+        margin: 6px 0;
+    }
+
+
+    .footer-inner {
+        padding:
+            27px 15px;
+    }
+
+
+    .footer-bottom {
+        padding:
+            15px 15px
+            18px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL IPHONE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .header-inner {
+        padding:
+            0 11px;
+    }
+
+
+    .site-logo {
+        font-size: 17px;
+    }
+
+
+    .desktop-nav {
+        gap: 8px;
+    }
+
+
+    .desktop-nav a {
+        font-size: 11px;
+    }
+
+
+    .page-container {
+        padding:
+            10px 6px
+            25px;
+    }
+
+
+    .legal-page {
+        padding:
+            21px 15px;
+    }
+
+
+    .legal-header h1 {
+        font-size: 21px;
+    }
+
+
+    .legal-section h2 {
+        font-size: 17px;
+    }
+
+
+    .legal-section p,
+    .legal-section li {
+        font-size: 13.5px;
+    }
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode {
+    background: #111315;
+
+    color: #e8e8e8;
+}
+
+
+body.dark-mode .site-header {
+    background: rgba(
+        20,
+        22,
+        24,
+        0.96
+    );
+
+    border-bottom-color: #292d31;
+}
+
+
+body.dark-mode .site-logo {
+    color: #f1f1f1;
+}
+
+
+body.dark-mode .site-logo:hover {
+    color: #fff;
+}
+
+
+body.dark-mode .desktop-nav a {
+    color: #b9bdc2;
+}
+
+
+body.dark-mode .desktop-nav a:hover {
+    color: #fff;
+}
+
+
+body.dark-mode .desktop-nav a::after {
+    background: #fff;
+}
+
+
+/* =========================================================
+   DARK LEGAL CARD
+========================================================= */
+
+body.dark-mode .legal-page {
+    background: #191c1f;
+
+    border-color: #2b3035;
+
+    box-shadow:
+        0 4px 20px rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+body.dark-mode .legal-header {
+    border-bottom-color: #2c3136;
+}
+
+
+body.dark-mode .legal-header h1 {
+    color: #f1f1f1;
+}
+
+
+body.dark-mode .legal-updated {
+    color: #858b92;
+}
+
+
+body.dark-mode .legal-section h2 {
+    color: #f0f0f0;
+}
+
+
+body.dark-mode .legal-section p,
+body.dark-mode .legal-section li {
+    color: #c5c9cd;
+}
+
+
+body.dark-mode .legal-section li::marker {
+    color: #8c939a;
+}
+
+
+body.dark-mode .legal-page a {
+    color: #f1f1f1;
+}
+
+
+body.dark-mode .legal-page a:hover {
+    color: #fff;
+}
+
+
+/* =========================================================
+   DARK FOOTER
+========================================================= */
+
+body.dark-mode .site-footer {
+    background: #151719;
+
+    border-top-color: #292d31;
+}
+
+
+body.dark-mode .footer-brand p {
+    color: #888f96;
+}
+
+
+body.dark-mode .footer-links a {
+    color: #aeb4ba;
+}
+
+
+body.dark-mode .footer-links a:hover {
+    color: #fff;
+}
+
+
+body.dark-mode .footer-bottom {
+    color: #777e85;
+
+    border-top-color: #292d31;
+}
+
+
+/* =========================================================
+   DARK FOCUS
+========================================================= */
+
+body.dark-mode
+.site-header a:focus-visible,
+body.dark-mode
+.site-footer a:focus-visible,
+body.dark-mode
+.legal-page a:focus-visible {
+
+    outline-color: #fff;
+}
+
+
+/* =========================================================
+   READER-DARK COMPATIBILITY
+=========================================================
+
+   reader-settings.js của project đang sử dụng
+   body.reader-dark.
+
+   Cho phép các trang legal dùng chung cơ chế
+   dark mode nếu sau này bật từ hệ thống ReaderSettings.
+========================================================= */
+
+body.reader-dark {
+    background: #111315;
+
+    color: #e8e8e8;
+}
+
+
+body.reader-dark .site-header {
+    background: rgba(
+        20,
+        22,
+        24,
+        0.96
+    );
+
+    border-bottom-color: #292d31;
+}
+
+
+body.reader-dark .site-logo {
+    color: #f1f1f1;
+}
+
+
+body.reader-dark .desktop-nav a {
+    color: #b9bdc2;
+}
+
+
+body.reader-dark .desktop-nav a:hover {
+    color: #fff;
+}
+
+
+body.reader-dark .desktop-nav a::after {
+    background: #fff;
+}
+
+
+body.reader-dark .legal-page {
+    background: #191c1f;
+
+    border-color: #2b3035;
+
+    box-shadow:
+        0 4px 20px rgba(
+            0,
+            0,
+            0,
+            0.25
+        );
+}
+
+
+body.reader-dark .legal-header {
+    border-bottom-color: #2c3136;
+}
+
+
+body.reader-dark .legal-header h1,
+body.reader-dark .legal-section h2 {
+    color: #f1f1f1;
+}
+
+
+body.reader-dark .legal-updated {
+    color: #858b92;
+}
+
+
+body.reader-dark .legal-section p,
+body.reader-dark .legal-section li {
+    color: #c5c9cd;
+}
+
+
+body.reader-dark .legal-page a {
+    color: #f1f1f1;
+}
+
+
+body.reader-dark .site-footer {
+    background: #151719;
+
+    border-top-color: #292d31;
+}
+
+
+body.reader-dark .footer-brand p {
+    color: #888f96;
+}
+
+
+body.reader-dark .footer-links a {
+    color: #aeb4ba;
+}
+
+
+body.reader-dark .footer-links a:hover {
+    color: #fff;
+}
+
+
+body.reader-dark .footer-bottom {
+    color: #777e85;
+
+    border-top-color: #292d31;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+}

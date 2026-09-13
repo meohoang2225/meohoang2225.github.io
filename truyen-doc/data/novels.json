@@ -8,17 +8,27 @@
     "status": "Đang ra",
     "updatedAt": "2026-09-10",
     "chapterCount": 1,
-    "latestChapter": "001"
+    "latestChapter": "001",
+    "genres": [
+        "Cổ trang",
+        "Tình cảm",
+        "Hài hước"
+    ]
   },
   {
     "id": "ben-kia-mua-he",
     "title": "Bên kia mùa hè",
-    "author": "Truyện Đọc",
+    "author": "Mèo Hoang - Thư viện truyện",
     "description": "Một câu chuyện ngắn về những điều ta tưởng đã cũ nhưng vẫn âm thầm lớn lên trong ký ức.",
     "cover": "images/novels/ben-kia-mua-he.png",
     "status": "Đang ra",
     "chapterCount": 1,
-    "updatedAt": "2026-09-02"
+    "updatedAt": "2026-09-02",
+    "genres": [
+        "Cổ trang",
+        "Tình cảm",
+        "Hài hước"
+    ]
   },
   {
     "id": "demo",
@@ -28,6 +38,11 @@
     "cover": "",
     "status": "Đang ra",
     "chapterCount": 2,
-    "updatedAt": "2026-09-01"
+    "updatedAt": "2026-09-01",
+    "genres": [
+        "Cổ trang",
+        "Tình cảm",
+        "Hài hước"
+    ]
   }
 ]

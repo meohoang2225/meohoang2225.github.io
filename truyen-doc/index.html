@@ -1,81 +1,143 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
+
     <title>
-        Thư viện truyện - Đọc truyện online miễn phí
+        Mèo Hoang - Thư viện truyện - Đọc truyện online miễn phí
     </title>
+
     <meta
         name="description"
-        content="Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc."
+        content="Mèo Hoang - Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc."
     >
+
     <meta
         name="robots"
         content="index, follow"
     >
-    <!-- Open Graph -->
+
+
+    <!-- =====================================================
+         OPEN GRAPH
+    ====================================================== -->
+
     <meta
         property="og:type"
         content="website"
     >
+
     <meta
         property="og:title"
-        content="Thư viện truyện - Đọc truyện online miễn phí"
+        content="Mèo Hoang - Thư viện truyện - Đọc truyện online miễn phí"
     >
+
     <meta
         property="og:description"
-        content="Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc."
+        content="Mèo Hoang - Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc."
     >
+
     <meta
         property="og:image"
         content="images/og-default.jpg"
     >
+
     <meta
         property="og:site_name"
-        content="Thư viện truyện"
+        content="Mèo Hoang - Thư viện truyện"
     >
+
     <meta
         property="og:locale"
         content="vi_VN"
     >
-    <!-- Twitter -->
+
+
+    <!-- =====================================================
+         TWITTER
+    ====================================================== -->
+
     <meta
         name="twitter:card"
         content="summary_large_image"
     >
+
     <meta
         name="twitter:title"
-        content="Thư viện truyện - Đọc truyện online miễn phí"
+        content="Mèo Hoang - Thư viện truyện - Đọc truyện online miễn phí"
     >
+
     <meta
         name="twitter:description"
-        content="Thư viện truyện online. Đọc truyện miễn phí."
+        content="Mèo Hoang - Thư viện truyện online. Đọc truyện miễn phí."
     >
+
     <meta
         name="twitter:image"
         content="images/og-default.jpg"
     >
+
+
+    <!-- =====================================================
+         CANONICAL
+    ====================================================== -->
+
     <link
         rel="canonical"
         href="./"
     >
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
     <link
         rel="stylesheet"
         href="assets/css/style.css"
     >
-    
-    <script async
+
+
+    <!-- =====================================================
+         GOOGLE ADSENSE
+    ====================================================== -->
+
+    <script
+        async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6349630685078292"
         crossorigin="anonymous">
     </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+    <!-- =====================================================
+         JQUERY
+    ====================================================== -->
+
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js">
+    </script>
+
+
+    <!-- =====================================================
+         PROJECT JS
+    ====================================================== -->
+
     <script src="assets/js/storage.js"></script>
+
     <script src="assets/js/seo.js"></script>
-    <script src="assets/js/app.js" defer></script>
+
+    <script
+        src="assets/js/app.js"
+        defer>
+    </script>
+
 </head>
 
 
@@ -90,13 +152,293 @@
 
     <div class="container header-inner">
 
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
         <a
             href="index.html"
             class="logo"
             aria-label="Trang chủ"
         >
-            📚 Thư viện truyện
+            📚
+            <span>Mèo Hoang - Thư viện truyện</span>
         </a>
+
+
+        <!-- =================================================
+             DESKTOP NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="site-nav"
+            aria-label="Điều hướng chính"
+        >
+
+
+            <!-- =============================================
+                 SEARCH
+            ============================================== -->
+
+            <div class="header-search">
+
+                <label
+                    for="novel-search"
+                    class="visually-hidden"
+                >
+                    Tìm kiếm truyện
+                </label>
+
+                <div class="header-search-box">
+
+                    <span
+                        class="header-search-icon"
+                        aria-hidden="true"
+                    >
+                        🔎
+                    </span>
+
+                    <input
+                        type="search"
+                        id="novel-search"
+                        placeholder="Tìm kiếm truyện..."
+                        autocomplete="off"
+                        aria-label="Tìm kiếm truyện"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 STATUS
+            ============================================== -->
+
+            <div class="header-filter">
+
+                <label
+                    for="status-filter"
+                    class="visually-hidden"
+                >
+                    Trạng thái
+                </label>
+
+                <select
+                    id="status-filter"
+                    aria-label="Lọc theo trạng thái"
+                >
+
+                    <option value="">
+                        Trạng thái
+                    </option>
+
+                    <option value="Đang ra">
+                        Đang ra
+                    </option>
+
+                    <option value="Hoàn thành">
+                        Hoàn thành
+                    </option>
+
+                    <option value="Tạm dừng">
+                        Tạm dừng
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- =============================================
+                 GENRE
+            ============================================== -->
+
+            <div class="header-filter">
+
+                <label
+                    for="genre-filter"
+                    class="visually-hidden"
+                >
+                    Thể loại
+                </label>
+
+                <select
+                    id="genre-filter"
+                    aria-label="Lọc theo thể loại"
+                >
+
+                    <option value="">
+                        Thể loại
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- =============================================
+                 THEME
+            ============================================== -->
+
+            <button
+                type="button"
+                id="theme-toggle"
+                class="theme-toggle"
+                aria-label="Chuyển chế độ sáng tối"
+                title="Chuyển chế độ sáng tối"
+            >
+
+                <span
+                    id="theme-icon"
+                    aria-hidden="true"
+                >
+                    🌙
+                </span>
+
+            </button>
+
+
+            <!-- =============================================
+                 MOBILE MENU
+            ============================================== -->
+
+            <button
+                type="button"
+                id="mobile-menu-toggle"
+                class="mobile-menu-toggle"
+                aria-label="Mở menu"
+                aria-expanded="false"
+                title="Menu"
+            >
+
+                <span aria-hidden="true">
+                    ☰
+                </span>
+
+            </button>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =====================================================
+         MOBILE NAVIGATION
+    ====================================================== -->
+
+    <div
+        id="mobile-nav"
+        class="mobile-nav"
+    >
+
+        <div class="container mobile-nav-inner">
+
+
+            <!-- =============================================
+                 MOBILE SEARCH
+            ============================================== -->
+
+            <div class="mobile-search">
+
+                <label
+                    for="mobile-novel-search"
+                    class="visually-hidden"
+                >
+                    Tìm kiếm truyện
+                </label>
+
+                <div class="mobile-search-box">
+
+                    <span
+                        aria-hidden="true"
+                    >
+                        🔎
+                    </span>
+
+                    <input
+                        type="search"
+                        id="mobile-novel-search"
+                        placeholder="Tìm kiếm truyện..."
+                        autocomplete="off"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 MOBILE STATUS
+            ============================================== -->
+
+            <div class="mobile-filter-row">
+
+                <div class="mobile-filter">
+
+                    <label
+                        for="mobile-status-filter"
+                        class="visually-hidden"
+                    >
+                        Trạng thái
+                    </label>
+
+                    <select
+                        id="mobile-status-filter"
+                        aria-label="Lọc theo trạng thái"
+                    >
+
+                        <option value="">
+                            Trạng thái
+                        </option>
+
+                        <option value="Đang ra">
+                            Đang ra
+                        </option>
+
+                        <option value="Hoàn thành">
+                            Hoàn thành
+                        </option>
+
+                        <option value="Tạm dừng">
+                            Tạm dừng
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- =========================================
+                     MOBILE GENRE
+                ========================================== -->
+
+                <div class="mobile-filter">
+
+                    <label
+                        for="mobile-genre-filter"
+                        class="visually-hidden"
+                    >
+                        Thể loại
+                    </label>
+
+                    <select
+                        id="mobile-genre-filter"
+                        aria-label="Lọc theo thể loại"
+                    >
+
+                        <option value="">
+                            Thể loại
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -119,71 +461,13 @@
 
         <div>
 
-            <h1>Danh sách truyện</h1>
+            <h1>
+                Danh sách truyện
+            </h1>
 
             <p id="novelCount">
                 Đang tải...
             </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SEARCH + FILTER
-    ====================================================== -->
-
-    <section class="novel-filter">
-
-        <div class="filter-search">
-
-            <label
-                for="novel-search"
-                class="filter-label"
-            >
-                🔎 Tìm kiếm truyện
-            </label>
-
-            <input
-                type="search"
-                id="novel-search"
-                placeholder="Tên truyện hoặc tác giả..."
-                autocomplete="off"
-            >
-
-        </div>
-
-
-        <div class="filter-status">
-
-            <label
-                for="status-filter"
-                class="filter-label"
-            >
-                🏷️ Trạng thái
-            </label>
-
-            <select id="status-filter">
-
-                <option value="">
-                    Tất cả trạng thái
-                </option>
-
-                <option value="Đang ra">
-                    Đang ra
-                </option>
-
-                <option value="Hoàn thành">
-                    Hoàn thành
-                </option>
-
-                <option value="Tạm dừng">
-                    Tạm dừng
-                </option>
-
-            </select>
 
         </div>
 
@@ -212,10 +496,16 @@
 
         <div class="section-title">
 
-            <h2>📚 Tất cả truyện</h2>
+            <h2>
+                📚 Tất cả truyện
+            </h2>
 
         </div>
 
+
+        <!-- ================================================
+             NOVEL LIST
+        ================================================= -->
 
         <section
             id="novel-list"
@@ -230,7 +520,9 @@
         </section>
 
 
-        <!-- Không có kết quả -->
+        <!-- ================================================
+             EMPTY RESULT
+        ================================================= -->
 
         <div
             id="emptyResult"
@@ -240,7 +532,9 @@
         </div>
 
 
-        <!-- Pagination -->
+        <!-- ================================================
+             PAGINATION
+        ================================================= -->
 
         <nav
             id="pagination"
@@ -275,14 +569,542 @@
 
 <footer class="site-footer">
 
-    <div class="container">
+    <div class="container footer-inner">
 
-        © 2026 Thư viện truyện
+
+        <!-- =================================================
+             FOOTER BRAND
+        ================================================== -->
+
+        <div class="footer-brand">
+
+            <a
+                href="index.html"
+                class="footer-logo"
+                aria-label="Trang chủ"
+            >
+                📚
+                <span>Mèo Hoang - Thư viện truyện</span>
+            </a>
+
+            <p class="footer-description">
+                Mèo Hoang - Thư viện truyện online,
+                đọc truyện miễn phí và tiện lợi.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <div class="footer-column">
+
+            <h3>
+                Liên hệ
+            </h3>
+
+            <!--
+                Thay email bên dưới bằng email thật
+                của website khi bạn xác định.
+            -->
+
+            <a
+                href="mailto:"
+                class="footer-link"
+            >
+                Email
+            </a>
+
+            <!--
+                Thay # bằng URL trang/liên hệ hỗ trợ
+                khi bạn tạo trang này.
+            -->
+
+            <a
+                href="#"
+                class="footer-link"
+            >
+                Liên hệ hỗ trợ
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             POLICIES
+        ================================================== -->
+
+        <div class="footer-column">
+
+            <h3>
+                Chính sách
+            </h3>
+
+            <a
+                href="pages/chinh-sach-va-quy-dinh-chung.html"
+                class="footer-link"
+            >
+                Chính sách và quy định chung
+            </a>
+
+            <a
+                href="pages/dieu-khoan-su-dung.html"
+                class="footer-link"
+            >
+                Điều khoản sử dụng
+            </a>
+
+            <a
+                href="pages/chinh-sach-bao-mat.html"
+                class="footer-link"
+            >
+                Chính sách bảo mật
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             DISCLAIMER
+        ================================================== -->
+
+        <div class="footer-column">
+
+            <h3>
+                Thông tin
+            </h3>
+
+            <a
+                href="pages/chinh-sach-va-quy-dinh-chung.html#mien-tru-trach-nhiem"
+                class="footer-link"
+            >
+                Miễn trừ trách nhiệm
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER BOTTOM
+    ====================================================== -->
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Mèo Hoang - Thư viện truyện
+            </p>
+
+        </div>
 
     </div>
 
 </footer>
 
 
+
+<!-- =========================================================
+     THEME SCRIPT
+     Không phụ thuộc reader.js
+========================================================= -->
+
+<script>
+
+(function () {
+
+    const THEME_KEY =
+        "truyen_doc_theme";
+
+    const body =
+        document.body;
+
+    const desktopButton =
+        document.getElementById(
+            "theme-toggle"
+        );
+
+    const themeIcon =
+        document.getElementById(
+            "theme-icon"
+        );
+
+
+    function getTheme() {
+
+        try {
+
+            const saved =
+                localStorage.getItem(
+                    THEME_KEY
+                );
+
+            if (
+                saved === "dark" ||
+                saved === "light"
+            ) {
+
+                return saved;
+
+            }
+
+        } catch (error) {
+            // Ignore storage errors
+        }
+
+
+        return "light";
+
+    }
+
+
+    function applyTheme(theme) {
+
+        if (theme === "dark") {
+
+            body.classList.add(
+                "reader-dark"
+            );
+
+            body.classList.add(
+                "dark-mode"
+            );
+
+            if (themeIcon) {
+
+                themeIcon.textContent =
+                    "☀️";
+
+            }
+
+        } else {
+
+            body.classList.remove(
+                "reader-dark"
+            );
+
+            body.classList.remove(
+                "dark-mode"
+            );
+
+            if (themeIcon) {
+
+                themeIcon.textContent =
+                    "🌙";
+
+            }
+
+        }
+
+        try {
+
+            localStorage.setItem(
+                THEME_KEY,
+                theme
+            );
+
+        } catch (error) {
+            // Ignore storage errors
+        }
+
+    }
+
+
+    function toggleTheme() {
+
+        const current =
+            getTheme();
+
+        const next =
+            current === "dark"
+                ? "light"
+                : "dark";
+
+        applyTheme(next);
+
+    }
+
+
+    applyTheme(
+        getTheme()
+    );
+
+
+    if (desktopButton) {
+
+        desktopButton.addEventListener(
+            "click",
+            toggleTheme
+        );
+
+    }
+
+
+    /*
+     * Đồng bộ theme giữa các tab.
+     */
+
+    window.addEventListener(
+        "storage",
+        function (event) {
+
+            if (
+                event.key === THEME_KEY &&
+                (
+                    event.newValue === "dark" ||
+                    event.newValue === "light"
+                )
+            ) {
+
+                applyTheme(
+                    event.newValue
+                );
+
+            }
+
+        }
+    );
+
+})();
+
+</script>
+
+
+
+<!-- =========================================================
+     MOBILE MENU SCRIPT
+========================================================= -->
+
+<script>
+
+(function () {
+
+    const button =
+        document.getElementById(
+            "mobile-menu-toggle"
+        );
+
+    const mobileNav =
+        document.getElementById(
+            "mobile-nav"
+        );
+
+
+    if (
+        !button ||
+        !mobileNav
+    ) {
+
+        return;
+
+    }
+
+
+    button.addEventListener(
+        "click",
+        function () {
+
+            const opened =
+                mobileNav.classList.toggle(
+                    "is-open"
+                );
+
+            button.setAttribute(
+                "aria-expanded",
+                opened
+                    ? "true"
+                    : "false"
+            );
+
+        }
+    );
+
+})();
+
+</script>
+
+
+
+<!-- =========================================================
+     MOBILE SEARCH / FILTER SYNC
+========================================================= -->
+
+<script>
+
+(function () {
+
+    const desktopSearch =
+        document.getElementById(
+            "novel-search"
+        );
+
+    const mobileSearch =
+        document.getElementById(
+            "mobile-novel-search"
+        );
+
+    const desktopStatus =
+        document.getElementById(
+            "status-filter"
+        );
+
+    const mobileStatus =
+        document.getElementById(
+            "mobile-status-filter"
+        );
+
+    const desktopGenre =
+        document.getElementById(
+            "genre-filter"
+        );
+
+    const mobileGenre =
+        document.getElementById(
+            "mobile-genre-filter"
+        );
+
+
+    /*
+     * Đồng bộ ô tìm kiếm desktop/mobile.
+     */
+
+    if (
+        desktopSearch &&
+        mobileSearch
+    ) {
+
+        mobileSearch.addEventListener(
+            "input",
+            function () {
+
+                desktopSearch.value =
+                    mobileSearch.value;
+
+                desktopSearch.dispatchEvent(
+                    new Event(
+                        "input",
+                        {
+                            bubbles: true
+                        }
+                    )
+                );
+
+            }
+        );
+
+
+        desktopSearch.addEventListener(
+            "input",
+            function () {
+
+                if (
+                    mobileSearch.value !==
+                    desktopSearch.value
+                ) {
+
+                    mobileSearch.value =
+                        desktopSearch.value;
+
+                }
+
+            }
+        );
+
+    }
+
+
+    /*
+     * Đồng bộ trạng thái.
+     */
+
+    if (
+        desktopStatus &&
+        mobileStatus
+    ) {
+
+        mobileStatus.addEventListener(
+            "change",
+            function () {
+
+                desktopStatus.value =
+                    mobileStatus.value;
+
+                desktopStatus.dispatchEvent(
+                    new Event(
+                        "change",
+                        {
+                            bubbles: true
+                        }
+                    )
+                );
+
+            }
+        );
+
+
+        desktopStatus.addEventListener(
+            "change",
+            function () {
+
+                mobileStatus.value =
+                    desktopStatus.value;
+
+            }
+        );
+
+    }
+
+
+    /*
+     * Đồng bộ thể loại.
+     */
+
+    if (
+        desktopGenre &&
+        mobileGenre
+    ) {
+
+        mobileGenre.addEventListener(
+            "change",
+            function () {
+
+                desktopGenre.value =
+                    mobileGenre.value;
+
+                desktopGenre.dispatchEvent(
+                    new Event(
+                        "change",
+                        {
+                            bubbles: true
+                        }
+                    )
+                );
+
+            }
+        );
+
+
+        desktopGenre.addEventListener(
+            "change",
+            function () {
+
+                mobileGenre.value =
+                    desktopGenre.value;
+
+            }
+        );
+
+    }
+
+})();
+
+</script>
+
+
 </body>
+
 </html>

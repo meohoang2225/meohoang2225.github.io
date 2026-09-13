@@ -1,10 +1,10 @@
 (function () {
     "use strict";
-    const SITE_NAME = "Thư viện truyện";
+    const SITE_NAME = "Mèo Hoang - Thư viện truyện";
     const DEFAULT_TITLE =
-        "Thư viện truyện - Đọc truyện online";
+        "Mèo Hoang - Thư viện truyện - Đọc truyện online";
     const DEFAULT_DESCRIPTION =
-        "Thư viện truyện online - Đọc truyện miễn phí.";
+        "Mèo Hoang - Thư viện truyện online - Đọc truyện miễn phí.";
     const DEFAULT_IMAGE =
         "images/og-default.jpg";
     /*
@@ -382,7 +382,7 @@
         const title =
             `${SITE_NAME} - Đọc truyện online miễn phí`;
         const description =
-            "Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc.";
+            "Mèo Hoang - Thư viện truyện online. Đọc truyện miễn phí, tìm kiếm truyện và tiếp tục chương đang đọc.";
         setBasicSEO({
             title,
             description

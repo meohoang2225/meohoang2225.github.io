@@ -137,7 +137,7 @@ $(document).ready(function () {
             ================================================= */
 
             document.title =
-                `${novel.title || "Đọc truyện"} - Thư viện truyện`;
+                `${novel.title || "Đọc truyện"} - Mèo Hoang - Thư viện truyện`;
 
 
             $("#bookTitle")
