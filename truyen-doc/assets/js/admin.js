@@ -676,7 +676,7 @@
 
 
         showCoverPreview(
-            novel.cover
+            `${CONFIG.github.sub_domain}/${novel.cover}`
         );
 
     }
@@ -1270,7 +1270,7 @@
 
 
                 showCoverPreview(
-                    path
+                    `${CONFIG.github.sub_domain}/${path}`
                 );
 
 

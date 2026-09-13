@@ -3,7 +3,8 @@ window.TRUYEN_DOC_CONFIG = {
     github: {
         owner: "meohoang2225",
         repo: "meohoang2225.github.io",
-        branch: "main"
+        branch: "main",
+        sub_domain: "truyen-doc"
     },
 
     data: {
