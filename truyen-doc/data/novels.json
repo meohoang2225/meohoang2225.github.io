@@ -39,7 +39,13 @@
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-09-13",
+    "genres": [
+      "Thương trường",
+      "Tình yêu",
+      "Đấu trí",
+      "Gia đình"
+    ]
   },
   {
     "id": "demo",
