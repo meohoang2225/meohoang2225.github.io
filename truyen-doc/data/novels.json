@@ -6,13 +6,13 @@
     "description": "Cổ trang · Chiến trường · Tình cảm · Gia đình · Thương trường · Hài hước · Mưu quyền",
     "cover": "images/novels/am-nuoc-dun-soi.png",
     "status": "Đang ra",
-    "updatedAt": "2026-09-10",
-    "chapterCount": 3,
-    "latestChapter": "003",
+    "updatedAt": "2026-09-13",
+    "chapterCount": 4,
+    "latestChapter": "004",
     "genres": [
-        "Cổ trang",
-        "Tình cảm",
-        "Hài hước"
+      "Cổ trang",
+      "Tình cảm",
+      "Hài hước"
     ]
   },
   {
@@ -25,9 +25,9 @@
     "chapterCount": 1,
     "updatedAt": "2026-09-02",
     "genres": [
-        "Cổ trang",
-        "Tình cảm",
-        "Hài hước"
+      "Cổ trang",
+      "Tình cảm",
+      "Hài hước"
     ]
   },
   {
@@ -40,9 +40,9 @@
     "chapterCount": 2,
     "updatedAt": "2026-09-01",
     "genres": [
-        "Cổ trang",
-        "Tình cảm",
-        "Hài hước"
+      "Cổ trang",
+      "Tình cảm",
+      "Hài hước"
     ]
   }
 ]
