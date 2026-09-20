@@ -1,0 +1,95 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#101d1a"/>
+      <stop offset="45%" stop-color="#0a1512"/>
+      <stop offset="100%" stop-color="#05080a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#dff2e6" stop-opacity="0.9"/>
+      <stop offset="55%" stop-color="#9fc9b9" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#9fc9b9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="door" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a2a20"/>
+      <stop offset="100%" stop-color="#1c130e"/>
+    </linearGradient>
+    <linearGradient id="mirror" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a6a68"/>
+      <stop offset="50%" stop-color="#22302f"/>
+      <stop offset="100%" stop-color="#0e1716"/>
+    </linearGradient>
+    <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#ffcf6b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffcf6b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1412" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#02100c" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="blurSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="blurMist" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <circle cx="760" cy="260" r="220" fill="url(#moon)"/>
+  <circle cx="760" cy="260" r="58" fill="#eef7f0" opacity="0.85"/>
+
+  <g opacity="0.55">
+    <rect x="0" y="0" width="90" height="1536" fill="#0d1a17"/>
+    <rect x="120" y="0" width="4" height="1536" fill="#0b1613" opacity="0.6"/>
+    <rect x="900" y="0" width="4" height="1536" fill="#0b1613" opacity="0.6"/>
+    <rect x="960" y="0" width="64" height="1536" fill="#0d1a17"/>
+  </g>
+
+  <ellipse cx="230" cy="1220" rx="260" ry="90" fill="#bcd8cf" opacity="0.10" filter="url(#blurMist)"/>
+  <ellipse cx="700" cy="1300" rx="320" ry="100" fill="#bcd8cf" opacity="0.08" filter="url(#blurMist)"/>
+  <ellipse cx="480" cy="1360" rx="420" ry="120" fill="#8fb3a8" opacity="0.10" filter="url(#blurMist)"/>
+
+  <line x1="330" y1="60" x2="330" y2="430" stroke="#3a3226" stroke-width="3" opacity="0.7"/>
+  <circle cx="330" cy="452" r="26" fill="url(#bulbGlow)"/>
+  <circle cx="330" cy="452" r="90" fill="url(#bulbGlow)" opacity="0.5" filter="url(#blurSoft)"/>
+  <path d="M318 440 q12 -14 24 0 l-4 26 q-8 8 -16 0 z" fill="#f4dfa0"/>
+
+  <g transform="translate(400,560)">
+    <path d="M0 640 L0 90 Q0 0 90 0 L110 0 Q200 0 200 90 L200 640 Z" fill="url(#door)" stroke="#0e0a07" stroke-width="4"/>
+    <rect x="20" y="60" width="70" height="220" rx="8" fill="none" stroke="#151009" stroke-width="4" opacity="0.6"/>
+    <rect x="110" y="60" width="70" height="220" rx="8" fill="none" stroke="#151009" stroke-width="4" opacity="0.6"/>
+    <rect x="20" y="320" width="70" height="260" rx="8" fill="none" stroke="#151009" stroke-width="4" opacity="0.6"/>
+    <rect x="110" y="320" width="70" height="260" rx="8" fill="none" stroke="#151009" stroke-width="4" opacity="0.6"/>
+    <circle cx="20" cy="360" r="7" fill="#b9905a"/>
+    <g transform="translate(58,150)">
+      <rect x="-38" y="-24" width="76" height="48" rx="10" fill="#2a2018" stroke="#c9a565" stroke-width="2.5"/>
+      <text x="0" y="14" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e9cf94" text-anchor="middle" font-weight="700">9</text>
+    </g>
+  </g>
+
+  <g transform="translate(660,700) rotate(-6)">
+    <rect x="-70" y="-190" width="150" height="380" rx="6" fill="#1a120c" stroke="#0e0906" stroke-width="10"/>
+    <rect x="-58" y="-178" width="126" height="356" fill="url(#mirror)"/>
+    <path d="M-40 -160 L-10 -40 L-30 40 L5 160" stroke="#dff2e6" stroke-width="2.5" fill="none" opacity="0.55"/>
+    <path d="M-10 -40 L20 -10" stroke="#dff2e6" stroke-width="1.8" fill="none" opacity="0.4"/>
+  </g>
+
+  <rect x="0" y="900" width="1024" height="636" fill="url(#floor)"/>
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1225" font-family="'Times New Roman', Georgia, serif" font-size="92" font-weight="700" fill="#eef2ea" text-anchor="middle">Căn Gác Số 9</text>
+  <text x="512" y="1278" font-family="'Segoe UI', Arial, sans-serif" font-size="27" fill="#b9cdc4" text-anchor="middle">Bảy ngày đếm ngược, một cái chết giấu kín bảy năm</text>
+
+  <g>
+    <rect x="132" y="1330" width="760" height="86" rx="14" fill="#05100c" opacity="0.72" stroke="#7a9184" stroke-width="1.5"/>
+    <text x="512" y="1382" font-family="'Segoe UI', Arial, sans-serif" font-size="28" fill="#e7efe9" text-anchor="middle">Kinh dị&#160;&#160;·&#160;&#160;Bí ẩn&#160;&#160;·&#160;&#160;Tâm linh</text>
+  </g>
+</svg>

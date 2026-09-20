@@ -1,0 +1,86 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff2d6"/>
+      <stop offset="55%" stop-color="#fbe0ae"/>
+      <stop offset="100%" stop-color="#f0c988"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f5d4a"/>
+      <stop offset="100%" stop-color="#204233"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c98a4d"/>
+      <stop offset="100%" stop-color="#a8672f"/>
+    </linearGradient>
+    <linearGradient id="deskFront" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5225"/>
+      <stop offset="100%" stop-color="#6b3d1a"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#160b02" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#sky)"/>
+
+  <g opacity="0.5" filter="url(#soft)">
+    <polygon points="120,0 320,0 60,560 -40,560" fill="#fff6df" opacity="0.55"/>
+    <polygon points="420,0 560,0 340,560 260,560" fill="#fff6df" opacity="0.4"/>
+    <polygon points="760,0 960,0 760,560 620,560" fill="#fff6df" opacity="0.5"/>
+  </g>
+
+  <rect x="0" y="150" width="1024" height="10" fill="#e3bd80" opacity="0.6"/>
+
+  <rect x="130" y="230" width="764" height="420" rx="10" fill="url(#board)" stroke="#0f251c" stroke-width="10"/>
+  <rect x="130" y="230" width="764" height="420" rx="10" fill="none" stroke="#8a5a2f" stroke-width="18"/>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" fill="#eae6d2" opacity="0.85">
+    <text x="512" y="330" font-size="40" text-anchor="middle" font-weight="700">ĐỘI A  &#160;&#160;VS&#160;&#160;  ĐỘI B</text>
+    <line x1="512" y1="360" x2="512" y2="600" stroke="#eae6d2" stroke-width="2" opacity="0.5" stroke-dasharray="6 8"/>
+    <text x="360" y="460" font-size="120" text-anchor="middle" font-weight="700">7</text>
+    <text x="664" y="460" font-size="120" text-anchor="middle" font-weight="700">7</text>
+    <path d="M230 560 q30 -18 60 0" stroke="#eae6d2" stroke-width="3" fill="none" opacity="0.4"/>
+    <path d="M700 560 q30 -18 60 0" stroke="#eae6d2" stroke-width="3" fill="none" opacity="0.4"/>
+  </g>
+
+  <ellipse cx="512" cy="900" rx="620" ry="260" fill="#fff8e6" opacity="0.35" filter="url(#soft)"/>
+
+  <g transform="translate(512,760)">
+    <path d="M-40 -30 q40 -30 80 0 l20 30 l-60 40 l-60 -40 z" fill="#f4f1e6" stroke="#c9c2a6" stroke-width="3"/>
+    <path d="M-20 -25 q20 -14 40 0" stroke="#c9c2a6" stroke-width="2" fill="none"/>
+  </g>
+
+  <polygon points="0,980 1024,940 1024,1536 0,1536" fill="url(#deskFront)"/>
+  <polygon points="0,940 1024,900 1024,980 0,1020" fill="url(#deskTop)"/>
+  <line x1="512" y1="905" x2="512" y2="1536" stroke="#fdf6e3" stroke-width="6" stroke-dasharray="4 14" opacity="0.85"/>
+
+  <g transform="translate(230,930)">
+    <rect x="-90" y="-10" width="180" height="26" rx="4" fill="#1e3a8a"/>
+    <rect x="-84" y="-34" width="168" height="26" rx="4" fill="#2563eb"/>
+    <rect x="-78" y="-58" width="156" height="26" rx="4" fill="#3b82f6"/>
+    <rect x="-30" y="4" width="70" height="46" rx="6" fill="#0f2a63"/>
+  </g>
+
+  <g transform="translate(800,930)">
+    <rect x="-90" y="-10" width="180" height="26" rx="4" fill="#7f1d1d"/>
+    <rect x="-84" y="-34" width="168" height="26" rx="4" fill="#b91c1c"/>
+    <rect x="-78" y="-58" width="156" height="26" rx="4" fill="#ef4444"/>
+    <rect x="-30" y="4" width="70" height="46" rx="6" fill="#5a1414"/>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1225" font-family="'Times New Roman', Georgia, serif" font-size="86" font-weight="700" fill="#fdf3dc" text-anchor="middle">Đối Thủ Chung Bàn</text>
+  <text x="512" y="1278" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#e6cd9e" text-anchor="middle">Học cách tin nhau trước một trận đấu trí khác</text>
+
+  <g>
+    <rect x="112" y="1330" width="800" height="86" rx="14" fill="#2c1808" opacity="0.78" stroke="#e8c98a" stroke-width="1.5"/>
+    <text x="512" y="1382" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#fbeed0" text-anchor="middle">Ngôn tình&#160;&#160;·&#160;&#160;Học đường&#160;&#160;·&#160;&#160;Đấu trí&#160;&#160;·&#160;&#160;Hài hước</text>
+  </g>
+</svg>

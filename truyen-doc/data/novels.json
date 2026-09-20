@@ -63,7 +63,7 @@
     "title": "Tiệm Radio Ông Tư",
     "author": "Mèo Hoang",
     "description": "Một tiệm sửa radio cũ, một cuộn băng cassette bỏ quên và bí mật hai mươi bảy năm về người bà mà cả gia đình chưa từng nhắc tới.",
-    "cover": "",
+    "cover": "images/novels/tiem-radio-ong-tu.svg",
     "status": "Hoàn thành",
     "chapterCount": 8,
     "latestChapter": "008",
@@ -79,7 +79,7 @@
     "title": "Hộp Thư Không Tên",
     "author": "Mèo Hoang",
     "description": "Một hộp thư tố cáo ẩn danh trong trường học, những kẻ bị tố luôn gặp tai nạn kỳ lạ, và một học sinh chuyển trường quyết tìm ra ai đang nắm quyền phán xét thay cả ngôi trường.",
-    "cover": "",
+    "cover": "images/novels/hop-thu-khong-ten.svg",
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
@@ -95,7 +95,7 @@
     "title": "Căn Gác Số 9",
     "author": "Mèo Hoang",
     "description": "Một phòng trọ giá rẻ, một lời cảnh báo kỳ lạ về chiếc gương sau nửa đêm, và bảy ngày đếm ngược lặp lại từ một cái chết bị giấu kín bảy năm trước.",
-    "cover": "",
+    "cover": "images/novels/can-gac-so-9.svg",
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
@@ -111,7 +111,7 @@
     "title": "Đối Thủ Chung Bàn",
     "author": "Mèo Hoang",
     "description": "Hai kỳ phùng địch thủ học thuật bị xếp ngồi chung bàn ngay trước kỳ chọn đội tuyển Đấu trường tri thức, và buộc phải học cách tin nhau trước khi kịp nhận ra mình đang thua trong một trận đấu trí khác.",
-    "cover": "",
+    "cover": "images/novels/doi-thu-chung-ban.svg",
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
@@ -121,6 +121,104 @@
       "Học đường",
       "Đấu trí",
       "Hài hước"
+    ]
+  },
+  {
+    "id": "kiep-nay-ta-khong-hien-lanh-nua",
+    "title": "Kiếp Này Ta Không Hiền Lành Nữa",
+    "author": "Mèo Hoang",
+    "description": "Bị em họ và vị hôn phu hãm hại đến chết trên pháp trường, đích nữ nhà họ Tần trọng sinh về ba tháng trước ngày sụp đổ — kiếp này, ai nợ máu phải trả bằng máu.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Huyền huyễn",
+      "Trọng sinh",
+      "Báo thù",
+      "Cổ trang"
+    ]
+  },
+  {
+    "id": "vi-hon-the-the-than",
+    "title": "Vị Hôn Thê Thế Thân",
+    "author": "Mèo Hoang",
+    "description": "Để cứu công ty gia đình khỏi phá sản, Đỗ Khánh My phải đóng giả chị gái song sinh đã bỏ trốn, cưới vị tổng giám đốc lạnh lùng theo hôn ước — nhưng không ngờ tình cảm thật lại nảy sinh đúng lúc bí mật sắp bị lật tẩy.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Đô thị",
+      "Tổng tài",
+      "Ngôn tình"
+    ]
+  },
+  {
+    "id": "dem-truoc-ngay-xu-tram",
+    "title": "Đêm Trước Ngày Xử Trảm",
+    "author": "Mèo Hoang",
+    "description": "Một biên tập viên hiện đại tỉnh dậy trong thân xác phi tần sắp bị chém đầu lúc bình minh vì tội không hề gây ra — chỉ còn một đêm để tìm ra kẻ chủ mưu thật, trước khi cuộc chiến trong cung thật sự bắt đầu.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 10,
+    "latestChapter": "010",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Xuyên không",
+      "Cổ trang",
+      "Cung đấu"
+    ]
+  },
+  {
+    "id": "ma-than-ngu-quen-trong-dan-dien",
+    "title": "Ma Thần Ngủ Quên Trong Đan Điền",
+    "author": "Mèo Hoang",
+    "description": "Bị tông môn ruồng bỏ vì đan điền trống rỗng, Lâm Tiểu Vũ rơi xuống vực cấm địa và đánh thức một mảnh tàn hồn Ma Thần thượng cổ — từ phế vật, cô âm thầm bước lên con đường vạch trần âm mưu từng hại chết song thân mình.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Huyền huyễn",
+      "Tu tiên",
+      "Phục thù"
+    ]
+  },
+  {
+    "id": "he-thong-bat-ta-phai-song-sot",
+    "title": "Hệ Thống Bắt Ta Phải Sống Sót",
+    "author": "Mèo Hoang",
+    "description": "Đêm các cổng không gian mở ra giữa thành phố, một tài xế giao hàng bình thường nhận được một hệ thống bí ẩn ngay lúc nguy cấp — phải bảo vệ những người thân yêu, trong khi dần phát hiện có kẻ đứng sau cố tình gây ra thảm họa để trục lợi.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Đô thị",
+      "Dị năng",
+      "Sinh tồn",
+      "Hành động"
+    ]
+  },
+  {
+    "id": "xuyen-khong-ve-lam-thon-nu-ban-banh",
+    "title": "Xuyên Không Về Làm Thôn Nữ Bán Bánh",
+    "author": "Mèo Hoang",
+    "description": "Một đầu bếp hiện đại xuyên vào thân xác thôn nữ nghèo sắp chết đói, dùng công thức bánh trái hiện đại gây dựng cơ nghiệp từ gánh hàng rong nhỏ, vượt qua chèn ép của thương gia lớn trong vùng để đổi đời cả gia đình.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Xuyên không",
+      "Điền văn",
+      "Ẩm thực"
     ]
   }
 ]

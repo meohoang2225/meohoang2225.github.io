@@ -1,0 +1,105 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a2f18"/>
+      <stop offset="50%" stop-color="#2f1c0e"/>
+      <stop offset="100%" stop-color="#180e07"/>
+    </linearGradient>
+    <linearGradient id="shelf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6b4423"/>
+      <stop offset="100%" stop-color="#4a2e16"/>
+    </linearGradient>
+    <linearGradient id="radioBig" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c98a4d"/>
+      <stop offset="100%" stop-color="#8a531f"/>
+    </linearGradient>
+    <radialGradient id="dial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe4a0"/>
+      <stop offset="70%" stop-color="#f2a63c"/>
+      <stop offset="100%" stop-color="#c9781c"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffdf9a" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffdf9a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff3d2" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#fff3d2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0a0500" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <polygon points="900,0 1024,0 1024,900 500,1536 300,1536" fill="url(#beam)"/>
+  <g fill="#fff3d2" opacity="0.5">
+    <circle cx="680" cy="260" r="3"/>
+    <circle cx="740" cy="400" r="2.2"/>
+    <circle cx="600" cy="520" r="2.6"/>
+    <circle cx="800" cy="620" r="2"/>
+    <circle cx="540" cy="700" r="3"/>
+    <circle cx="720" cy="820" r="2.4"/>
+    <circle cx="640" cy="960" r="2"/>
+  </g>
+
+  <rect x="0" y="60" width="1024" height="22" fill="#2f1c0e"/>
+  <rect x="0" y="480" width="1024" height="22" fill="#2f1c0e"/>
+  <rect x="60" y="82" width="20" height="398" fill="#2f1c0e"/>
+  <rect x="944" y="82" width="20" height="398" fill="#2f1c0e"/>
+
+  <g transform="translate(180,180)">
+    <rect width="150" height="110" rx="10" fill="url(#shelf)" stroke="#2a1a0c" stroke-width="4"/>
+    <circle cx="75" cy="55" r="34" fill="#3a2412" stroke="#c9a565" stroke-width="3"/>
+    <circle cx="75" cy="55" r="4" fill="#c9a565"/>
+    <rect x="18" y="18" width="24" height="18" rx="3" fill="#1e130a"/>
+  </g>
+
+  <g transform="translate(760,150)">
+    <rect width="140" height="130" rx="10" fill="#3a4a3a" stroke="#1c241c" stroke-width="4"/>
+    <circle cx="70" cy="65" r="38" fill="#22301f" stroke="#c9a565" stroke-width="3"/>
+    <rect x="16" y="20" width="20" height="16" rx="3" fill="#152012"/>
+  </g>
+
+  <g transform="translate(512,860)">
+    <rect x="-190" y="-260" width="380" height="300" rx="18" fill="url(#radioBig)" stroke="#4a2c10" stroke-width="8"/>
+    <circle cx="-70" cy="-140" r="86" fill="#5c3818"/>
+    <circle cx="-70" cy="-140" r="72" fill="#3a2410"/>
+    <g stroke="#7a5024" stroke-width="3" opacity="0.7">
+      <line x1="-70" y1="-200" x2="-70" y2="-80"/>
+      <line x1="-130" y1="-140" x2="-10" y2="-140"/>
+      <line x1="-112" y1="-182" x2="-28" y2="-98"/>
+      <line x1="-112" y1="-98" x2="-28" y2="-182"/>
+    </g>
+    <rect x="30" y="-210" width="140" height="34" rx="6" fill="url(#dial)"/>
+    <line x1="98" y1="-210" x2="98" y2="-176" stroke="#7a4212" stroke-width="3"/>
+    <circle cx="150" cy="-120" r="16" fill="#3a2410" stroke="#c9a565" stroke-width="3"/>
+    <circle cx="150" cy="-70" r="16" fill="#3a2410" stroke="#c9a565" stroke-width="3"/>
+    <rect x="-190" y="10" width="380" height="30" fill="#3a2410" opacity="0.4"/>
+  </g>
+  <circle cx="442" cy="720" r="130" fill="url(#glow)" filter="url(#soft)"/>
+
+  <g transform="translate(512,1170) rotate(-3)">
+    <rect x="-130" y="-40" width="260" height="80" rx="10" fill="#241a10" stroke="#0e0904" stroke-width="4"/>
+    <rect x="-110" y="-24" width="220" height="48" rx="6" fill="#3a2c1c"/>
+    <circle cx="-55" cy="0" r="20" fill="#0e0904" stroke="#8a6a3a" stroke-width="3"/>
+    <circle cx="55" cy="0" r="20" fill="#0e0904" stroke="#8a6a3a" stroke-width="3"/>
+    <rect x="-30" y="-10" width="60" height="20" rx="3" fill="#0e0904"/>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1235" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700" fill="#fbe9c8" text-anchor="middle">Tiệm Radio Ông Tư</text>
+  <text x="512" y="1288" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#d7b98a" text-anchor="middle">Cuộn băng cũ và bí mật hai mươi bảy năm của gia đình</text>
+
+  <g>
+    <rect x="192" y="1338" width="640" height="86" rx="14" fill="#180d04" opacity="0.75" stroke="#c9a565" stroke-width="1.5"/>
+    <text x="512" y="1390" font-family="'Segoe UI', Arial, sans-serif" font-size="28" fill="#f3e2bd" text-anchor="middle">Gia đình&#160;&#160;·&#160;&#160;Tâm lý&#160;&#160;·&#160;&#160;Bí ẩn</text>
+  </g>
+</svg>
