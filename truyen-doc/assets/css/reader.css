@@ -863,6 +863,21 @@ body.reader-dark .site-footer {
         grid-template-columns: 1fr 1fr;
     }
 
+    #chapterListButtonBottom {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
+    #prevChapterBottom {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #nextChapterBottom {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
     .chapter-title {
         font-size: 21px;
     }

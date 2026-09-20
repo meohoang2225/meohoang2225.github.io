@@ -149,8 +149,7 @@ $(document).ready(function () {
              * Nếu URL không có chapter:
              *
              * 1. Lấy chương đang đọc dở
-             * 2. Nếu không có -> mở chương mới nhất
-             * 3. Nếu vẫn không có -> chương đầu
+             * 2. Nếu không có -> mở chương đầu (chương 1)
              */
 
             if (!chapterId) {
@@ -174,7 +173,7 @@ $(document).ready(function () {
                 } else if (chapters.length > 0) {
 
                     chapterId =
-                        String(chapters[chapters.length - 1].id);
+                        String(chapters[0].id);
 
                 }
 
@@ -601,14 +600,39 @@ $(document).ready(function () {
        OPEN / CLOSE CHAPTER LIST
     ========================================================= */
 
-    $("#chapterListButton").on("click", function () {
+    function toggleChapterList() {
 
-        $("#chapterList")
-            .toggleClass("hidden");
+        const list =
+            $("#chapterList");
+
+
+        list.toggleClass("hidden");
 
 
         renderChapterList();
-    });
+
+
+        if (!list.hasClass("hidden")) {
+
+            list[0].scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }
+    }
+
+
+    $("#chapterListButton").on(
+        "click",
+        toggleChapterList
+    );
+
+
+    $("#chapterListButtonBottom").on(
+        "click",
+        toggleChapterList
+    );
 
 
     $("#closeChapterList").on("click", function () {
@@ -904,6 +928,10 @@ $(document).ready(function () {
                 $("#chapterListButton")[0];
 
 
+            const buttonBottom =
+                $("#chapterListButtonBottom")[0];
+
+
             if (!list || !button) {
                 return;
             }
@@ -911,7 +939,8 @@ $(document).ready(function () {
 
             if (
                 !list.contains(event.target) &&
-                !button.contains(event.target)
+                !button.contains(event.target) &&
+                !(buttonBottom && buttonBottom.contains(event.target))
             ) {
 
                 $("#chapterList")

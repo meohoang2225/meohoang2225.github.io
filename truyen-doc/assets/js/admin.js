@@ -19,6 +19,30 @@
         "truyen_doc_editor_draft";
 
 
+    const GENRE_OPTIONS = [
+        "Cổ trang",
+        "Hiện đại",
+        "Ngôn tình",
+        "Tình cảm",
+        "Tình yêu",
+        "Gia đình",
+        "Hài hước",
+        "Chiến trường",
+        "Thương trường",
+        "Mưu quyền",
+        "Đấu trí",
+        "Trinh thám",
+        "Bí ẩn",
+        "Tâm lý",
+        "Kinh dị",
+        "Huyền huyễn",
+        "Xuyên không",
+        "Trọng sinh",
+        "Đô thị",
+        "Học đường"
+    ];
+
+
     let editor = null;
 
     let novels = [];
@@ -598,6 +622,32 @@
                 result.data;
 
 
+            if (
+                !Array.isArray(novel.genres) ||
+                !novel.genres.length
+            ) {
+
+                const catalogItem =
+                    novels.find(
+                        x =>
+                            String(x.id) ===
+                            String(novelId)
+                    );
+
+
+                if (
+                    catalogItem &&
+                    Array.isArray(catalogItem.genres)
+                ) {
+
+                    novel.genres =
+                        catalogItem.genres;
+
+                }
+
+            }
+
+
             fillNovelForm(
                 novel
             );
@@ -633,6 +683,81 @@
     // ==========================================
     // NOVEL FORM
     // ==========================================
+
+    function renderGenreCheckboxes() {
+
+        let html = "";
+
+        GENRE_OPTIONS.forEach(
+            function (genre, index) {
+
+                const inputId =
+                    `novel-genre-${index}`;
+
+                html += `
+                    <div class="form-check">
+
+                        <input
+                            type="checkbox"
+                            class="form-check-input novel-genre-checkbox"
+                            id="${inputId}"
+                            value="${escapeAttr(genre)}"
+                        >
+
+                        <label
+                            class="form-check-label"
+                            for="${inputId}"
+                        >
+                            ${escapeHtml(genre)}
+                        </label>
+
+                    </div>
+                `;
+
+            }
+        );
+
+        $("#novel-genres")
+            .html(html);
+
+    }
+
+
+    function getSelectedGenres() {
+
+        return $(".novel-genre-checkbox:checked")
+            .map(function () {
+
+                return $(this).val();
+
+            })
+            .get();
+
+    }
+
+
+    function setSelectedGenres(genres) {
+
+        const selected =
+            Array.isArray(genres)
+                ? genres.map(String)
+                : [];
+
+        $(".novel-genre-checkbox").each(
+            function () {
+
+                $(this).prop(
+                    "checked",
+                    selected.includes(
+                        $(this).val()
+                    )
+                );
+
+            }
+        );
+
+    }
+
 
     function fillNovelForm(
         novel
@@ -675,6 +800,11 @@
             );
 
 
+        setSelectedGenres(
+            novel.genres
+        );
+
+
         showCoverPreview(
             `${CONFIG.github.sub_domain}/${novel.cover}`
         );
@@ -697,6 +827,8 @@
 
         $("#novel-description")
             .val("");
+
+        setSelectedGenres([]);
 
         $("#cover-preview-image")
             .attr("src", "");
@@ -885,6 +1017,9 @@
                     status:
                         $("#novel-status")
                             .val(),
+
+                    genres:
+                        getSelectedGenres(),
 
                     updatedAt:
                         today()
@@ -1167,6 +1302,9 @@
 
             status:
                 novel.status,
+
+            genres:
+                novel.genres,
 
             chapterCount:
                 chapterCount,
@@ -3733,6 +3871,9 @@
     // ==========================================
 
     async function initializeApp() {
+
+        renderGenreCheckboxes();
+
 
         initGitHub();
 

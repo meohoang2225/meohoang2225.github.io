@@ -466,6 +466,27 @@
 
 
             /*
+             * Sắp xếp theo ngày cập nhật
+             * gần nhất trước.
+             */
+
+            novels.sort(
+                function (a, b) {
+
+                    return (
+                        new Date(
+                            b.updatedAt || 0
+                        ).getTime() -
+                        new Date(
+                            a.updatedAt || 0
+                        ).getTime()
+                    );
+
+                }
+            );
+
+
+            /*
              * Tạo danh sách thể loại
              * sau khi novels đã được load.
              */

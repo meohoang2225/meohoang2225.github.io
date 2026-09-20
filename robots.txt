@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /truyen-doc/admin.html
+
+Sitemap: https://meohoang2225.github.io/sitemap.xml

@@ -59,17 +59,67 @@
     "updatedAt": "2026-09-14"
   },
   {
-    "id": "demo",
-    "title": "Vô Địch",
-    "author": "Đạt",
-    "description": "Một câu chuyện demo để kiểm tra hệ thống đọc truyện.",
+    "id": "tiem-radio-ong-tu",
+    "title": "Tiệm Radio Ông Tư",
+    "author": "Mèo Hoang",
+    "description": "Một tiệm sửa radio cũ, một cuộn băng cassette bỏ quên và bí mật hai mươi bảy năm về người bà mà cả gia đình chưa từng nhắc tới.",
     "cover": "",
-    "status": "Đang ra",
-    "chapterCount": 2,
-    "updatedAt": "2026-09-01",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-20",
     "genres": [
-      "Cổ trang",
-      "Tình cảm",
+      "Gia đình",
+      "Tâm lý",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "hop-thu-khong-ten",
+    "title": "Hộp Thư Không Tên",
+    "author": "Mèo Hoang",
+    "description": "Một hộp thư tố cáo ẩn danh trong trường học, những kẻ bị tố luôn gặp tai nạn kỳ lạ, và một học sinh chuyển trường quyết tìm ra ai đang nắm quyền phán xét thay cả ngôi trường.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Trinh thám",
+      "Học đường",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "can-gac-so-9",
+    "title": "Căn Gác Số 9",
+    "author": "Mèo Hoang",
+    "description": "Một phòng trọ giá rẻ, một lời cảnh báo kỳ lạ về chiếc gương sau nửa đêm, và bảy ngày đếm ngược lặp lại từ một cái chết bị giấu kín bảy năm trước.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm linh"
+    ]
+  },
+  {
+    "id": "doi-thu-chung-ban",
+    "title": "Đối Thủ Chung Bàn",
+    "author": "Mèo Hoang",
+    "description": "Hai kỳ phùng địch thủ học thuật bị xếp ngồi chung bàn ngay trước kỳ chọn đội tuyển Đấu trường tri thức, và buộc phải học cách tin nhau trước khi kịp nhận ra mình đang thua trong một trận đấu trí khác.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Ngôn tình",
+      "Học đường",
+      "Đấu trí",
       "Hài hước"
     ]
   }
