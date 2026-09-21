@@ -1,0 +1,99 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a1420"/>
+      <stop offset="50%" stop-color="#3a0e18"/>
+      <stop offset="100%" stop-color="#1c0710"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffdf9a" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#ff9a4d" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ff9a4d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="house" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a2a1a"/>
+      <stop offset="100%" stop-color="#5a1810"/>
+    </linearGradient>
+    <linearGradient id="dressA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9302f"/>
+      <stop offset="100%" stop-color="#7a1414"/>
+    </linearGradient>
+    <linearGradient id="dressB" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2f3a"/>
+      <stop offset="100%" stop-color="#131620"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1c0710" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <polygon points="120,420 120,220 512,60 904,220 904,420" fill="url(#house)" stroke="#3a0f0a" stroke-width="6"/>
+    <rect x="220" y="260" width="180" height="160" fill="#3a0f0a" opacity="0.7"/>
+    <rect x="624" y="260" width="180" height="160" fill="#3a0f0a" opacity="0.7"/>
+    <rect x="452" y="300" width="120" height="120" fill="#2a0a08"/>
+    <rect x="452" y="300" width="120" height="18" fill="#c9302f"/>
+    <text x="512" y="392" font-family="'Times New Roman', Georgia, serif" font-size="60" fill="#f2c94c" text-anchor="middle">福</text>
+  </g>
+
+  <g>
+    <rect x="200" y="200" width="26" height="80" rx="6" fill="#c9302f"/>
+    <ellipse cx="213" cy="300" rx="30" ry="40" fill="#c9302f"/>
+    <rect x="205" y="330" width="16" height="30" fill="#f2c94c"/>
+  </g>
+  <g>
+    <rect x="798" y="200" width="26" height="80" rx="6" fill="#c9302f"/>
+    <ellipse cx="811" cy="300" rx="30" ry="40" fill="#c9302f"/>
+    <rect x="803" y="330" width="16" height="30" fill="#f2c94c"/>
+  </g>
+
+  <g opacity="0.8">
+    <path d="M60 460 q40 -60 20 -140" stroke="#5a1810" stroke-width="10" fill="none"/>
+    <circle cx="70" cy="330" r="20" fill="#f2c94c" opacity="0.9"/>
+    <circle cx="40" cy="360" r="16" fill="#f2c94c" opacity="0.8"/>
+    <circle cx="100" cy="380" r="14" fill="#f2c94c" opacity="0.7"/>
+    <path d="M964 460 q-40 -60 -20 -140" stroke="#5a1810" stroke-width="10" fill="none"/>
+    <circle cx="954" cy="330" r="20" fill="#f2c94c" opacity="0.9"/>
+    <circle cx="984" cy="360" r="16" fill="#f2c94c" opacity="0.8"/>
+    <circle cx="924" cy="380" r="14" fill="#f2c94c" opacity="0.7"/>
+  </g>
+
+  <ellipse cx="512" cy="820" rx="380" ry="360" fill="url(#glow)" filter="url(#soft)"/>
+
+  <g transform="translate(400,900)">
+    <path d="M0 -180 Q-80 -120 -85 40 L-90 260 Q-90 300 -40 300 L40 300 Q90 300 90 260 L85 40 Q80 -120 0 -180 Z" fill="url(#dressA)" stroke="#4a0d0d" stroke-width="4"/>
+    <circle cx="0" cy="-220" r="44" fill="#e9c6a8"/>
+    <path d="M-44 -228 Q0 -268 44 -228 Q38 -190 0 -182 Q-38 -190 -44 -228 Z" fill="#160404"/>
+    <path d="M60 20 Q120 10 140 -20" stroke="#7a1414" stroke-width="18" stroke-linecap="round" fill="none"/>
+  </g>
+  <g transform="translate(624,900)">
+    <path d="M0 -180 Q-80 -120 -85 40 L-90 260 Q-90 300 -40 300 L40 300 Q90 300 90 260 L85 40 Q80 -120 0 -180 Z" fill="url(#dressB)" stroke="#0a0b12" stroke-width="4"/>
+    <circle cx="0" cy="-220" r="44" fill="#d9ac82"/>
+    <path d="M-44 -228 Q0 -272 44 -228 Q38 -186 0 -178 Q-38 -186 -44 -228 Z" fill="#0e0d10"/>
+    <path d="M-60 20 Q-120 10 -140 -20" stroke="#2a2f3a" stroke-width="18" stroke-linecap="round" fill="none"/>
+  </g>
+  <rect x="536" y="1020" width="24" height="10" rx="4" fill="#f2c94c" opacity="0.9"/>
+
+  <g transform="translate(512,760)">
+    <rect x="-40" y="-26" width="80" height="52" rx="8" fill="#c9302f" stroke="#7a1414" stroke-width="3"/>
+    <text x="0" y="16" font-family="'Times New Roman', Georgia, serif" font-size="30" fill="#f2c94c" text-anchor="middle">囍</text>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1225" font-family="'Times New Roman', Georgia, serif" font-size="66" font-weight="700" fill="#fdf1d8" text-anchor="middle">Người Yêu Giả</text>
+  <text x="512" y="1285" font-family="'Times New Roman', Georgia, serif" font-size="66" font-weight="700" fill="#fdf1d8" text-anchor="middle">Ba Ngày Tết</text>
+  <text x="512" y="1330" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#f0b8a8" text-anchor="middle">Ranh giới giữa giả vờ và thật lòng mong manh hơn cô tưởng</text>
+
+  <g>
+    <rect x="242" y="1372" width="540" height="86" rx="14" fill="#2a0a10" opacity="0.78" stroke="#f2c94c" stroke-width="1.5"/>
+    <text x="512" y="1424" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#fbeed0" text-anchor="middle">Đô thị&#160;&#160;·&#160;&#160;Tình yêu&#160;&#160;·&#160;&#160;Hài hước</text>
+  </g>
+</svg>

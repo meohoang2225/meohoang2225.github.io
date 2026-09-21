@@ -1,0 +1,78 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1430"/>
+      <stop offset="55%" stop-color="#0a0e22"/>
+      <stop offset="100%" stop-color="#050612"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eaf3ff" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#6ba8ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#6ba8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243056"/>
+      <stop offset="100%" stop-color="#0c0f1e"/>
+    </linearGradient>
+    <linearGradient id="robeDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160a10"/>
+      <stop offset="100%" stop-color="#050205"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <g opacity="0.75">
+    <polygon points="0,600 220,600 300,420 380,600 1024,600 1024,660 0,660" fill="#080a18"/>
+    <polygon points="120,540 220,540 260,480 300,540 1024,540 1024,600 60,600" fill="#0a0c1c" opacity="0.7"/>
+  </g>
+
+  <g stroke="#dfeaff" stroke-width="4" opacity="0.85" fill="none">
+    <path d="M180 40 L260 260 L200 260 L300 520"/>
+    <path d="M840 20 L760 240 L820 240 L720 480"/>
+  </g>
+  <g stroke="#9cc4ff" stroke-width="8" opacity="0.35" filter="url(#soft)" fill="none">
+    <path d="M180 40 L260 260 L200 260 L300 520"/>
+    <path d="M840 20 L760 240 L820 240 L720 480"/>
+  </g>
+
+  <circle cx="512" cy="620" r="260" fill="url(#core)" filter="url(#soft)"/>
+
+  <g transform="translate(512,760)">
+    <path d="M-110 220 Q-140 40 -60 -120 Q0 -180 60 -120 Q140 40 110 220 Q100 280 0 290 Q-100 280 -110 220 Z" fill="url(#robe)" stroke="#050710" stroke-width="4"/>
+    <circle cx="0" cy="-190" r="44" fill="#e9c6a8"/>
+    <path d="M-44 -198 Q0 -238 44 -198 Q38 -160 0 -152 Q-38 -160 -44 -198 Z" fill="#0c0d16"/>
+    <path d="M-90 -20 Q-160 -60 -170 -160" stroke="#243056" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <path d="M90 -20 Q160 -60 170 -160" stroke="#243056" stroke-width="22" stroke-linecap="round" fill="none"/>
+    <circle cx="-170" cy="-160" r="14" fill="#e9c6a8"/>
+    <circle cx="170" cy="-160" r="14" fill="#e9c6a8"/>
+  </g>
+
+  <g transform="translate(700,420) rotate(18)">
+    <path d="M0 0 L-40 -180 Q-42 -210 -20 -220 L20 -220 Q42 -210 40 -180 L0 0 Z" fill="url(#robeDark)" stroke="#000" stroke-width="4"/>
+    <circle cx="0" cy="-230" r="30" fill="#100a10"/>
+    <path d="M-70 40 L110 -30 L120 -6 L-58 62 Z" fill="#c9d4e6" stroke="#5a6478" stroke-width="3"/>
+    <path d="M-70 40 L-100 60 L-84 76 L-56 60 Z" fill="#4a3018"/>
+  </g>
+
+  <ellipse cx="700" cy="470" rx="130" ry="60" fill="#0a0c1c" opacity="0.5" filter="url(#soft)"/>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1200" font-family="'Times New Roman', Georgia, serif" font-size="54" font-weight="700" fill="#e6edff" text-anchor="middle">Mười Năm Trước Ta Chết</text>
+  <text x="512" y="1258" font-family="'Times New Roman', Georgia, serif" font-size="54" font-weight="700" fill="#e6edff" text-anchor="middle">Vì Tin Sư Huynh</text>
+  <text x="512" y="1302" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#a8bce6" text-anchor="middle">Trọng sinh mười năm trước, liệu có dám tin lại lần nữa?</text>
+
+  <g>
+    <rect x="222" y="1344" width="580" height="86" rx="14" fill="#0a0c1a" opacity="0.8" stroke="#5a7ad0" stroke-width="1.5"/>
+    <text x="512" y="1396" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#e2e9fa" text-anchor="middle">Huyền huyễn&#160;&#160;·&#160;&#160;Tu tiên&#160;&#160;·&#160;&#160;Trọng sinh</text>
+  </g>
+</svg>

@@ -39,7 +39,9 @@
         "Xuyên không",
         "Trọng sinh",
         "Đô thị",
-        "Học đường"
+        "Học đường",
+        "Tu tiên",
+        "Cung đấu"
     ];
 
 

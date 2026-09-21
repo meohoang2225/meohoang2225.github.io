@@ -880,6 +880,17 @@ main.container {
     background: #f4f4f4;
 }
 
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #fff;
+}
+
+.pagination button:disabled:hover {
+    border-color: #ddd;
+    background: #fff;
+}
+
 .pagination .active,
 .pagination button.active,
 .pagination a.active {
@@ -1157,6 +1168,15 @@ body.dark-mode .pagination button:hover,
 body.dark-mode .pagination a:hover {
     border-color: #555;
     background: #282828;
+}
+
+body.dark-mode .pagination button:disabled {
+    background: #1c1c1c;
+}
+
+body.dark-mode .pagination button:disabled:hover {
+    border-color: #383838;
+    background: #1c1c1c;
 }
 
 body.dark-mode .pagination .active,

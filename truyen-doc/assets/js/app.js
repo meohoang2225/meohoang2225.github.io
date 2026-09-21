@@ -1040,13 +1040,7 @@
         }
 
 
-        let html = `
-            <nav
-                aria-label="Phân trang"
-            >
-
-                <ul class="pagination justify-content-center">
-        `;
+        let html = "";
 
 
         /*
@@ -1054,27 +1048,19 @@
          */
 
         html += `
-            <li class="page-item ${
-                currentPage === 1
-                    ? "disabled"
-                    : ""
-            }">
-
-                <button
-                    class="page-link"
-                    data-page="${
-                        currentPage - 1
-                    }"
-                    ${
-                        currentPage === 1
-                            ? "disabled"
-                            : ""
-                    }
-                >
-                    ‹
-                </button>
-
-            </li>
+            <button
+                class="page-link"
+                data-page="${
+                    currentPage - 1
+                }"
+                ${
+                    currentPage === 1
+                        ? "disabled"
+                        : ""
+                }
+            >
+                ‹
+            </button>
         `;
 
 
@@ -1097,13 +1083,12 @@
                 ) {
 
                     html += `
-                        <li class="page-item disabled">
-
-                            <span class="page-link">
-                                …
-                            </span>
-
-                        </li>
+                        <button
+                            class="page-link"
+                            disabled
+                        >
+                            …
+                        </button>
                     `;
 
                     return;
@@ -1111,21 +1096,17 @@
 
 
                 html += `
-                    <li class="page-item ${
-                        page ===
-                        currentPage
-                            ? "active"
-                            : ""
-                    }">
-
-                        <button
-                            class="page-link"
-                            data-page="${page}"
-                        >
-                            ${page}
-                        </button>
-
-                    </li>
+                    <button
+                        class="page-link ${
+                            page ===
+                            currentPage
+                                ? "active"
+                                : ""
+                        }"
+                        data-page="${page}"
+                    >
+                        ${page}
+                    </button>
                 `;
 
             }
@@ -1137,36 +1118,20 @@
          */
 
         html += `
-            <li class="page-item ${
-                currentPage ===
-                totalPages
-                    ? "disabled"
-                    : ""
-            }">
-
-                <button
-                    class="page-link"
-                    data-page="${
-                        currentPage + 1
-                    }"
-                    ${
-                        currentPage ===
-                        totalPages
-                            ? "disabled"
-                            : ""
-                    }
-                >
-                    ›
-                </button>
-
-            </li>
-        `;
-
-
-        html += `
-                </ul>
-
-            </nav>
+            <button
+                class="page-link"
+                data-page="${
+                    currentPage + 1
+                }"
+                ${
+                    currentPage ===
+                    totalPages
+                        ? "disabled"
+                        : ""
+                }
+            >
+                ›
+            </button>
         `;
 
 

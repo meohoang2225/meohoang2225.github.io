@@ -1,0 +1,81 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241018"/>
+      <stop offset="50%" stop-color="#160a10"/>
+      <stop offset="100%" stop-color="#0a0508"/>
+    </linearGradient>
+    <radialGradient id="candle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe4a0" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#e0793a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#e0793a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a1a24"/>
+      <stop offset="100%" stop-color="#140609"/>
+    </linearGradient>
+    <linearGradient id="book" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0dfae"/>
+      <stop offset="100%" stop-color="#cbb280"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <g opacity="0.6">
+    <polygon points="0,320 140,320 180,220 220,320 380,320 380,380 0,380" fill="#150810"/>
+    <polygon points="640,300 690,300 740,190 790,300 1024,300 1024,370 640,370" fill="#150810"/>
+    <rect x="60" y="240" width="10" height="80" fill="#0c0508"/>
+    <rect x="720" y="220" width="10" height="80" fill="#0c0508"/>
+  </g>
+
+  <ellipse cx="512" cy="820" rx="360" ry="360" fill="url(#candle)" filter="url(#soft)"/>
+
+  <g transform="translate(512,980)">
+    <path d="M-160 -300 Q-190 -160 -180 20 L-170 230 Q-170 280 -100 280 L100 280 Q170 280 170 230 L180 20 Q190 -160 160 -300 Q90 -370 0 -370 Q-90 -370 -160 -300 Z" fill="url(#robe)" stroke="#0a0305" stroke-width="4" opacity="0.92"/>
+    <circle cx="0" cy="-380" r="48" fill="#e9c6a8"/>
+    <path d="M-48 -388 Q0 -428 48 -388 Q42 -350 0 -342 Q-42 -350 -48 -388 Z" fill="#0e0508"/>
+    <path d="M-10 -428 l4 -28 l8 4 l-2 26 Z" fill="#e9c46a"/>
+    <circle cx="16" cy="-436" r="5" fill="#ff8a3d"/>
+  </g>
+
+  <g transform="translate(512,1040)">
+    <path d="M-220 -30 L0 -60 L220 -30 L220 60 L0 30 L-220 60 Z" fill="url(#book)" stroke="#9a8552" stroke-width="4"/>
+    <path d="M0 -60 L0 30" stroke="#9a8552" stroke-width="3"/>
+    <g stroke="#6b5a34" stroke-width="2" opacity="0.7">
+      <line x1="-190" y1="-16" x2="-30" y2="-32"/>
+      <line x1="-190" y1="4" x2="-30" y2="-12"/>
+      <line x1="-190" y1="24" x2="-30" y2="8"/>
+      <line x1="30" y1="-32" x2="190" y2="-16"/>
+      <line x1="30" y1="-12" x2="190" y2="4"/>
+    </g>
+    <circle cx="-70" cy="6" r="9" fill="#8a1414" opacity="0.85"/>
+    <path d="M-70 6 q-4 30 -14 46" stroke="#8a1414" stroke-width="3" fill="none" opacity="0.6"/>
+    <rect x="200" y="-90" width="10" height="70" fill="#3a2a18" transform="rotate(18 205 -55)"/>
+    <path d="M204 -92 l14 -22 l6 4 l-12 22 Z" fill="#0e0a08" transform="rotate(18 205 -55)"/>
+  </g>
+
+  <g transform="translate(760,1000)">
+    <rect x="-26" y="-26" width="52" height="52" rx="6" fill="#8a1414" stroke="#5a0d0d" stroke-width="3" transform="rotate(-8)"/>
+    <text x="0" y="10" font-family="'Times New Roman', Georgia, serif" font-size="26" fill="#f0dfae" text-anchor="middle" transform="rotate(-8)">令</text>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1235" font-family="'Times New Roman', Georgia, serif" font-size="66" font-weight="700" fill="#f3d9b8" text-anchor="middle">Cung Nữ Và Cuốn</text>
+  <text x="512" y="1295" font-family="'Times New Roman', Georgia, serif" font-size="66" font-weight="700" fill="#f3d9b8" text-anchor="middle">Sổ Sinh Tử</text>
+  <text x="512" y="1340" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#c99a7c" text-anchor="middle">Một mục ghi chết bất thường, một âm mưu bị chôn giấu</text>
+
+  <g>
+    <rect x="212" y="1382" width="600" height="86" rx="14" fill="#1a0a12" opacity="0.78" stroke="#a85a6a" stroke-width="1.5"/>
+    <text x="512" y="1434" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#f0d6c2" text-anchor="middle">Cổ trang&#160;&#160;·&#160;&#160;Cung đấu&#160;&#160;·&#160;&#160;Mưu quyền</text>
+  </g>
+</svg>

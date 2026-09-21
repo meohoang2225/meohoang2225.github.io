@@ -169,6 +169,7 @@
     "genres": [
       "Xuyên không",
       "Cổ trang",
+      "Cung đấu",
       "Mưu quyền"
     ]
   },
@@ -184,6 +185,7 @@
     "updatedAt": "2026-09-21",
     "genres": [
       "Huyền huyễn",
+      "Tu tiên",
       "Mưu quyền",
       "Đấu trí"
     ]
@@ -218,6 +220,54 @@
       "Xuyên không",
       "Cổ trang",
       "Gia đình"
+    ]
+  },
+  {
+    "id": "cung-nu-va-cuon-so-sinh-tu",
+    "title": "Cung Nữ Và Cuốn Sổ Sinh Tử",
+    "author": "Mèo Hoang",
+    "description": "Một cung nữ phụ trách ghi chép sổ sinh tử trong cung phát hiện một mục ghi chết bất thường, hé lộ một vụ ám sát bị che giấu giữa cuộc tranh giành ngôi vị — và cuốn cô vào cuộc chiến ngầm nguy hiểm nhất đời mình.",
+    "cover": "images/novels/cung-nu-va-cuon-so-sinh-tu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Cổ trang",
+      "Cung đấu",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "muoi-nam-truoc-ta-chet-vi-tin-su-huynh",
+    "title": "Mười Năm Trước Ta Chết Vì Tin Sư Huynh",
+    "author": "Mèo Hoang",
+    "description": "Đúng lúc độ kiếp phi thăng, Hàn Dạ Thanh bị chính đại sư huynh mình tin tưởng nhất ám toán cướp đoạt cơ duyên. Trọng sinh về ngày nhập môn mười năm trước, hắn quyết không để lịch sử lặp lại — nhưng cứu người từng phản bội mình, liệu có khó hơn cả việc giết chết kẻ đó?",
+    "cover": "images/novels/muoi-nam-truoc-ta-chet-vi-tin-su-huynh.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Huyền huyễn",
+      "Tu tiên",
+      "Trọng sinh"
+    ]
+  },
+  {
+    "id": "nguoi-yeu-gia-ba-ngay-tet",
+    "title": "Người Yêu Giả Ba Ngày Tết",
+    "author": "Mèo Hoang",
+    "description": "Bị gia đình giục cưới mỗi dịp Tết, An Nhiên liều nhờ đồng nghiệp lạnh lùng khó ưa đóng giả người yêu về quê ba ngày Tết — và phát hiện ranh giới giữa giả vờ và thật lòng mong manh hơn cô tưởng.",
+    "cover": "images/novels/nguoi-yeu-gia-ba-ngay-tet.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-21",
+    "genres": [
+      "Đô thị",
+      "Tình yêu",
+      "Hài hước"
     ]
   }
 ]
