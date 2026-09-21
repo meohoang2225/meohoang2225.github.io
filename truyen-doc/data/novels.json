@@ -4,7 +4,7 @@
     "title": "Ấm nước đun sôi tướng quân mộng",
     "author": "Mèo Hoang",
     "description": "Cổ trang · Chiến trường · Tình cảm · Gia đình · Thương trường · Hài hước · Mưu quyền",
-    "cover": "images/novels/am-nuoc-dun-soi.png",
+    "cover": "images/novels/am-nuoc-dun-soi.svg",
     "status": "Đang ra",
     "updatedAt": "2026-09-13",
     "chapterCount": 5,
@@ -20,14 +20,15 @@
     "title": "Bên kia mùa hè",
     "author": "Mèo Hoang - Thư viện truyện",
     "description": "Một câu chuyện ngắn về những điều ta tưởng đã cũ nhưng vẫn âm thầm lớn lên trong ký ức.",
-    "cover": "images/novels/ben-kia-mua-he.png",
-    "status": "Đang ra",
-    "chapterCount": 1,
-    "updatedAt": "2026-09-02",
+    "cover": "images/novels/ben-kia-mua-he.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-22",
     "genres": [
-      "Cổ trang",
-      "Tình cảm",
-      "Hài hước"
+      "Tâm lý",
+      "Gia đình",
+      "Tình cảm"
     ]
   },
   {
@@ -35,7 +36,7 @@
     "title": "Hợp Đồng Mười Hai Tháng",
     "author": "Mèo Hoang",
     "description": "Cha chết bí ẩn, gia nghiệp bên bờ phá sản, Lâm An buộc phải kết hôn với người đàn ông cô từng xem là kẻ thù.\nMười hai tháng. Một bản hợp đồng. Một cuộc hôn nhân không được phép yêu.",
-    "cover": "images/novels/hop-dong-muoi-hai-thang.png",
+    "cover": "images/novels/hop-dong-muoi-hai-thang.svg",
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
@@ -52,7 +53,7 @@
     "title": "Nhà Có Ba Người Và Một Con Mèo",
     "author": "Mèo Hoang",
     "description": "Một gia đình nhỏ, một cuộc hôn nhân bình dị và một chú mèo tinh quái khiến căn nhà chẳng ngày nào yên ổn.",
-    "cover": "truyen-doc/images/novels/nha-co-ba-nguoi-va-mot-con-meo.png",
+    "cover": "images/novels/nha-co-ba-nguoi-va-mot-con-meo.svg",
     "status": "Hoàn thành",
     "chapterCount": 7,
     "latestChapter": "007",
@@ -268,6 +269,86 @@
       "Đô thị",
       "Tình yêu",
       "Hài hước"
+    ]
+  },
+  {
+    "id": "so-nha-khong-ton-tai",
+    "title": "Số Nhà Không Tồn Tại",
+    "author": "Mèo Hoang",
+    "description": "Ba người trẻ chết trong vòng một tháng, không liên quan gì nhau, ngoại trừ một điểm chung rợn người: tin nhắn cuối cùng của cả ba đều nhắc tới phòng 13B trong một chung cư mà thực tế không hề có tầng đó.",
+    "cover": "images/novels/so-nha-khong-ton-tai.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Trinh thám",
+      "Kinh dị",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "xuyen-khong-mang-theo-ky-nang-game-thu",
+    "title": "Xuyên Không Mang Theo Kỹ Năng Game Thủ",
+    "author": "Mèo Hoang",
+    "description": "Ngủ quên sau trận chung kết, game thủ chuyên nghiệp Đức Anh tỉnh dậy trong thân xác một thiếu gia phế vật sắp bị đuổi khỏi gia tộc — ở một thế giới vận hành y hệt tựa game chiến thuật anh từng cày cuốc suốt mười năm.",
+    "cover": "images/novels/xuyen-khong-mang-theo-ky-nang-game-thu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Huyền huyễn",
+      "Xuyên không",
+      "Hài hước"
+    ]
+  },
+  {
+    "id": "tro-choi-luc-khong-gio",
+    "title": "Trò Chơi Lúc 0 Giờ",
+    "author": "Mèo Hoang",
+    "description": "Một trò chơi truyền miệng trong trường: đúng 0 giờ, gọi tên người bạn thứ mười ba trong gương phòng học cũ, người đó sẽ xuất hiện và ban một điều ước — đổi lại một cái giá không ai lường trước được.",
+    "cover": "images/novels/tro-choi-luc-khong-gio.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Kinh dị",
+      "Học đường",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "thay-cha-tong-quan-ta-gia-trai-nhap-ngu",
+    "title": "Thay Cha Tòng Quân, Ta Giả Trai Nhập Ngũ",
+    "author": "Mèo Hoang",
+    "description": "Cha già yếu không đủ sức tòng quân theo lệnh triều đình, Lâm Tuyết Nhi giả trai nhập ngũ thay cha, che giấu thân phận nữ nhi giữa doanh trại toàn nam nhân — trong khi vị chủ tướng trẻ tuổi tài ba ngày càng nghi ngờ những điều bất thường ở nàng.",
+    "cover": "images/novels/thay-cha-tong-quan-ta-gia-trai-nhap-ngu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Cổ trang",
+      "Chiến trường",
+      "Ngôn tình"
+    ]
+  },
+  {
+    "id": "nguoi-thua-ke-bi-xoa-ten-khoi-di-chuc",
+    "title": "Người Thừa Kế Bị Xóa Tên Khỏi Di Chúc",
+    "author": "Mèo Hoang",
+    "description": "Mười năm sau ngày bị gia tộc ruồng bỏ, Phan Gia Bảo được gọi về khi cha bệnh nặng, phát hiện tên mình đã âm thầm bị xóa khỏi di chúc — và phải dùng chính năng lực đã âm thầm gây dựng suốt mười năm để giành lại những gì đáng lẽ thuộc về mình.",
+    "cover": "images/novels/nguoi-thua-ke-bi-xoa-ten-khoi-di-chuc.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Thương trường",
+      "Mưu quyền",
+      "Gia đình"
     ]
   }
 ]
