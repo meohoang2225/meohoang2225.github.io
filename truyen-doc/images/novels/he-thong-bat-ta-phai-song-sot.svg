@@ -1,0 +1,84 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050a14"/>
+      <stop offset="55%" stop-color="#070c16"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </linearGradient>
+    <radialGradient id="rift" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eafcff" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#4be0ff" stop-opacity="0.75"/>
+      <stop offset="65%" stop-color="#1c6fff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#1c6fff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141d2e"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="danger" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff5a2e" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff5a2e" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+
+  <g opacity="0.9">
+    <rect x="0" y="380" width="130" height="700" fill="url(#tower)"/>
+    <rect x="150" y="300" width="110" height="780" fill="url(#tower)"/>
+    <rect x="820" y="340" width="120" height="740" fill="url(#tower)"/>
+    <rect x="950" y="260" width="74" height="820" fill="url(#tower)"/>
+    <g fill="#2ec6ff" opacity="0.35">
+      <rect x="18" y="420" width="12" height="16"/><rect x="46" y="460" width="12" height="16"/><rect x="74" y="500" width="12" height="16"/>
+      <rect x="170" y="340" width="12" height="16"/><rect x="198" y="380" width="12" height="16"/>
+      <rect x="840" y="380" width="12" height="16"/><rect x="868" y="420" width="12" height="16"/>
+      <rect x="970" y="300" width="12" height="16"/><rect x="998" y="340" width="12" height="16"/>
+    </g>
+  </g>
+
+  <path d="M562 40 L600 260 L700 200 L610 420 L720 400 L560 640 L520 520 L440 560 L520 320 L420 360 Z" fill="url(#rift)" filter="url(#soft)" opacity="0.9"/>
+  <path d="M562 40 L600 260 L700 200 L610 420 L720 400 L560 640 L520 520 L440 560 L520 320 L420 360 Z" fill="#eafcff" opacity="0.7"/>
+  <g stroke="#8fe6ff" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M562 40 L600 260"/>
+    <path d="M610 420 L720 400"/>
+  </g>
+
+  <rect x="0" y="1200" width="1024" height="336" fill="url(#danger)"/>
+
+  <g transform="translate(420,950)">
+    <ellipse cx="70" cy="130" rx="140" ry="26" fill="#04060c" opacity="0.6"/>
+    <path d="M-40 60 L180 60 L200 30 L20 30 Z" fill="#12324a" stroke="#0a1c2a" stroke-width="4"/>
+    <circle cx="10" cy="90" r="30" fill="#0a1420" stroke="#2ec6ff" stroke-width="4"/>
+    <circle cx="140" cy="90" r="30" fill="#0a1420" stroke="#2ec6ff" stroke-width="4"/>
+    <rect x="150" y="-10" width="60" height="46" rx="8" fill="#3a4a5a"/>
+    <path d="M40 30 L40 -30 Q40 -60 80 -60 L110 -60" stroke="#2a3a4a" stroke-width="10" fill="none"/>
+    <circle cx="40" cy="-45" r="34" fill="#0e1620" stroke="#2ec6ff" stroke-width="3"/>
+    <path d="M20 -45 q20 -14 40 0" stroke="#2ec6ff" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" fill="#8fe6ff" opacity="0.85">
+    <rect x="700" y="620" width="220" height="42" rx="6" fill="#04141e" stroke="#2ec6ff" stroke-width="1.5" opacity="0.8"/>
+    <text x="712" y="648" font-size="22">SINH TỒN: 87%</text>
+    <rect x="700" y="672" width="220" height="42" rx="6" fill="#04141e" stroke="#2ec6ff" stroke-width="1.5" opacity="0.8"/>
+    <text x="712" y="700" font-size="22">NHIỆM VỤ MỚI</text>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1225" font-family="'Times New Roman', Georgia, serif" font-size="62" font-weight="700" fill="#eafcff" text-anchor="middle">Hệ Thống Bắt Ta</text>
+  <text x="512" y="1285" font-family="'Times New Roman', Georgia, serif" font-size="62" font-weight="700" fill="#eafcff" text-anchor="middle">Phải Sống Sót</text>
+  <text x="512" y="1330" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#8fbcd4" text-anchor="middle">Cổng không gian mở ra, kẻ đứng sau vẫn ẩn mình</text>
+
+  <g>
+    <rect x="102" y="1372" width="820" height="86" rx="14" fill="#03080f" opacity="0.8" stroke="#2ec6ff" stroke-width="1.5"/>
+    <text x="512" y="1424" font-family="'Segoe UI', Arial, sans-serif" font-size="25" fill="#dff4fa" text-anchor="middle">Đô thị&#160;&#160;·&#160;&#160;Dị năng&#160;&#160;·&#160;&#160;Sinh tồn&#160;&#160;·&#160;&#160;Hành động</text>
+  </g>
+</svg>

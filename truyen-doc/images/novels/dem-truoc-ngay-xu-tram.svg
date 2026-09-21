@@ -1,0 +1,80 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1440"/>
+      <stop offset="45%" stop-color="#100c2a"/>
+      <stop offset="80%" stop-color="#0a0718"/>
+      <stop offset="100%" stop-color="#170a08"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eaf0ff" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#9cb0e6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#9cb0e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dawn" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#ff8a3d" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ff8a3d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="robe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a1c2e"/>
+      <stop offset="100%" stop-color="#2c0611"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="58%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#bg)"/>
+  <circle cx="770" cy="220" r="200" fill="url(#moon)"/>
+  <circle cx="770" cy="220" r="54" fill="#f2f6ff" opacity="0.9"/>
+  <rect x="0" y="1000" width="1024" height="536" fill="url(#dawn)" filter="url(#soft)"/>
+
+  <g opacity="0.7">
+    <polygon points="0,420 260,420 300,300 340,420 620,420 660,280 700,420 1024,420 1024,480 0,480" fill="#0c0920"/>
+    <rect x="120" y="330" width="20" height="90" fill="#0c0920"/>
+    <rect x="560" y="310" width="20" height="110" fill="#0c0920"/>
+  </g>
+
+  <g opacity="0.85">
+    <rect x="60" y="440" width="10" height="1096" fill="#150d10"/>
+    <rect x="954" y="440" width="10" height="1096" fill="#150d10"/>
+    <rect x="60" y="700" width="904" height="8" fill="#150d10"/>
+    <line x1="140" y1="440" x2="140" y2="1536" stroke="#1c1214" stroke-width="6"/>
+    <line x1="240" y1="440" x2="240" y2="1536" stroke="#1c1214" stroke-width="6"/>
+    <line x1="784" y1="440" x2="784" y2="1536" stroke="#1c1214" stroke-width="6"/>
+    <line x1="884" y1="440" x2="884" y2="1536" stroke="#1c1214" stroke-width="6"/>
+  </g>
+
+  <g transform="translate(512,980)">
+    <path d="M-100 -260 Q-120 -140 -110 20 L-100 220 Q-100 260 -50 260 L50 260 Q100 260 100 220 L110 20 Q120 -140 100 -260 Q60 -320 0 -320 Q-60 -320 -100 -260 Z" fill="url(#robe)" stroke="#180307" stroke-width="4"/>
+    <circle cx="0" cy="-330" r="46" fill="#e9c6a8"/>
+    <path d="M-46 -340 Q0 -390 46 -340 Q46 -370 0 -382 Q-46 -370 -46 -340 Z" fill="#0e0508"/>
+    <path d="M-8 -378 l4 -26 l8 4 l-2 24 Z" fill="#e9c46a"/>
+
+    <path d="M-60 40 L60 40" stroke="#3a2016" stroke-width="6" opacity="0.7"/>
+    <circle cx="-60" cy="40" r="10" fill="#3a2016"/>
+    <circle cx="60" cy="40" r="10" fill="#3a2016"/>
+  </g>
+
+  <g opacity="0.75">
+    <line x1="330" y1="1140" x2="330" y2="1536" stroke="#0a0608" stroke-width="10"/>
+    <line x1="400" y1="1140" x2="400" y2="1536" stroke="#0a0608" stroke-width="10"/>
+    <line x1="624" y1="1140" x2="624" y2="1536" stroke="#0a0608" stroke-width="10"/>
+    <line x1="694" y1="1140" x2="694" y2="1536" stroke="#0a0608" stroke-width="10"/>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1210" font-family="'Times New Roman', Georgia, serif" font-size="76" font-weight="700" fill="#eee6ff" text-anchor="middle">Đêm Trước Ngày Xử Trảm</text>
+  <text x="512" y="1263" font-family="'Segoe UI', Arial, sans-serif" font-size="25" fill="#b7a8d9" text-anchor="middle">Một đêm để tìm ra kẻ chủ mưu, trước khi bình minh lên</text>
+
+  <g>
+    <rect x="242" y="1305" width="540" height="86" rx="14" fill="#0d0820" opacity="0.78" stroke="#7a5aa0" stroke-width="1.5"/>
+    <text x="512" y="1357" font-family="'Segoe UI', Arial, sans-serif" font-size="26" fill="#e9e0f7" text-anchor="middle">Xuyên không&#160;&#160;·&#160;&#160;Cổ trang&#160;&#160;·&#160;&#160;Cung đấu</text>
+  </g>
+</svg>

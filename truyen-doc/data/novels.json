@@ -103,7 +103,7 @@
     "genres": [
       "Kinh dị",
       "Bí ẩn",
-      "Tâm linh"
+      "Tâm lý"
     ]
   },
   {
@@ -128,7 +128,7 @@
     "title": "Kiếp Này Ta Không Hiền Lành Nữa",
     "author": "Mèo Hoang",
     "description": "Bị em họ và vị hôn phu hãm hại đến chết trên pháp trường, đích nữ nhà họ Tần trọng sinh về ba tháng trước ngày sụp đổ — kiếp này, ai nợ máu phải trả bằng máu.",
-    "cover": "",
+    "cover": "images/novels/kiep-nay-ta-khong-hien-lanh-nua.svg",
     "status": "Hoàn thành",
     "chapterCount": 9,
     "latestChapter": "009",
@@ -136,8 +136,8 @@
     "genres": [
       "Huyền huyễn",
       "Trọng sinh",
-      "Báo thù",
-      "Cổ trang"
+      "Cổ trang",
+      "Mưu quyền"
     ]
   },
   {
@@ -145,15 +145,15 @@
     "title": "Vị Hôn Thê Thế Thân",
     "author": "Mèo Hoang",
     "description": "Để cứu công ty gia đình khỏi phá sản, Đỗ Khánh My phải đóng giả chị gái song sinh đã bỏ trốn, cưới vị tổng giám đốc lạnh lùng theo hôn ước — nhưng không ngờ tình cảm thật lại nảy sinh đúng lúc bí mật sắp bị lật tẩy.",
-    "cover": "",
+    "cover": "images/novels/vi-hon-the-the-than.svg",
     "status": "Hoàn thành",
     "chapterCount": 9,
     "latestChapter": "009",
     "updatedAt": "2026-09-21",
     "genres": [
       "Đô thị",
-      "Tổng tài",
-      "Ngôn tình"
+      "Ngôn tình",
+      "Thương trường"
     ]
   },
   {
@@ -161,7 +161,7 @@
     "title": "Đêm Trước Ngày Xử Trảm",
     "author": "Mèo Hoang",
     "description": "Một biên tập viên hiện đại tỉnh dậy trong thân xác phi tần sắp bị chém đầu lúc bình minh vì tội không hề gây ra — chỉ còn một đêm để tìm ra kẻ chủ mưu thật, trước khi cuộc chiến trong cung thật sự bắt đầu.",
-    "cover": "",
+    "cover": "images/novels/dem-truoc-ngay-xu-tram.svg",
     "status": "Hoàn thành",
     "chapterCount": 10,
     "latestChapter": "010",
@@ -169,7 +169,7 @@
     "genres": [
       "Xuyên không",
       "Cổ trang",
-      "Cung đấu"
+      "Mưu quyền"
     ]
   },
   {
@@ -177,15 +177,15 @@
     "title": "Ma Thần Ngủ Quên Trong Đan Điền",
     "author": "Mèo Hoang",
     "description": "Bị tông môn ruồng bỏ vì đan điền trống rỗng, Lâm Tiểu Vũ rơi xuống vực cấm địa và đánh thức một mảnh tàn hồn Ma Thần thượng cổ — từ phế vật, cô âm thầm bước lên con đường vạch trần âm mưu từng hại chết song thân mình.",
-    "cover": "",
+    "cover": "images/novels/ma-than-ngu-quen-trong-dan-dien.svg",
     "status": "Hoàn thành",
     "chapterCount": 8,
     "latestChapter": "008",
     "updatedAt": "2026-09-21",
     "genres": [
       "Huyền huyễn",
-      "Tu tiên",
-      "Phục thù"
+      "Mưu quyền",
+      "Đấu trí"
     ]
   },
   {
@@ -193,16 +193,15 @@
     "title": "Hệ Thống Bắt Ta Phải Sống Sót",
     "author": "Mèo Hoang",
     "description": "Đêm các cổng không gian mở ra giữa thành phố, một tài xế giao hàng bình thường nhận được một hệ thống bí ẩn ngay lúc nguy cấp — phải bảo vệ những người thân yêu, trong khi dần phát hiện có kẻ đứng sau cố tình gây ra thảm họa để trục lợi.",
-    "cover": "",
+    "cover": "images/novels/he-thong-bat-ta-phai-song-sot.svg",
     "status": "Hoàn thành",
     "chapterCount": 9,
     "latestChapter": "009",
     "updatedAt": "2026-09-21",
     "genres": [
       "Đô thị",
-      "Dị năng",
-      "Sinh tồn",
-      "Hành động"
+      "Hiện đại",
+      "Bí ẩn"
     ]
   },
   {
@@ -210,15 +209,15 @@
     "title": "Xuyên Không Về Làm Thôn Nữ Bán Bánh",
     "author": "Mèo Hoang",
     "description": "Một đầu bếp hiện đại xuyên vào thân xác thôn nữ nghèo sắp chết đói, dùng công thức bánh trái hiện đại gây dựng cơ nghiệp từ gánh hàng rong nhỏ, vượt qua chèn ép của thương gia lớn trong vùng để đổi đời cả gia đình.",
-    "cover": "",
+    "cover": "images/novels/xuyen-khong-ve-lam-thon-nu-ban-banh.svg",
     "status": "Hoàn thành",
     "chapterCount": 8,
     "latestChapter": "008",
     "updatedAt": "2026-09-21",
     "genres": [
       "Xuyên không",
-      "Điền văn",
-      "Ẩm thực"
+      "Cổ trang",
+      "Gia đình"
     ]
   }
 ]

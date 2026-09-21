@@ -1,0 +1,97 @@
+<svg width="1024" height="1536" viewBox="0 0 1024 1536" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bfe3f5"/>
+      <stop offset="45%" stop-color="#fdeec2"/>
+      <stop offset="100%" stop-color="#f6cf8e"/>
+    </linearGradient>
+    <linearGradient id="cart" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8672f"/>
+      <stop offset="100%" stop-color="#7a4a20"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3d2" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fff3d2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2c98a"/>
+      <stop offset="100%" stop-color="#d9a25a"/>
+    </linearGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#2a1608" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1536" fill="url(#sky)"/>
+  <circle cx="820" cy="220" r="240" fill="url(#sun)"/>
+  <circle cx="820" cy="220" r="70" fill="#fff8e6" opacity="0.9"/>
+
+  <g opacity="0.75">
+    <polygon points="40,520 40,380 140,300 240,380 240,520" fill="#c98a4d"/>
+    <polygon points="20,390 140,280 260,390" fill="#7a4a20"/>
+    <polygon points="720,540 720,400 810,330 900,400 900,540" fill="#d9a25a"/>
+    <polygon points="700,410 810,310 920,410" fill="#8a531f"/>
+    <ellipse cx="150" cy="560" rx="60" ry="90" fill="#4a7a3a" opacity="0.8"/>
+    <ellipse cx="900" cy="580" rx="70" ry="100" fill="#3a6a2e" opacity="0.8"/>
+  </g>
+
+  <ellipse cx="512" cy="780" rx="600" ry="240" fill="#fff6df" opacity="0.4" filter="url(#soft)"/>
+
+  <g transform="translate(512,760)">
+    <rect x="-260" y="60" width="520" height="220" rx="10" fill="url(#cart)" stroke="#4a2c10" stroke-width="8"/>
+    <rect x="-260" y="60" width="520" height="30" fill="#5a3416" opacity="0.5"/>
+    <circle cx="-190" cy="300" r="34" fill="#3a220e" stroke="#6b4423" stroke-width="6"/>
+    <circle cx="190" cy="300" r="34" fill="#3a220e" stroke="#6b4423" stroke-width="6"/>
+
+    <path d="M-280 60 L280 60 L240 -20 L-240 -20 Z" fill="#8a531f" stroke="#4a2c10" stroke-width="6"/>
+    <path d="M-240 -20 L240 -20 L200 -80 L-200 -80 Z" fill="#c9a565" opacity="0.9"/>
+
+    <g>
+      <circle cx="-150" cy="20" r="42" fill="url(#bun)" stroke="#a8672f" stroke-width="3"/>
+      <circle cx="-70" cy="10" r="46" fill="url(#bun)" stroke="#a8672f" stroke-width="3"/>
+      <circle cx="10" cy="18" r="42" fill="url(#bun)" stroke="#a8672f" stroke-width="3"/>
+      <circle cx="90" cy="8" r="46" fill="url(#bun)" stroke="#a8672f" stroke-width="3"/>
+      <circle cx="170" cy="18" r="40" fill="url(#bun)" stroke="#a8672f" stroke-width="3"/>
+      <path d="M-160 -14 q10 -10 20 0" stroke="#8a531f" stroke-width="2" fill="none"/>
+      <path d="M-80 -24 q10 -10 20 0" stroke="#8a531f" stroke-width="2" fill="none"/>
+      <path d="M0 -16 q10 -10 20 0" stroke="#8a531f" stroke-width="2" fill="none"/>
+      <path d="M80 -26 q10 -10 20 0" stroke="#8a531f" stroke-width="2" fill="none"/>
+      <path d="M160 -14 q10 -10 20 0" stroke="#8a531f" stroke-width="2" fill="none"/>
+    </g>
+
+    <g stroke="#fff8e6" stroke-width="3" opacity="0.6" fill="none">
+      <path d="M-150 -50 q-6 -30 6 -54"/>
+      <path d="M-30 -60 q-6 -30 6 -54"/>
+      <path d="M90 -60 q-6 -30 6 -54"/>
+    </g>
+
+    <ellipse cx="-330" cy="240" rx="70" ry="46" fill="#a8672f"/>
+    <path d="M-380 200 Q-330 150 -280 200" stroke="#6b4423" stroke-width="10" fill="none"/>
+    <g stroke="#6b4423" stroke-width="4">
+      <line x1="-380" y1="210" x2="-280" y2="210"/>
+      <line x1="-380" y1="230" x2="-280" y2="230"/>
+      <line x1="-375" y1="195" x2="-375" y2="255"/>
+      <line x1="-330" y1="195" x2="-330" y2="255"/>
+      <line x1="-285" y1="195" x2="-285" y2="255"/>
+    </g>
+    <circle cx="-350" cy="220" r="16" fill="url(#bun)"/>
+    <circle cx="-315" cy="220" r="16" fill="url(#bun)"/>
+    <circle cx="-350" cy="245" r="16" fill="url(#bun)"/>
+  </g>
+
+  <rect x="0" y="0" width="1024" height="1536" fill="url(#vignette)"/>
+
+  <text x="512" y="1235" font-family="'Times New Roman', Georgia, serif" font-size="58" font-weight="700" fill="#fdf1d8" text-anchor="middle">Xuyên Không Về Làm</text>
+  <text x="512" y="1295" font-family="'Times New Roman', Georgia, serif" font-size="58" font-weight="700" fill="#fdf1d8" text-anchor="middle">Thôn Nữ Bán Bánh</text>
+  <text x="512" y="1340" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#e6c99a" text-anchor="middle">Gây dựng cơ nghiệp từ một gánh hàng rong nhỏ</text>
+
+  <g>
+    <rect x="212" y="1382" width="600" height="86" rx="14" fill="#2c1808" opacity="0.78" stroke="#e8c98a" stroke-width="1.5"/>
+    <text x="512" y="1434" font-family="'Segoe UI', Arial, sans-serif" font-size="27" fill="#fbeed0" text-anchor="middle">Xuyên không&#160;&#160;·&#160;&#160;Điền văn&#160;&#160;·&#160;&#160;Ẩm thực</text>
+  </g>
+</svg>
