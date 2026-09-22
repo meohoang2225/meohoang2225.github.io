@@ -806,6 +806,19 @@
                     latestChapter;
 
 
+                /*
+                 * Chưa đọc bao giờ -> không gắn
+                 * chapter vào URL, để reader.html
+                 * tự mở chương 1.
+                 *
+                 * Đã đọc dở -> quay lại đúng
+                 * chương đang đọc.
+                 */
+
+                const linkChapter =
+                    continueChapter;
+
+
                 const genres =
                     getNovelGenres(
                         novel
@@ -818,7 +831,7 @@
                         <a
                             href="${getNovelUrl(
                                 novel.id,
-                                targetChapter
+                                linkChapter
                             )}"
                             class="novel-card-link"
                         >
