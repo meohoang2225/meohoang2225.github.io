@@ -1,5 +1,53 @@
 [
   {
+    "id": "dem-khong-co-nhan-chung",
+    "title": "Đêm Không Có Nhân Chứng",
+    "author": "Mèo Boss",
+    "description": "Kế toán trưởng Lâm Gia Khuê phát hiện một đường dây rút ruột dự án dẫn thẳng tới cấp trên của mình, và cái giá phải trả là một cuộc hẹn định mệnh tại căn hộ bỏ hoang tầng 4 chung cư Sao Mai, nơi anh suýt trở thành nạn nhân không ai hay biết.",
+    "cover": "images/novels/dem-khong-co-nhan-chung.svg",
+    "status": "Hoàn thành",
+    "updatedAt": "2026-09-23",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "chay-khoi-dam-cuoi-cua-chinh-minh",
+    "title": "Chạy Khỏi Đám Cưới Của Chính Mình",
+    "author": "Mèo Boss",
+    "description": "Đặng Thanh Vy mặc nguyên váy cưới bỏ trốn khỏi hôn lễ sắp đặt để trả nợ cho gia đình, lao vào một khu chung cư bỏ hoang để trốn người nhà truy tìm, không hề biết mình sắp gây ra một đám cháy làm thay đổi số phận của một người xa lạ.",
+    "cover": "images/novels/chay-khoi-dam-cuoi-cua-chinh-minh.svg",
+    "status": "Hoàn thành",
+    "updatedAt": "2026-09-23",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "genres": [
+      "Tình cảm",
+      "Tâm lý",
+      "Gia đình"
+    ]
+  },
+  {
+    "id": "vien-dan-khong-co-so",
+    "title": "Viên Đạn Không Có Số",
+    "author": "Mèo Boss",
+    "description": "Bị chính đồng đội gài bẫy trong một vụ thanh trừng nội bộ, trung uý hình sự Trần Minh Đăng chỉ sống sót qua đêm truy sát tại khu chung cư bỏ hoang Sao Mai nhờ một khẩu súng vô chủ giấu trong đống đổ nát còn sót lại từ một vụ cháy bí ẩn nhiều tháng trước.",
+    "cover": "images/novels/vien-dan-khong-co-so.svg",
+    "status": "Hoàn thành",
+    "updatedAt": "2026-09-23",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Đấu trí"
+    ]
+  },
+  {
     "id": "am-nuoc-dun-soi",
     "title": "Ấm nước đun sôi tướng quân mộng",
     "author": "Mèo Hoang",
@@ -429,6 +477,89 @@
       "Kinh dị",
       "Bí ẩn",
       "Tâm lý"
+    ]
+  },
+  {
+    "id": "nguoi-pha-tra-trong-cung-cam",
+    "title": "Người Pha Trà Trong Cung Cấm",
+    "author": "Mèo Hoang",
+    "description": "Một cung nữ pha trà thấp hèn tình cờ nghe được âm mưu đầu độc Thái tử trong tiệc mừng thọ, và nhận ra kẻ chủ mưu chính là người đã hãm hại cha nàng năm năm trước.",
+    "cover": "images/novels/nguoi-pha-tra-trong-cung-cam.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Cổ trang",
+      "Cung đấu",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "con-so-khong-khop",
+    "title": "Con Số Không Khớp",
+    "author": "Mèo Hoang",
+    "description": "Mười ngày trước lễ ký kết sáp nhập, nữ kiểm toán viên Thục Anh phát hiện một khoản chênh lệch 2,3 tỷ đồng dẫn tới một công ty vỏ bọc, và một cái tên trong chính gia tộc sáng lập tập đoàn.",
+    "cover": "images/novels/con-so-khong-khop.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Trinh thám",
+      "Đấu trí",
+      "Thương trường"
+    ]
+  },
+  {
+    "id": "xuyen-khong-thanh-hoang-hau-bi-phe",
+    "title": "Xuyên Không Thành Hoàng Hậu Bị Phế",
+    "author": "Mèo Hoang",
+    "description": "Vừa tỉnh dậy, Lâm Thư Nhã đã thấy mình quỳ giữa điện, chén rượu độc kề miệng và chiếu chỉ phế hậu vừa đọc xong — cô chỉ có một đêm để tìm ra kẻ đã hãm hại mình trước khi trời sáng.",
+    "cover": "images/novels/xuyen-khong-thanh-hoang-hau-bi-phe.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Cổ trang",
+      "Xuyên không",
+      "Cung đấu",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "tong-tai-gia-vo-lam-tro-ly",
+    "title": "Tổng Tài Giả Vờ Làm Trợ Lý Của Tôi",
+    "author": "Mèo Hoang",
+    "description": "Để điều tra một vụ rò rỉ thông tin nội bộ, tổng giám đốc tập đoàn Hải Đăng cải trang thành trợ lý mới toanh của chính bộ phận marketing — và vô tình rơi vào tầm ngắm của cô trưởng nhóm luôn miệng than phiền sếp lớn không biết mặt mũi ra sao.",
+    "cover": "images/novels/tong-tai-gia-vo-lam-tro-ly.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Đô thị",
+      "Thương trường",
+      "Tình yêu",
+      "Hài hước"
+    ]
+  },
+  {
+    "id": "kiep-tu-tien-bi-phan-boi-ta-trong-sinh",
+    "title": "Kiếp Tu Tiên Bị Phản Bội, Ta Trọng Sinh Về Thời Phàm Nhân",
+    "author": "Mèo Hoang",
+    "description": "Chưởng môn nhân bị chính sư đệ mình một tay nuôi dạy phản bội, đoạt hết công pháp rồi đẩy xuống vực sâu, tỉnh lại đã thấy mình trở về thân xác một phàm nhân mười lăm tuổi chưa từng biết đến tu luyện — mọi ân oán, lần này ta sẽ tính lại từ đầu.",
+    "cover": "images/novels/kiep-tu-tien-bi-phan-boi-ta-trong-sinh.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Tu tiên",
+      "Huyền huyễn",
+      "Trọng sinh",
+      "Mưu quyền"
     ]
   }
 ]
