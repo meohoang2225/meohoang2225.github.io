@@ -366,5 +366,37 @@
       "Gia đình",
       "Tâm lý"
     ]
+  },
+  {
+    "id": "ong-noi-livestream-ban-hang",
+    "title": "Ông Nội Livestream Bán Hàng",
+    "author": "Mèo Hoang",
+    "description": "Tiệm tạp hóa ba mươi năm tuổi của ông Sáu đứng trước nguy cơ đóng cửa vì tiền thuê tăng vọt. Đứa cháu gái mà ông từng mắng vì chọn nghề livestream bán hàng là người duy nhất có thể cứu tiệm, nếu cả hai chịu bước qua vết rạn hai năm trước.",
+    "cover": "images/novels/ong-noi-livestream-ban-hang.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Hài hước",
+      "Gia đình",
+      "Đô thị"
+    ]
+  },
+  {
+    "id": "tai-khoan-an-danh",
+    "title": "Tài Khoản Ẩn Danh",
+    "author": "Mèo Hoang",
+    "description": "Một tài khoản không danh tính lần lượt phơi bày bí mật riêng tư của từng học sinh lớp 12A3. Khi cái tên tiếp theo là chính mình, lớp trưởng Minh Anh buộc phải lần ra sự thật, và nhận ra thủ phạm không phải kẻ xa lạ.",
+    "cover": "images/novels/tai-khoan-an-danh.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-22",
+    "genres": [
+      "Bí ẩn",
+      "Học đường",
+      "Tâm lý"
+    ]
   }
 ]
