@@ -561,5 +561,37 @@
       "Trọng sinh",
       "Mưu quyền"
     ]
+  },
+  {
+    "id": "thang-may-ket-tang-13",
+    "title": "Thang Máy Kẹt Tầng 13",
+    "author": "Mèo Hoang",
+    "description": "Năm người xa lạ mắc kẹt trong thang máy giữa cơn bão mất điện. Khi đèn bật lại, một người đã bất tỉnh vì một vết thương không giống tai nạn, và kẻ ra tay vẫn đang đứng lẫn trong bóng tối cùng họ.",
+    "cover": "images/novels/thang-may-ket-tang-13.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "mat-lenh-gia",
+    "title": "Mật Lệnh Giả",
+    "author": "Mèo Hoang",
+    "description": "Trinh sát Vệ Thanh vô tình chứng kiến quân sư đóng dấu giả lên một mật lệnh rút quân qua đường hiểm Vọng Nguyệt. Chỉ còn nửa ngày trước khi tiên phong quân xuất phát thẳng vào ổ phục kích đã giăng sẵn.",
+    "cover": "images/novels/mat-lenh-gia.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Chiến trường",
+      "Cổ trang",
+      "Mưu quyền"
+    ]
   }
 ]
