@@ -593,5 +593,37 @@
       "Cổ trang",
       "Mưu quyền"
     ]
+  },
+  {
+    "id": "phi-vu-cuoi-cung",
+    "title": "Phi Vụ Cuối Cùng",
+    "author": "Mèo Hoang",
+    "description": "Đêm cuối cùng trước khi giải nghệ, đội trộm bốn người phát hiện hệ thống an ninh mục tiêu đã bị đổi hoàn toàn ngay giữa phi vụ. Chỉ còn mười lăm phút trước khi cảnh sát ập tới, và không ai biết ai trong nhóm là kẻ phản bội.",
+    "cover": "images/novels/phi-vu-cuoi-cung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Đấu trí",
+      "Bí ẩn",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "lu-quet-trong-dem",
+    "title": "Lũ Quét Trong Đêm",
+    "author": "Mèo Hoang",
+    "description": "Một chuyến đi tưởng nhớ người mẹ đã khuất biến thành đêm sinh tử khi lũ quét bất ngờ nhấn chìm homestay. Trên mái nhà giữa dòng nước dâng, cả gia đình buộc phải đối mặt với những bí mật đã chôn giấu suốt tám năm.",
+    "cover": "images/novels/lu-quet-trong-dem.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-23",
+    "genres": [
+      "Tâm lý",
+      "Gia đình",
+      "Hiện đại"
+    ]
   }
 ]
