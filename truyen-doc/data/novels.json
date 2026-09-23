@@ -657,5 +657,133 @@
       "Bí ẩn",
       "Tâm lý"
     ]
+  },
+  {
+    "id": "dam-cuoi-dam-mau",
+    "title": "Đám Cưới Đẫm Máu",
+    "author": "Mèo Hoang",
+    "description": "Ngay sau khi trao nhẫn, chú rể gục xuống chết giữa tiệc cưới trước hàng trăm khách mời. Người bạn cũ của cô dâu, cũng là điều tra viên, phải tìm ra hung thủ trước khi bữa tiệc kết thúc và mọi dấu vết tan biến.",
+    "cover": "images/novels/dam-cuoi-dam-mau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Gia đình"
+    ]
+  },
+  {
+    "id": "vuot-nguc-de-minh-oan",
+    "title": "Vượt Ngục Để Minh Oan",
+    "author": "Mèo Hoang",
+    "description": "Ba ngày trước giờ thi hành án, kỹ sư Trần Đức Long vượt ngục để tự đi tìm bằng chứng chứng minh mình vô tội trong vụ án giết đối tác kinh doanh mà anh không hề gây ra.",
+    "cover": "images/novels/vuot-nguc-de-minh-oan.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Đấu trí",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "sat-thu-cuoi-cung",
+    "title": "Sát Thủ Cuối Cùng",
+    "author": "Mèo Hoang",
+    "description": "Nhận hợp đồng cuối cùng trước khi giải nghệ, sát thủ Vũ theo dõi mục tiêu và nhận ra đó chính là người đã cứu mạng anh năm mười hai tuổi. Anh còn chưa kịp quyết định phải làm gì thì phát hiện chính mình cũng nằm trong kế hoạch bị thủ tiêu.",
+    "cover": "images/novels/sat-thu-cuoi-cung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Đấu trí",
+      "Bí ẩn",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "thich-khach-trong-cung",
+    "title": "Thích Khách Trong Cung",
+    "author": "Mèo Hoang",
+    "description": "Nữ thích khách Yên Chi lẻn vào tẩm cung để ám sát hoàng đế theo lệnh chủ tướng phản loạn. Nhưng giữa đêm định mệnh ấy, nàng phát hiện mình chỉ là con tốt thí trong một âm mưu soán ngôi lớn hơn nhiều so với những gì nàng được biết.",
+    "cover": "images/novels/thich-khach-trong-cung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Cổ trang",
+      "Cung đấu",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "buc-anh-cuoi-cung",
+    "title": "Bức Ảnh Cuối Cùng",
+    "author": "Mèo Hoang",
+    "description": "Chiếc máy ảnh cũ Hạ My mua ở chợ đồ cổ luôn tiên đoán trước cái chết của người trong khung hình. Càng cố ngăn cản định mệnh, cô càng bị cuốn gần hơn vào một vụ án mạng bị chôn giấu suốt nhiều năm, mà chính chiếc máy ảnh là nhân chứng duy nhất còn sót lại.",
+    "cover": "images/novels/buc-anh-cuoi-cung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "ca-phau-thuat-khong-the-tu-choi",
+    "title": "Ca Phẫu Thuật Không Thể Từ Chối",
+    "author": "Mèo Hoang",
+    "description": "Giữa ca trực đêm, bác sĩ phẫu thuật Minh Thư nhận ra bệnh nhân nguy kịch trên bàn mổ chính là người tài xế say rượu đã cướp đi mạng sống em trai cô nhiều năm trước. Chỉ có cô đủ chuyên môn để cứu sống ông ta.",
+    "cover": "images/novels/ca-phau-thuat-khong-the-tu-choi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Tâm lý",
+      "Gia đình",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "di-chuc-trong-can-biet-thu-co",
+    "title": "Di Chúc Trong Căn Biệt Thự Cổ",
+    "author": "Mèo Hoang",
+    "description": "Cả gia tộc họ Lâm chấn động khi di chúc được công bố dồn hết tài sản cho cô cháu út ít ai để ý. Ngay trong đêm đó, một thành viên trong nhà bị sát hại sau cánh cửa khóa kín từ bên trong, và người thừa kế bất ngờ trở thành nghi phạm số một.",
+    "cover": "images/novels/di-chuc-trong-can-biet-thu-co.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Gia đình"
+    ]
+  },
+  {
+    "id": "nam-vung",
+    "title": "Nằm Vùng",
+    "author": "Mèo Hoang",
+    "description": "Nữ trinh sát Diệu Linh cải trang nằm vùng trong một băng nhóm buôn lậu để thu thập chứng cứ, nhưng lại nảy sinh tình cảm với thủ lĩnh trẻ Kiên, người cô dần nhận ra cũng đang bị chính ông trùm thật sự ép buộc.",
+    "cover": "images/novels/nam-vung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Đấu trí",
+      "Ngôn tình"
+    ]
   }
 ]
