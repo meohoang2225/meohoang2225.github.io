@@ -913,5 +913,69 @@
       "Xuyên không",
       "Hài hước"
     ]
+  },
+  {
+    "id": "ke-phe-dan-dien-nhat-duoc-bi-kip-cam",
+    "title": "Kẻ Phế Đan Điền Nhặt Được Bí Kíp Cấm",
+    "author": "Mèo Hoang",
+    "description": "Lâm Chiêu, đệ tử đan điền phế bị Thanh Vân Quán khinh miệt suốt bốn năm, còn bảy ngày nữa sẽ bị trục xuất theo môn quy, cho đến đêm cậu nhặt được một quyển bí kíp bị chôn giấu hai trăm năm, thứ công pháp từng khiến một đệ tử tẩu hỏa nhập ma giết hại cả môn phái.",
+    "cover": "images/novels/ke-phe-dan-dien-nhat-duoc-bi-kip-cam.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-26",
+    "genres": [
+      "Tu tiên",
+      "Huyền huyễn",
+      "Đấu trí"
+    ]
+  },
+  {
+    "id": "phi-tan-bi-nghi-dau-doc-hoang-hau",
+    "title": "Phi Tần Bị Nghi Đầu Độc Hoàng Hậu",
+    "author": "Mèo Hoang",
+    "description": "Nhu Gia, Quý nhân hạng thấp mới nhập cung nửa năm, bị đẩy vào vị trí dâng trà đúng đêm Hoàng hậu trúng độc ngã quỵ giữa yến tiệc, buộc phải dùng kiến thức y thuật cha để lại để tự điều tra và minh oan trước khi bị đưa ra xử tội.",
+    "cover": "images/novels/phi-tan-bi-nghi-dau-doc-hoang-hau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-26",
+    "genres": [
+      "Cung đấu",
+      "Trinh thám",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "dau-bep-doi-nghich-chung-mot-nha-hang",
+    "title": "Đầu Bếp Đối Nghịch Chung Một Nhà Hàng",
+    "author": "Mèo Hoang",
+    "description": "Đông Nghi sắp mất quán phở gia truyền vì nợ ngân hàng thì phát hiện cha cô đã ký di chúc sáp nhập quán với nhà hàng Âu sang trọng của đối thủ không đội trời chung thời đi học, buộc hai đầu bếp trái ngược phong cách phải cùng điều hành một nhà hàng.",
+    "cover": "images/novels/dau-bep-doi-nghich-chung-mot-nha-hang.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-26",
+    "genres": [
+      "Ngôn tình",
+      "Hài hước",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "can-phong-bi-bit-kin-trong-chung-cu-cu",
+    "title": "Căn Phòng Bị Bịt Kín Trong Chung Cư Cũ",
+    "author": "Mèo Hoang",
+    "description": "Bảo Trân, kỹ sư giám sát công trình cải tạo đầu tiên trong sự nghiệp, phát hiện một căn phòng bị bít kín hoàn toàn không có trên bản vẽ gốc, nơi cất giấu một cuốn nhật ký hé lộ sự thật bị chôn giấu hơn hai mươi năm về một vụ mất tích bí ẩn liên quan đến người quyền lực nhất công ty cô đang làm việc.",
+    "cover": "images/novels/can-phong-bi-bit-kin-trong-chung-cu-cu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-26",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
   }
 ]
