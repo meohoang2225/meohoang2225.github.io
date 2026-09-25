@@ -785,5 +785,133 @@
       "Đấu trí",
       "Ngôn tình"
     ]
+  },
+  {
+    "id": "doi-mang-lay-con",
+    "title": "Đổi Mạng Lấy Con",
+    "author": "Mèo Hoang",
+    "description": "Con gái bảy tuổi của Thanh Vân bị bắt cóc ngay trước cổng trường. Kẻ bắt cóc không đòi một đồng tiền chuộc nào, chỉ đòi cô công khai thú nhận một bí mật cô đã chôn giấu suốt tám năm.",
+    "cover": "images/novels/doi-mang-lay-con.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Tâm lý",
+      "Gia đình"
+    ]
+  },
+  {
+    "id": "bac-si-khong-the-sieu-thoat",
+    "title": "Bác Sĩ Không Thể Siêu Thoát",
+    "author": "Mèo Hoang",
+    "description": "Bác sĩ Minh Đức tỉnh dậy nhìn thấy chính thi thể mình dưới chân cầu thang bệnh viện. Anh chỉ còn bảy ngày để tìm ra ai đã đẩy mình xuống, với sự giúp đỡ của người duy nhất có thể nghe thấy anh: một nữ y tá mang bí mật của riêng cô.",
+    "cover": "images/novels/bac-si-khong-the-sieu-thoat.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "rap-xiec-khong-anh-sang",
+    "title": "Rạp Xiếc Không Ánh Sáng",
+    "author": "Mèo Hoang",
+    "description": "Giữa tiết mục đu dây trên cao, đèn rạp xiếc phụt tắt trong ba giây. Khi ánh sáng trở lại, nữ diễn viên Bích Ngọc đã biến mất không dấu vết. Em gái cô từ chối tin đó chỉ là một màn ảo thuật.",
+    "cover": "images/novels/rap-xiec-khong-anh-sang.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Kinh dị"
+    ]
+  },
+  {
+    "id": "khong-tac-tren-chuyen-bay",
+    "title": "Không Tặc Trên Chuyến Bay",
+    "author": "Mèo Hoang",
+    "description": "Giữa không trung, một hành khách đứng dậy tuyên bố không tặc, đòi hãng bay công khai sự thật về một vụ tai nạn năm năm trước. Chỉ có một cựu phi công đang ngồi lẫn trong đám hành khách nhận ra điều bất thường.",
+    "cover": "images/novels/khong-tac-tren-chuyen-bay.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Đấu trí",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "huynh-de-trong-thanh-vay-ham",
+    "title": "Huynh Đệ Trong Thành Vây Hãm",
+    "author": "Mèo Hoang",
+    "description": "Kho lương thực bị đốt cháy ngay trước đợt tiếp tế cuối cùng, và mọi manh mối nội gián đều chỉ về phía người huynh đệ kết nghĩa mà tướng trẻ Đình Phong tin tưởng nhất. Sự thật phía sau còn tàn nhẫn hơn cả một lời phản bội.",
+    "cover": "images/novels/huynh-de-trong-thanh-vay-ham.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Chiến trường",
+      "Cổ trang",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "nhan-chung-khong-nhin-thay",
+    "title": "Nhân Chứng Không Nhìn Thấy",
+    "author": "Mèo Hoang",
+    "description": "Thảo My, một cô gái khiếm thị, nghe tiếng cãi vã và một tiếng động mạnh vọng ra từ căn hộ kế bên trong đêm. Không ai tin lời khai của một nhân chứng chưa từng nhìn thấy gì, nên cô phải tự mình chứng minh bằng chính những giác quan còn lại.",
+    "cover": "images/novels/nhan-chung-khong-nhin-thay.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Trinh thám",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "ba-moi-khong-chuyen",
+    "title": "Bà Mối Không Chuyên",
+    "author": "Mèo Hoang",
+    "description": "Bà Tuyết quyết tâm se duyên cho cháu trai lập trình viên khô khan với cô hàng xóm mới chuyển tới, bất chấp sự phản đối kịch liệt của cháu mình. Những màn 'tình cờ sắp đặt' của bà biến cuộc sống cả hai thành một chuỗi tình huống dở khóc dở cười.",
+    "cover": "images/novels/ba-moi-khong-chuyen.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Hài hước",
+      "Gia đình",
+      "Đô thị"
+    ]
+  },
+  {
+    "id": "xuyen-vao-tieu-thuyet-chinh-minh-viet",
+    "title": "Xuyên Vào Tiểu Thuyết Chính Mình Viết",
+    "author": "Mèo Hoang",
+    "description": "Tác giả mạng Tuệ Lâm ngủ gục lúc hai giờ sáng, tỉnh dậy thấy mình đang quỳ giữa đại điện trong chính bộ truyện cổ trang mình sáng tác, nhập vào vai nữ phụ phản diện sắp bị xử tử theo đúng kịch bản cô từng viết.",
+    "cover": "images/novels/xuyen-vao-tieu-thuyet-chinh-minh-viet.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-24",
+    "genres": [
+      "Huyền huyễn",
+      "Xuyên không",
+      "Hài hước"
+    ]
   }
 ]
