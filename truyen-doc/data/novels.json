@@ -1057,5 +1057,54 @@
       "Huyền huyễn",
       "Bí ẩn"
     ]
+  },
+  {
+    "id": "nguoi-dua-thu-cuoi-cung-cua-xom",
+    "title": "Người Đưa Thư Cuối Cùng Của Xóm",
+    "author": "Mèo Hoang",
+    "description": "Bưu cục nhỏ của cha để lại sắp đóng cửa vĩnh viễn, Duy dọn kho thì phát hiện một hộp thư cũ chưa từng được giao suốt nhiều năm, bị chính cha giấu kỹ phía sau tủ hồ sơ — và phải tự tay hoàn thành chuyến thư cuối cùng trước khi tấm biển bưu cục được gỡ xuống.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-29",
+    "genres": [
+      "Hiện đại",
+      "Gia đình",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "doi-tac-bat-dac-di",
+    "title": "Đối Tác Bất Đắc Dĩ",
+    "author": "Mèo Hoang",
+    "description": "Hai nhà sáng lập startup từng là kỳ phùng địch thủ trên thương trường bị chính quỹ đầu tư chung ép buộc sáp nhập công ty trong ba mươi ngày, nếu không cả hai sẽ cùng phá sản — và phải học cách tin nhau trước khi kịp nhận ra ranh giới giữa ganh đua và rung động mong manh đến mức nào.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-09-29",
+    "genres": [
+      "Thương trường",
+      "Đấu trí",
+      "Tình yêu"
+    ]
+  },
+  {
+    "id": "xuyen-thanh-phan-dien-trong-truyen-tu-tien",
+    "title": "Xuyên Thành Phản Diện Trong Truyện Tu Tiên Mình Từng Đọc",
+    "author": "Mèo Hoang",
+    "description": "Đang đọc dở bộ tiểu thuyết tu tiên trên giường thì ngủ quên, tỉnh dậy Tô Dịch đã thấy mình nằm trong thân xác Nhị thiếu gia phản diện — kẻ mà theo đúng cốt truyện, sẽ chết thảm dưới tay nam chính đúng một trăm hai mươi ngày nữa vì tranh đoạt một món bảo vật không thuộc về mình.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-09-29",
+    "genres": [
+      "Xuyên không",
+      "Tu tiên",
+      "Huyền huyễn",
+      "Hài hước"
+    ]
   }
 ]
