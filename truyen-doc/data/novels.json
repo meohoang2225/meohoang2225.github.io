@@ -1106,5 +1106,86 @@
       "Huyền huyễn",
       "Hài hước"
     ]
+  },
+  {
+    "id": "ban-nhac-cua-hai-ke-ghet-nhau",
+    "title": "Ban Nhạc Của Hai Kẻ Ghét Nhau",
+    "author": "Mèo Hoang",
+    "description": "Bị giáo viên chủ nhiệm ép chung một nhóm biểu diễn văn nghệ cuối năm, Bảo Trâm — trưởng nhóm hợp xướng kỷ luật thép — và Huy Đăng — tay trống bất cần chỉ thích chơi nhạc theo cảm hứng — phải học cách hòa âm với nhau trước khi kịp nhận ra họ đang hòa hợp nhiều hơn cả một bản nhạc.",
+    "cover": "images/novels/ban-nhac-cua-hai-ke-ghet-nhau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-01",
+    "genres": [
+      "Học đường",
+      "Tình cảm",
+      "Hài hước"
+    ]
+  },
+  {
+    "id": "nguoi-goi-nham-so-luc-nua-dem",
+    "title": "Người Gọi Nhầm Số Lúc Nửa Đêm",
+    "author": "Mèo Hoang",
+    "description": "Ba đêm liên tiếp, Diệp Anh nhận được cuộc gọi từ một số máy lạ đúng mười hai giờ đêm, đầu dây bên kia là giọng một cô gái hoảng loạn cầu cứu vì bị nhốt trong một căn phòng không cửa sổ — và mỗi lần Diệp Anh cố xác minh, cô lại phát hiện số điện thoại đó đã ngừng hoạt động từ ba năm trước.",
+    "cover": "images/novels/nguoi-goi-nham-so-luc-nua-dem.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-01",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "quan-su-gia-dien-giua-tran-tien",
+    "title": "Quân Sư Giả Điên Giữa Trận Tiền",
+    "author": "Mèo Hoang",
+    "description": "Sau khi vạch trần một âm mưu phản loạn trong quân doanh, quân sư trẻ Tạ Chiêu Dương nhận ra chính chủ tướng mình phò tá mới là kẻ đứng sau giật dây — và cách duy nhất để sống sót qua đêm nay là giả điên trước ba quân, chờ thời cơ lật ngược thế cờ.",
+    "cover": "images/novels/quan-su-gia-dien-giua-tran-tien.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-01",
+    "genres": [
+      "Cổ trang",
+      "Chiến trường",
+      "Mưu quyền",
+      "Đấu trí"
+    ]
+  },
+  {
+    "id": "di-san-cua-nguoi-giup-viec",
+    "title": "Di Sản Của Người Giúp Việc",
+    "author": "Mèo Hoang",
+    "description": "Ba mươi năm làm quản gia tận tụy cho gia tộc họ Đinh, bà Tư qua đời để lại một bản di chúc khiến cả nhà chấn động: toàn bộ cổ phần kiểm soát tập đoàn được chuyển cho cô con gái nuôi ít ai biết tới — và bí mật thật sự phía sau danh phận ấy sắp làm đảo lộn trật tự quyền lực của cả gia tộc.",
+    "cover": "images/novels/di-san-cua-nguoi-giup-viec.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-01",
+    "genres": [
+      "Đô thị",
+      "Gia đình",
+      "Thương trường"
+    ]
+  },
+  {
+    "id": "ta-xuyen-thanh-thu-cung-cua-ma-dau",
+    "title": "Ta Xuyên Thành Thú Cưng Của Ma Đầu",
+    "author": "Mèo Hoang",
+    "description": "Một cú sét đánh trúng khi đang xem phim hoạt hình về ma đầu và linh hồ ly cưng của hắn, Tiểu Miêu tỉnh dậy đã thấy mình chui vào đúng thân xác con hồ ly nhỏ bé đó — sống cạnh nhân vật phản diện quyền lực nhất truyện, người duy nhất đối xử dịu dàng với nó giữa cả một ma giới lạnh lẽo.",
+    "cover": "images/novels/ta-xuyen-thanh-thu-cung-cua-ma-dau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-01",
+    "genres": [
+      "Huyền huyễn",
+      "Xuyên không",
+      "Hài hước"
+    ]
   }
 ]
