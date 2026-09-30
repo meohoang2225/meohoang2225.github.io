@@ -1,0 +1,31 @@
+name: Rebuild static novel list
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "truyen-doc/data/novels.json"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate static novel list
+        run: node scripts/generate-static-list.js
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- truyen-doc/index.html; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add truyen-doc/index.html
+          git commit -m "Rebuild static novel list [skip ci]"
+          git push
