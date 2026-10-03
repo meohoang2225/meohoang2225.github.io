@@ -1193,7 +1193,7 @@
     "title": "Ba Chén Rượu Thề Dưới Cờ Loạn",
     "author": "Mèo Boss",
     "description": "Tưởng Nhất Minh, con trai bán đậu phụ ở trấn Hà Dương, tình nguyện nhập ngũ thay em trai út giữa thời loạn thế — nơi anh kết nghĩa huynh đệ sinh tử, yêu một nữ tướng áo giáp bạc, và phải đánh đổi máu, nước mắt lẫn những người thân thiết nhất để giữ trọn lời thề dưới ngọn cờ chiến trận.",
-    "cover": "",
+    "cover": "images/novels/ba-chen-ruou-the-duoi-co-loan.svg",
     "status": "Hoàn thành",
     "chapterCount": 36,
     "latestChapter": "036",
@@ -1204,6 +1204,134 @@
       "Đấu trí",
       "Tình yêu",
       "Hài hước"
+    ]
+  },
+  {
+    "id": "quan-ca-phe-chi-mo-khi-troi-mua",
+    "title": "Quán Cà Phê Chỉ Mở Khi Trời Mưa",
+    "author": "Mèo Hoang",
+    "description": "Cô kế toán Thanh Vy lạc vào một quán cà phê chỉ mở khi trời mưa, nơi mỗi ly cà phê được trả bằng một ngày trong đời. Cô đổi đi ngày đau đớn nhất của mình để rồi phát hiện đã đánh mất cả lời cuối cùng của mẹ, và phải tìm cách lấy lại trước khi những ký ức quanh nó mòn hết — dù cái giá phải trả là vĩnh viễn rời khỏi quán và người chủ quán đang giấu một bí mật.",
+    "cover": "images/novels/quan-ca-phe-chi-mo-khi-troi-mua.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Huyền huyễn",
+      "Tình cảm",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "an-mang-dem-hoa-dang",
+    "title": "Án Mạng Đêm Hoa Đăng",
+    "author": "Mèo Hoang",
+    "description": "Đêm hội hoa đăng rằm tháng Tám, chủ hiệu tơ lụa giàu nhất huyện Thanh Giang chết trong thư phòng cài then kín từ bên trong, trong khi quản gia thề đã nghe ông đáp lời lúc canh hai. Cô gái nối nghiệp cha làm ngỗ tác và vị tri huyện mới hay ăn vặt phải gỡ một cánh cửa khóa kín, bốn lời khai dối trá và một nhân chứng bất ngờ: con vẹt biết nói tiếng người.",
+    "cover": "images/novels/an-mang-dem-hoa-dang.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Cổ trang",
+      "Trinh thám",
+      "Đấu trí"
+    ]
+  },
+  {
+    "id": "bo-me-toi-ly-hon-nhung-van-o-chung",
+    "title": "Bố Mẹ Tôi Ly Hôn Nhưng Vẫn Ở Chung",
+    "author": "Mèo Hoang",
+    "description": "Bố mẹ Lan Anh vừa ly hôn nhưng vẫn phải sống chung một căn hộ còn nợ ngân hàng, và đang giấu chuyện này với bà ngoại vừa mổ tim. Khi bà bất ngờ lên thăm mười ngày, cô con gái mười bảy tuổi trở thành đạo diễn của vở kịch gia đình hạnh phúc, để rồi chính màn diễn khiến hai người lớn phát hiện ra họ chưa từng thật sự hỏi nhau thích gì.",
+    "cover": "images/novels/bo-me-toi-ly-hon-nhung-van-o-chung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Hài hước",
+      "Gia đình",
+      "Tình cảm"
+    ]
+  },
+  {
+    "id": "su-phu-toi-la-ke-lua-dao-de-nhat-tu-tien-gioi",
+    "title": "Sư Phụ Tôi Là Kẻ Lừa Đảo Đệ Nhất Tu Tiên Giới",
+    "author": "Mèo Hoang",
+    "description": "Tần Tiểu Mễ lên núi bái sư, chỉ để phát hiện vị cao nhân trứ danh của quan Thanh Vân bán phù giả, đốt pháo giả làm thiên lôi và thuê chồn tinh đóng yêu quái. Khi Thiên Kiếm Môn đòi nợ mười tám năm kèm lệnh thu quan, cô đệ tử giỏi sổ sách phải cùng ông thầy lừa đảo diễn một vở kịch lớn để giữ bí mật nằm dưới chân núi.",
+    "cover": "images/novels/su-phu-toi-la-ke-lua-dao-de-nhat-tu-tien-gioi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Tu tiên",
+      "Hài hước",
+      "Đấu trí"
+    ]
+  },
+  {
+    "id": "quan-bun-cha-ba-doi",
+    "title": "Quán Bún Chả Ba Đời",
+    "author": "Mèo Hoang",
+    "description": "Quán bún chả gia truyền trong ngõ Hàng Than đứng trước hai lựa chọn: bán công thức nước chấm với giá hai tỷ để cứu căn nhà đang bị thế chấp, hoặc giữ lại thứ bà nội đã nêm bằng tay suốt sáu mươi năm. Khi cô cháu gái đi tìm công thức, cô phát hiện ra bà không có công thức nào cả, và bà đang dần quên.",
+    "cover": "images/novels/quan-bun-cha-ba-doi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Gia đình",
+      "Đô thị",
+      "Thương trường"
+    ]
+  },
+  {
+    "id": "thu-gui-nguoi-linh-khong-biet-mat",
+    "title": "Thư Gửi Người Lính Không Biết Mặt",
+    "author": "Mèo Hoang",
+    "description": "Cô thợ thêu Tô Nhược Vân giấu một bức thư vào tay áo bông gửi lên biên ải và nhận về những lá hồi âm đẹp đến mức cô tin mình đã yêu người viết. Nhưng người lính nhận thư không biết chữ, người viết thư là một văn thư thầm lặng, và khi cô đến Hổ Khẩu ải đúng lúc quân Bắc Hồ kéo đến, sự thật về những lá thư trở thành điều cô phải đối mặt.",
+    "cover": "images/novels/thu-gui-nguoi-linh-khong-biet-mat.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Cổ trang",
+      "Chiến trường",
+      "Tình yêu"
+    ]
+  },
+  {
+    "id": "buc-tranh-ba-muoi-ty",
+    "title": "Bức Tranh Ba Mươi Tỷ",
+    "author": "Mèo Hoang",
+    "description": "Ba ngày trước phiên đấu giá bức tranh hai mươi tám tỷ của họa sĩ Phan Cảnh, thẩm định viên Hoài Nam phát hiện một phần sơn được vẽ lại bằng chất liệu không thuộc về thời đại của nó. Anh phải lần ra sự thật đằng sau chữ L ẩn trong nếp rèm trước khi một nhà sưu tầm quyền lực dùng chính bí mật ấy để ép bà chủ tranh bán rẻ.",
+    "cover": "images/novels/buc-tranh-ba-muoi-ty.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Đấu trí",
+      "Bí ẩn",
+      "Thương trường"
+    ]
+  },
+  {
+    "id": "trong-sinh-ve-tuan-cuoi-cap-ba",
+    "title": "Trọng Sinh Về Tuần Cuối Cấp Ba",
+    "author": "Mèo Hoang",
+    "description": "Khả Hân ba mươi lăm tuổi mở mắt ra giữa lớp 12A5, bảy ngày trước lễ bế giảng, với tờ giấy ghi bốn điều cô không dám làm năm mười tám tuổi. Cô có đúng một tuần để xin lỗi người bạn thân, cảm ơn thầy chủ nhiệm, nói thật với người cô thích, và nộp bản vẽ cho một cuộc thi mà mẹ cô đã cấm.",
+    "cover": "images/novels/trong-sinh-ve-tuan-cuoi-cap-ba.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-03",
+    "genres": [
+      "Trọng sinh",
+      "Học đường",
+      "Tình cảm"
     ]
   }
 ]
