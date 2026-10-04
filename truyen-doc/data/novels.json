@@ -1333,5 +1333,85 @@
       "Học đường",
       "Tình cảm"
     ]
+  },
+  {
+    "id": "van-co-cua-quan-thuong-thu-mu",
+    "title": "Ván Cờ Của Quan Thượng Thư Mù",
+    "author": "Mèo Hoang",
+    "description": "Năm mươi vạn thạch gạo cứu đói đến Bắc Cương toàn mốc và lẫn cát, còn thượng thư Hộ bộ Lâm Hoài An, người đã mù từ mười năm trước, bị đổ tội thất trách. Với mười ngày trong tay, một cậu bé nhặt về từ chợ làm đôi mắt và đôi tai nghe được cả tiếng hạt gạo rơi, ông lần theo dấu vết tới người quyền lực nhất không ai dám nghi ngờ.",
+    "cover": "images/novels/van-co-cua-quan-thuong-thu-mu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-04",
+    "genres": [
+      "Cổ trang",
+      "Mưu quyền",
+      "Đấu trí"
+    ]
+  },
+  {
+    "id": "hop-thu-thoai-cua-cha",
+    "title": "Hộp Thư Thoại Của Cha",
+    "author": "Mèo Hoang",
+    "description": "Ba ngày sau đám tang người cha sửa xe, hai chị em Hiền và Tín phát hiện trong điện thoại mình có hơn một trăm tin nhắn thoại của bố mà cả hai chưa bao giờ nghe. Từng tin một, họ ghép lại người đàn ông vụng nói đã âm thầm làm những gì, từ khoản nợ ngân hàng đến cây đàn của người hâm mộ ẩn danh.",
+    "cover": "images/novels/hop-thu-thoai-cua-cha.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-04",
+    "genres": [
+      "Gia đình",
+      "Tâm lý",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "dam-cuoi-thue-co-hai-chu-re",
+    "title": "Đám Cưới Thuê Có Hai Chú Rể",
+    "author": "Mèo Hoang",
+    "description": "Ba ngày trước đám cưới bốn trăm khách, chú rể bỏ trốn bằng ba dòng tin nhắn, và cô dâu xin người tổ chức tiệc cưới giỏi nhất thành phố tìm cho mình một chú rể thay thế. Người nhận lời là thầy giáo dạy mỹ thuật cần hai mươi triệu sửa mái trường, trong một bản hợp đồng có ba điều khoản và một quy tắc: không ai được khóc trước giờ cắt bánh.",
+    "cover": "images/novels/dam-cuoi-thue-co-hai-chu-re.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-04",
+    "genres": [
+      "Ngôn tình",
+      "Hài hước",
+      "Đô thị"
+    ]
+  },
+  {
+    "id": "nhan-vien-khong-ai-biet-mat",
+    "title": "Nhân Viên Không Ai Biết Mặt",
+    "author": "Mèo Hoang",
+    "description": "Chuyên viên tiền lương Minh Trang phát hiện trong bảng lương có một nhân viên được trả gần sáu năm mà không ai từng gặp, không thẻ từ, không email, không chấm công. Trước giờ kiểm toán đến, cô lần ra người phụ nữ nhận tiền ở Bình Chánh và phải quyết định: báo cáo một vụ gian lận, hay hiểu vì sao nó tồn tại.",
+    "cover": "images/novels/nhan-vien-khong-ai-biet-mat.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-04",
+    "genres": [
+      "Hài hước",
+      "Bí ẩn",
+      "Thương trường"
+    ]
+  },
+  {
+    "id": "homestay-cuoi-duong-deo",
+    "title": "Homestay Cuối Đường Đèo",
+    "author": "Mèo Hoang",
+    "description": "Nhận việc quản lý một homestay trên đèo Mây Trắng, Diệp Lam được dặn mỗi sáng bày mười bộ chén cho chín vị khách, và tuyệt đối không dọn bộ thứ mười. Khi cơn sạt lở cắt đường, chín người cùng nhận một lá thư mời mang tên người đã mất tích ba năm trước phải đối mặt với điều họ giấu, trong lúc bát cháo thứ mười vẫn bốc khói lúc ba giờ sáng.",
+    "cover": "images/novels/homestay-cuoi-duong-deo.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-04",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Trinh thám"
+    ]
   }
 ]
