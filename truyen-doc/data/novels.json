@@ -1413,5 +1413,133 @@
       "Bí ẩn",
       "Trinh thám"
     ]
+  },
+  {
+    "id": "nguoi-giu-cua-lanh-cung",
+    "title": "Người Giữ Cửa Lãnh Cung",
+    "author": "Mèo Hoang",
+    "description": "Cung nữ hạng bảy Tiểu Hạnh bị đày canh Lãnh cung, nơi giam người phi tần bị kết tội đầu độc hoàng tử. Mỗi đêm, giọng nói sau cánh cửa dạy cô đọc chữ bằng những hạt gạo, và cô dần phát hiện hai năm trước có người đã cố tình để một chiếc bánh hoa quế mang độc đến đúng tay đứa trẻ.",
+    "cover": "images/novels/nguoi-giu-cua-lanh-cung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Cổ trang",
+      "Cung đấu",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "tho-khoa-cua-am-phu",
+    "title": "Thợ Khóa Của Âm Phủ",
+    "author": "Mèo Hoang",
+    "description": "Thợ khóa Lục Thành nhận một việc lúc hai giờ sáng: mở chiếc tủ hồ sơ bị khóa suốt bốn mươi chín năm ở Cục Lưu Trữ Âm Ty. Ổ khóa vừa mở, bảy lệnh tử sai sót bị kẹt trong đó đồng loạt có hiệu lực trước sáu giờ sáng, và một trong số đó mang tên ông. Muốn hủy chúng ông phải vượt qua ba cái dấu, ba phòng ban và một ông chủ nhiệm không muốn bí mật bị lộ.",
+    "cover": "images/novels/tho-khoa-cua-am-phu.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Huyền huyễn",
+      "Hài hước",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "hai-tam-ve-cung-mot-giuong",
+    "title": "Hai Tấm Vé Cùng Một Giường",
+    "author": "Mèo Hoang",
+    "description": "Trên chuyến tàu Sài Gòn - Hà Nội kéo dài hơn ba mươi tiếng, cô phiên dịch Nhật Thanh và anh bác sĩ thú y Bảo Long phát hiện họ cầm hai tấm vé cho cùng một giường, một con mèo bị cấm mang lên tàu và một lý do không ai muốn nói ra. Giữa cơn bão và đoạn đường bị sạt lở, cô phải quyết định có gọi cho người mẹ đã ba năm không nói chuyện hay không.",
+    "cover": "images/novels/hai-tam-ve-cung-mot-giuong.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Ngôn tình",
+      "Tâm lý",
+      "Hiện đại"
+    ]
+  },
+  {
+    "id": "an-mang-o-tiem-cat-toc",
+    "title": "Án Mạng Ở Tiệm Cắt Tóc",
+    "author": "Mèo Hoang",
+    "description": "Sáng thứ Hai, chị Tư Mơ mở cửa tiệm cắt tóc ở Đà Lạt và thấy ông chủ cho vay nặng lãi ngồi chết trên ghế số hai, mặt phủ một chiếc khăn không phải của tiệm. Là người từng cãi nhau với ông ta trước cả khu phố, chị phải tự lần ra hung thủ, bằng đôi mắt quen đọc người qua mái tóc, một viên thiếu úy công an có mái tóc thảm họa và một cậu học việc nhuộm xanh.",
+    "cover": "images/novels/an-mang-o-tiem-cat-toc.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Trinh thám",
+      "Hài hước",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "cau-lac-bo-co-vua-sap-bi-giai-tan",
+    "title": "Câu Lạc Bộ Cờ Vua Sắp Bị Giải Tán",
+    "author": "Mèo Hoang",
+    "description": "Quả bóng đá của cậu học trò Quốc Bảo phá vỡ cửa kính và ván cờ của Hải Yến, đúng ngày nhà trường báo câu lạc bộ cờ vua chỉ còn sáu tuần để có năm thành viên và một hạng ba thành phố. Bốn người ghép lại: cô gái sợ ngồi vào bàn cờ, cậu cầu thủ thua bốn mươi hai ván liên tiếp, nàng họa sĩ nhìn cờ như tranh và chàng game thủ bị oan là gian lận.",
+    "cover": "images/novels/cau-lac-bo-co-vua-sap-bi-giai-tan.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Học đường",
+      "Hài hước",
+      "Tình cảm"
+    ]
+  },
+  {
+    "id": "me-toi-hoc-cach-dung-dien-thoai",
+    "title": "Mẹ Tôi Học Cách Dùng Điện Thoại",
+    "author": "Mèo Hoang",
+    "description": "Bà Hằng sáu mươi tám tuổi ở Quảng Ngãi bất ngờ mua điện thoại thông minh, gọi con trai lúc ba giờ sáng và bình luận hỏi ăn cơm chưa dưới bài đăng của sếp anh. Kiệt tưởng mẹ chỉ học để gọi mình, cho đến khi anh phát hiện bà giữ chân kẻ lừa đảo suốt bốn tiếng và đang âm thầm livestream bán mít sấy để trả khoản nợ chưa từng nói với ai.",
+    "cover": "images/novels/me-toi-hoc-cach-dung-dien-thoai.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Gia đình",
+      "Hài hước",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "tram-dung-khong-co-ten",
+    "title": "Trạm Dừng Không Có Tên",
+    "author": "Mèo Hoang",
+    "description": "Chuyến xe khách đêm rời Pleiku có vé không ghi điểm đến, bác tài đeo găng tay trắng và tấm nội quy ba dòng: không hỏi điểm đến, không xuống ở trạm đầu tiên, nghe ai gọi tên mình thì đừng trả lời. Lục Gia An ngồi ghế mười ba, nghe tiếng mẹ gọi ngoài màn sương, và phải nhớ ra lý do mình ở trên chuyến xe này trước khi tới trạm dừng không có tên.",
+    "cover": "images/novels/tram-dung-khong-co-ten.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "xuyen-thanh-thim-hai-phan-dien-trong-truyen-dien-van",
+    "title": "Xuyên Thành Thím Hai Phản Diện Trong Truyện Điền Văn",
+    "author": "Mèo Hoang",
+    "description": "Kế toán trưởng Thu Thủy ngủ quên khi đọc dở một bộ truyện điền văn, tỉnh dậy trong thân xác thím Hai, kẻ phản diện sẽ bị nước lũ cuốn trôi ở chương bốn mươi, đúng chín mươi bốn ngày nữa. Muốn sống, cô phải chuộc lại những tội lỗi của người đàn bà ấy bằng sổ sách, que tính và một cái giỏ giặt, trước khi cốt truyện kịp kéo cô về đúng vai.",
+    "cover": "images/novels/xuyen-thanh-thim-hai-phan-dien-trong-truyen-dien-van.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-05",
+    "genres": [
+      "Xuyên không",
+      "Hài hước",
+      "Gia đình"
+    ]
   }
 ]
