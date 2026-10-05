@@ -1541,5 +1541,132 @@
       "Hài hước",
       "Gia đình"
     ]
+  },
+  {
+    "id": "phu-huynh-so-bay",
+    "title": "Phụ Huynh Số Bảy",
+    "author": "Mèo Hoang",
+    "description": "Cô giáo mầm non Tuyết Nhi nhận ra ba của bé Bơ là phụ huynh duy nhất viết hơn hai chữ trong sổ liên lạc, và cũng là người đón con trễ nhất lớp. Giữa nhóm Zalo phụ huynh xì xào, lời cảnh báo của hiệu trưởng và một bức tranh vẽ ba người, họ phải quyết định chờ nhau đến khi bé lên lớp Một.",
+    "cover": "images/novels/phu-huynh-so-bay.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Ngôn tình",
+      "Gia đình",
+      "Hài hước"
+    ]
+  },
+  {
+    "id": "tiem-cam-do-pho-chua",
+    "title": "Tiệm Cầm Đồ Phố Chùa",
+    "author": "Mèo Hoang",
+    "description": "Nữ chưởng quầy Bạch Thảo nhận lần lượt ba món đồ quân phục từ ba người xa lạ: một chiếc đai lưng, một chiếc ủng, một vỏ kiếm, tất cả đều bị ném xuống sông. Chỉ có người đọc được đường kim mũi chỉ mới nhận ra chúng thuộc về một đô úy mất tích, và lớp lót chiếc đai giấu một cuốn sổ có thể làm sụp đổ cả một vị thị lang.",
+    "cover": "images/novels/tiem-cam-do-pho-chua.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Cổ trang",
+      "Trinh thám",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "shipper-hoa-than",
+    "title": "Shipper Hóa Thần",
+    "author": "Mèo Hoang",
+    "description": "Thái Thượng Trưởng Lão một thời của Cửu Thiên Huyền Môn nay là tài xế giao hàng điểm bốn phẩy ba mốt sao ở Sài Gòn. Khi một vong hồn đánh giá anh năm sao và linh khí bất ngờ chảy vào người, anh phát hiện thế giới không có linh mạch này vẫn còn một nguồn sức mạnh duy nhất, lòng biết ơn, và ai đó đang âm thầm thu hoạch nó qua ứng dụng giao hàng.",
+    "cover": "images/novels/shipper-hoa-than.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Huyền huyễn",
+      "Hài hước",
+      "Đô thị"
+    ]
+  },
+  {
+    "id": "lang-khong-co-tieng-cho",
+    "title": "Làng Không Có Tiếng Chó",
+    "author": "Mèo Hoang",
+    "description": "Bác sĩ thú y Thu An đến làng Nậm Khuất theo lời mời khám gia súc, nhưng ngôi làng im lặng như chết: không chó, không chuông, không tiếng hát, và biển đề sau giờ Hợi xin giữ im lặng. Khi con chó của cô sủa lên, cô phát hiện bảy điều quy ước của làng đều giấu một cái tên bị xóa khỏi sổ nhân khẩu và một cái giếng bị khóa suốt sáu mươi ba năm.",
+    "cover": "images/novels/lang-khong-co-tieng-cho.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "quan-tri-khung-hoang",
+    "title": "Quản Trị Khủng Hoảng",
+    "author": "Mèo Hoang",
+    "description": "Chuyên gia quản trị khủng hoảng Đoàn Khánh Linh nhận một vụ lúc sáu giờ sáng: ai đó đòi hai mươi tỷ trong bảy mươi hai giờ, nếu không sẽ tung video công ty thực phẩm đóng gói lại một lô cá hồi hết hạn. Qua từng tin nhắn, cô nhận ra kẻ tống tiền đòi đúng một con số và ba điều kiện không hề có chữ nào cho riêng mình.",
+    "cover": "images/novels/quan-tri-khung-hoang.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Đấu trí",
+      "Thương trường",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "lop-hoc-cuoi-cung-tren-ban",
+    "title": "Lớp Học Cuối Cùng Trên Bản",
+    "author": "Mèo Hoang",
+    "description": "Cô giáo trẻ Hương Giang nhận điểm trường lẻ Pà Cò chỉ có chín học sinh, trong khi quy định mới buộc phải có đủ mười em nếu không lớp sẽ bị sáp nhập về trường cách mười tám cây số. Giữa mùa mưa, cây cầu gãy và những lá thư chưa ai đọc, học trò thứ mười lại là một ông cụ sáu mươi sáu tuổi chưa từng biết mặt chữ.",
+    "cover": "images/novels/lop-hoc-cuoi-cung-tren-ban.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Học đường",
+      "Tâm lý",
+      "Tình cảm"
+    ]
+  },
+  {
+    "id": "nu-tho-gom-va-vi-khach-quen",
+    "title": "Nữ Thợ Gốm Và Vị Khách Quen",
+    "author": "Mèo Hoang",
+    "description": "Mỗi ngày rằm, một vị khách không chịu nói tên đến lò gốm Thanh Vân đặt một chiếc chén men xanh như trời sau mưa. Thanh Vân vừa phải giữ lò của người cha đã mất, vừa lần ra công thức men lam ngọc bị gạch đen trong cuốn sổ cũ, vừa đối mặt với chiếu chỉ triều đình và đối thủ sẵn sàng đốt lò của nàng.",
+    "cover": "images/novels/nu-tho-gom-va-vi-khach-quen.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Cổ trang",
+      "Ngôn tình",
+      "Tình cảm"
+    ]
+  },
+  {
+    "id": "hop-lop-muoi-nam",
+    "title": "Họp Lớp Mười Năm",
+    "author": "Mèo Hoang",
+    "description": "Ba ngày sau khi bị đuổi việc, Thanh Tâm tự phong mình là giám đốc sáng tạo trong nhóm lớp, còn cậu lớp trưởng cũ tự phong là CEO. Gặp nhau trước cổng nhà hàng họp lớp, hai kẻ nói dối quyết định đóng giả người yêu đúng một đêm, và chiếc hộp thời gian chôn dưới gốc phượng mười năm trước sắp phơi bày điều họ giấu.",
+    "cover": "images/novels/hop-lop-muoi-nam.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Hài hước",
+      "Tình cảm",
+      "Hiện đại"
+    ]
   }
 ]
