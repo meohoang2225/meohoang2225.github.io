@@ -1686,5 +1686,23 @@
       "Bí ẩn",
       "Tình cảm"
     ]
+  },
+  {
+    "id": "nhan-vien-thu-viec-cuu-the-gioi",
+    "title": "Nhân Viên Thử Việc Cứu Thế Giới",
+    "author": "Mèo Boss",
+    "description": "Bị đội trưởng bỏ lại trong cổng ngục cùng một cái nồi cơm điện, anh cõng đồ hạng E Đỗ Minh Khang bỗng nhận được thông báo trúng tuyển từ một hệ thống giọng công sở: lương 0 đồng, thưởng kinh nghiệm, thử việc 284 ngày để cứu thế giới. Từ những nhiệm vụ hằng ngày vặt vãnh như rửa chén, gọi điện cho mẹ, đến những cuộc chiến sinh tử cùng hội Gạo Tẻ nhỏ bé, anh vừa cười, vừa khóc, vừa gánh thêm di nguyện của những người ngã xuống, để đứng trước Kỳ Thẩm Định cuối cùng.",
+    "cover": "images/novels/nhan-vien-thu-viec-cuu-the-gioi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 35,
+    "latestChapter": "035",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Huyền huyễn",
+      "Hài hước",
+      "Đô thị",
+      "Chiến trường",
+      "Tình cảm"
+    ]
   }
 ]
