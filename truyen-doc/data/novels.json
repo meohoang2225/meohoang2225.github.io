@@ -1668,5 +1668,23 @@
       "Tình cảm",
       "Hiện đại"
     ]
+  },
+  {
+    "id": "ba-ban-di-chuc-cua-ong-chu-tra",
+    "title": "Ba Bản Di Chúc Của Ông Chủ Trà",
+    "author": "Mèo Boss",
+    "description": "Đêm trước khi qua đời, ông chủ Trà Lục Gia nhắn cho cháu nội một dòng: đừng tin ai trước khi gặp ông. Thanh Hà, cô kỹ sư kiểm nghiệm thực phẩm từ Hà Nội, trở về Tân Cương chịu tang và lần theo cái phích trà đã bị rửa vội, chiếc hộp thiếc đỏ gửi muộn và ba bản di chúc, để lật lại cái chết của cha mình mười ba năm trước, cùng một lô trà độc mà cả gia tộc đã chôn giấu.",
+    "cover": "images/novels/ba-ban-di-chuc-cua-ong-chu-tra.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 36,
+    "latestChapter": "036",
+    "updatedAt": "2026-10-06",
+    "genres": [
+      "Gia đình",
+      "Thương trường",
+      "Mưu quyền",
+      "Bí ẩn",
+      "Tình cảm"
+    ]
   }
 ]
