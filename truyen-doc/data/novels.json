@@ -1944,5 +1944,85 @@
       "Tâm lý",
       "Hiện đại"
     ]
+  },
+  {
+    "id": "nha-hang-khong-thuc-don",
+    "title": "Nhà Hàng Không Thực Đơn",
+    "author": "Mèo Hoang",
+    "description": "Tâm là nhà phê bình ẩm thực mất sạch vị giác từ ngày cha mất, vẫn giấu mọi người và viết review bằng trí nhớ. Một đêm mưa, cô tìm thấy ngõ nhỏ ở Hồ Tây với nhà hàng không có thực đơn, nơi bà phục vụ chỉ hỏi khách đang nhớ ai, và ông bếp trưởng không nếm được món nào lại nấu đúng hương vị của người đã khuất.",
+    "cover": "images/novels/nha-hang-khong-thuc-don.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-08",
+    "genres": [
+      "Huyền huyễn",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "te-tuong-ve-que-trong-rau",
+    "title": "Tể Tướng Về Quê Trồng Rau",
+    "author": "Mèo Hoang",
+    "description": "Tể tướng Nguyễn Công Hoài nộp đơn từ chức chỉ với hai chữ rồi về làng trồng rau, dù chưa từng cầm cuốc. Trong khi bà bán đậu phụ nhận làm sư phụ dạy ông trồng cải, thượng thư họ Triệu phái ba sát thủ cải trang thợ làm thuê đến lấy mạng ông, và vị tể tướng già quyết định thuê luôn cả ba để cuốc đất, ủ phân, đào mương cứu hạn.",
+    "cover": "images/novels/te-tuong-ve-que-trong-rau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-08",
+    "genres": [
+      "Cổ trang",
+      "Hài hước",
+      "Mưu quyền"
+    ]
+  },
+  {
+    "id": "co-hoc-tro-bay-muoi-tuoi",
+    "title": "Cô Học Trò Bảy Mươi Tuổi",
+    "author": "Mèo Hoang",
+    "description": "Dũng, giáo viên dạy lái xe nóng tính, nhận học viên cuối tháng là bà Lan bảy mươi tuổi, cựu giáo viên piano chưa từng cầm vô lăng, chết máy liền mười bảy lần và đòi lấy bằng trong hai tháng. Bà phổ nhạc cho chân côn, anh học cách bớt la, và cả hai cùng hướng đến chuyến đi lên Đà Lạt thăm người chị gái không còn nhiều thời gian.",
+    "cover": "images/novels/co-hoc-tro-bay-muoi-tuoi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-08",
+    "genres": [
+      "Gia đình",
+      "Hài hước",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "con-vet-lam-chung",
+    "title": "Con Vẹt Làm Chứng",
+    "author": "Mèo Hoang",
+    "description": "Ông chủ xưởng gỗ thuê thám tử tư Kiệt điều tra khoản thất thoát tám trăm triệu rồi chết ba ngày sau, chỉ để lại di chúc nhờ anh nuôi con vẹt Đại Lão. Con vẹt lặp lại nguyên những tiếng động đêm án mạng, giọng người lạ, cả mã bấm két, và vị thám tử ham ăn cùng cô trợ lý sinh viên luật phải biến nó thành chứng nhân biết nói duy nhất.",
+    "cover": "images/novels/con-vet-lam-chung.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-08",
+    "genres": [
+      "Trinh thám",
+      "Hài hước",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "chiec-o-chung-muoi-mua-mua",
+    "title": "Chiếc Ô Chung Mười Mùa Mưa",
+    "author": "Mèo Hoang",
+    "description": "Chiếc ô của Thư gãy gọng ngay trận mưa đầu mùa, và một người lạ đã nghiêng ô che cho cô. Từ đó hai người đặt ra hiệp ước chỉ gặp nhau vào trận mưa lớn đầu tiên mỗi năm tại trạm xe buýt, không số điện thoại, không hẹn thêm. Mười mùa mưa trôi qua cùng người yêu cũ, tang cha, chuyến bay trễ và một trạm xe buýt sắp bị dỡ bỏ.",
+    "cover": "images/novels/chiec-o-chung-muoi-mua-mua.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-08",
+    "genres": [
+      "Ngôn tình",
+      "Tình cảm",
+      "Đô thị"
+    ]
   }
 ]
