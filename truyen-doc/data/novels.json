@@ -1864,5 +1864,85 @@
       "Bí ẩn",
       "Đô thị"
     ]
+  },
+  {
+    "id": "tiem-giat-ui-mo-xuyen-dem",
+    "title": "Tiệm Giặt Ủi Mở Xuyên Đêm",
+    "author": "Mèo Hoang",
+    "description": "Thảo nhận ca đêm ở một tiệm giặt ủi nhỏ trong hẻm với bốn quy tắc kỳ lạ của bà chủ: không nhận đồ không phiếu, đồ quá bảy ngày phải đem đốt, đừng moi túi áo của khách sau nửa đêm, và đừng nhìn xuống chân người gõ cửa sau ba giờ sáng. Rồi một cô dâu mặc váy cưới dính máu gõ cửa xin giặt chiếc váy hai mươi lăm năm chưa sạch.",
+    "cover": "images/novels/tiem-giat-ui-mo-xuyen-dem.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-07",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "quan-huyen-so-mau",
+    "title": "Quan Huyện Sợ Máu",
+    "author": "Mèo Hoang",
+    "description": "Tân quan huyện Lục Minh Chính ngất xỉu ngay trước cổng nha môn vì một con gà, và còn ngất thêm mỗi lần nhìn thấy máu. Nhưng khi ông địa chủ giàu nhất vùng chết giữa tiệc thọ với ba mươi vị khách làm chứng, ông ngồi sau bình phong, nhắm mắt, dùng cái mũi thính và nữ sư gia sắc sảo họ Tống để lần ra kẻ hạ độc mà không cần nhìn một giọt máu.",
+    "cover": "images/novels/quan-huyen-so-mau.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-10-07",
+    "genres": [
+      "Cổ trang",
+      "Trinh thám",
+      "Hài hước"
+    ]
+  },
+  {
+    "id": "tho-dia-nha-so-chin",
+    "title": "Thổ Địa Nhà Số Chín",
+    "author": "Mèo Hoang",
+    "description": "Ông Địa Bảy ba trăm tuổi mất ngủ vì căn nhà ống số chín phố Hàng Đường sắp bị bán, mà nhà bán thì ông sẽ nhạt dần rồi biến mất. Chỉ có cô bé Mai mười sáu tuổi nhìn thấy ông, và hai ông cháu mở chiến dịch dọa người mua bằng nước chảy ngược, đèn nhảy múa và con mèo biết nói, trong khi cả gia đình họ Tạ đang đứng trước một quyết định khó.",
+    "cover": "images/novels/tho-dia-nha-so-chin.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-07",
+    "genres": [
+      "Huyền huyễn",
+      "Hài hước",
+      "Gia đình"
+    ]
+  },
+  {
+    "id": "nuoc-co-cuoi-cua-ong-gia-via-he",
+    "title": "Nước Cờ Cuối Của Ông Già Vỉa Hè",
+    "author": "Mèo Hoang",
+    "description": "Nữ điều tra viên Trần Ngọc Hạ thua ván cờ tướng đầu tiên với ông già Chín Cờ trên vỉa hè phố Hàng Chiếu, và nhận ra những thế cờ tàn ông bày mỗi ngày đang kể lại vụ cháy kho Vạn An hai mươi lăm năm trước, vụ cháy đã cướp đi cha cô. Mỗi quân cờ là một con người, và có một quân xe đã im lặng suốt hai mươi lăm năm.",
+    "cover": "images/novels/nuoc-co-cuoi-cua-ong-gia-via-he.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-07",
+    "genres": [
+      "Đấu trí",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "nguoi-gac-den-goi-tong-dai",
+    "title": "Người Gác Đèn Gọi Tổng Đài",
+    "author": "Mèo Hoang",
+    "description": "Mỗi đêm lúc hai giờ mười lăm, một người gác hải đăng trên đảo xa gọi tổng đài điện lực báo những sự cố không có thật, và cô tổng đài viên Khuê chỉ được nói tối đa tám phút mỗi cuộc. Từ những mã sự cố riêng của hai người đến cơn bão số chín cắt điện cả hòn đảo, một đường dây vệ tinh nhiễu sóng dần trở thành điều duy nhất cả hai chờ mỗi đêm.",
+    "cover": "images/novels/nguoi-gac-den-goi-tong-dai.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-10-07",
+    "genres": [
+      "Ngôn tình",
+      "Tâm lý",
+      "Hiện đại"
+    ]
   }
 ]
