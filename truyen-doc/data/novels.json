@@ -2104,5 +2104,85 @@
       "Tâm lý",
       "Gia đình"
     ]
+  },
+  {
+    "id": "xuong-may-ut-thom",
+    "title": "Xưởng May Út Thơm",
+    "author": "Mèo Hoang",
+    "description": "Đang ở Singapore với mười năm làm phân tích tài chính, Diễm Khuê bỏ cả phòng họp để bay về Gò Vấp khi nghe má nhận đơn chín ngàn chiếc áo sơ mi giao trong hai mươi mốt ngày. Cuộn vải bị chặn, cổ phần bị người nhà bán lén, ba nghìn hai trăm cái nhãn may sai. Cô phải học lại cách đứng cạnh những người thợ đã gắn bó với xưởng suốt mười tám năm.",
+    "cover": "images/novels/xuong-may-ut-thom.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-11-02",
+    "genres": [
+      "Thương trường",
+      "Gia đình",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "me-toi-nam-hai-muoi-lam-tuoi",
+    "title": "Mẹ Tôi Năm Hai Mươi Lăm Tuổi",
+    "author": "Mèo Hoang",
+    "description": "Ba tháng sau đám tang của mẹ, Thảo ngủ thiếp đi trên gác xép căn nhà cũ ở Đà Nẵng, cạnh cuốn sổ công thức chè mẹ để lại, rồi tỉnh dậy giữa năm 1996. Cô thuê gác ngay trong nhà mình, học nấu chè với cô gái hai mươi lăm tuổi mà cô chỉ quen biết qua vai trò người mẹ khô khan, và dần hiểu vì sao bà chưa bao giờ nói được chữ thương.",
+    "cover": "images/novels/me-toi-nam-hai-muoi-lam-tuoi.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-11-02",
+    "genres": [
+      "Xuyên không",
+      "Gia đình",
+      "Tình cảm"
+    ]
+  },
+  {
+    "id": "bao-tang-mo-cua-luc-nua-dem",
+    "title": "Bảo Tàng Mở Cửa Lúc Nửa Đêm",
+    "author": "Mèo Hoang",
+    "description": "Cựu giáo viên Sử Thế Lộc nhận ca bảo vệ đêm của một bảo tàng cũ để trả viện phí cho vợ, cùng cuốn sổ bảy quy tắc do người tiền nhiệm bỏ lại. Mỗi đêm, những hiện vật thức dậy: người lính đứng quay lưng ở phòng số 4, chiếc nón lá chưa gửi được thư, cây tỳ bà thiếu phần nhạc cuối. Và dưới hầm, có bảy mươi ba người chưa ai gọi tên.",
+    "cover": "images/novels/bao-tang-mo-cua-luc-nua-dem.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 7,
+    "latestChapter": "007",
+    "updatedAt": "2026-11-02",
+    "genres": [
+      "Kinh dị",
+      "Bí ẩn",
+      "Tâm lý"
+    ]
+  },
+  {
+    "id": "cong-chua-hoa-than-gioi-hon-su-than",
+    "title": "Công Chúa Hòa Thân Giỏi Hơn Sứ Thần",
+    "author": "Mèo Hoang",
+    "description": "Công chúa Đoan Nghi của Nam Triệu bị gả sang Bắc Cương cùng một trăm hai mươi rương hồi môn, và nàng phát hiện hơn trăm rương trong đó chỉ chứa đá cuội. Không đem theo gì ngoài bàn tính, trí nhớ và cung nữ Tiểu Mộc, nàng cùng Thái tử Mặc Hàn lần theo từng con số trong sổ lương thực để vạch trần âm mưu của sứ thần và đại tướng quân.",
+    "cover": "images/novels/cong-chua-hoa-than-gioi-hon-su-than.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 8,
+    "latestChapter": "008",
+    "updatedAt": "2026-11-02",
+    "genres": [
+      "Cổ trang",
+      "Mưu quyền",
+      "Ngôn tình"
+    ]
+  },
+  {
+    "id": "nha-van-khong-chiu-lo-mat",
+    "title": "Nhà Văn Không Chịu Lộ Mặt",
+    "author": "Mèo Hoang",
+    "description": "Biên tập viên Hương Giang có ba mươi ngày để tìm chương cuối cùng của tác giả ngôn tình bí ẩn nhất nước, người chưa từng xuất hiện trước công chúng. Cô hóa trang, rình rập, trông mèo hộ, và phát hiện người hàng xóm tầng dưới với ngón tay dính mực xanh chính là người cô đang tìm, một người sợ ánh đèn hơn mọi điều trên đời.",
+    "cover": "images/novels/nha-van-khong-chiu-lo-mat.svg",
+    "status": "Hoàn thành",
+    "chapterCount": 9,
+    "latestChapter": "009",
+    "updatedAt": "2026-11-02",
+    "genres": [
+      "Ngôn tình",
+      "Hài hước",
+      "Đô thị"
+    ]
   }
 ]
