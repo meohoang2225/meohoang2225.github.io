@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Ủng hộ Mèo Hoang - Thư viện truyện
+    </title>
+
+    <meta
+        name="description"
+        content="Mời tác giả một ly cà phê nếu bạn thích truyện trên Mèo Hoang - Thư viện truyện. Hoàn toàn tự nguyện, truyện vẫn đọc miễn phí."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/legal.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="../assets/css/donate.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a
+                href="../index.html"
+                class="site-logo"
+            >
+                Mèo Hoang - Thư viện truyện
+            </a>
+
+
+            <nav class="desktop-nav">
+
+                <a href="../index.html">
+                    Trang chủ
+                </a>
+
+                <a href="../index.html">
+                    Tìm truyện
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="page-container">
+
+        <article class="legal-page">
+
+            <header class="legal-header">
+
+                <h1>
+                    ☕ Ủng hộ Mèo Hoang
+                </h1>
+
+                <p class="legal-updated">
+                    Hoàn toàn tự nguyện, truyện vẫn đọc miễn phí.
+                </p>
+
+            </header>
+
+
+            <section class="legal-section">
+
+                <p>
+                    Nếu bạn thấy những câu chuyện trên Mèo Hoang - Thư viện truyện
+                    đáng đọc, bạn có thể mời tác giả một ly cà phê để có thêm
+                    động lực viết tiếp. Cảm ơn bạn rất nhiều! 🐱
+                </p>
+
+            </section>
+
+
+            <div class="donate-card">
+
+                <img
+                    src="../images/donate-qr.svg"
+                    alt="Mã QR chuyển khoản, nội dung Meo Hoang"
+                >
+
+                <div class="donate-hint">
+                    Quét bằng app ngân hàng bất kỳ. Nội dung chuyển khoản đã điền
+                    sẵn là <b>Meo Hoang</b>, số tiền bạn tự nhập.
+                </div>
+
+                <dl>
+
+                    <dt>Ngân hàng</dt>
+                    <dd>Techcombank</dd>
+
+                    <dt>Số tài khoản</dt>
+                    <dd>
+                        <span id="stk">19037588145011</span>
+                        <button data-copy="stk" type="button">Sao chép</button>
+                    </dd>
+
+                    <dt>Chủ tài khoản</dt>
+                    <dd>HOANG THI HONG HANH</dd>
+
+                    <dt>Nội dung</dt>
+                    <dd>
+                        <span id="nd">Meo Hoang</span>
+                        <button data-copy="nd" type="button">Sao chép</button>
+                    </dd>
+
+                </dl>
+
+            </div>
+
+        </article>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+
+                <a
+                    href="../index.html"
+                    class="site-logo"
+                >
+                    Mèo Hoang - Thư viện truyện
+                </a>
+
+                <p>
+                    Không gian đọc truyện trực tuyến.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="../index.html">
+                    Trang chủ
+                </a>
+
+                <a href="ung-ho.html">
+                    Ủng hộ Mèo Hoang
+                </a>
+
+                <a href="chinh-sach-va-quy-dinh-chung.html">
+                    Chính sách và quy định chung
+                </a>
+
+                <a href="dieu-khoan-su-dung.html">
+                    Điều khoản sử dụng
+                </a>
+
+                <a href="chinh-sach-bao-mat.html">
+                    Chính sách bảo mật
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            © 2026 Mèo Hoang - Thư viện truyện.
+            All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script>
+        document.querySelectorAll("button[data-copy]").forEach(function (button) {
+            button.addEventListener("click", async function () {
+                var text = document.getElementById(button.dataset.copy).textContent;
+
+                try {
+                    await navigator.clipboard.writeText(text);
+                    button.textContent = "Đã chép ✓";
+                } catch (error) {
+                    button.textContent = "Chép tay nhé";
+                }
+
+                setTimeout(function () {
+                    button.textContent = "Sao chép";
+                }, 1500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

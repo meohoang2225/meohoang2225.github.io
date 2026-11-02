@@ -1,0 +1,183 @@
+/* =========================================================
+   DONATE (trang ủng hộ + các điểm dẫn tới trang đó)
+   ========================================================= */
+
+.donate-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: #c0392b;
+    color: #fff !important;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.donate-link:hover {
+    background: #a93226;
+    color: #fff !important;
+}
+
+.mobile-donate {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 12px;
+}
+
+.mobile-donate .donate-link {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    .site-nav .donate-link {
+        display: none;
+    }
+}
+
+
+/* ---------- Nút nổi ---------- */
+
+.donate-pill {
+    position: fixed;
+    right: 14px;
+    bottom: 16px;
+    z-index: 700;
+
+    padding: 9px 14px;
+
+    border-radius: 999px;
+
+    background: #c0392b;
+    color: #fff;
+
+    font: 600 13px/1 system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    text-decoration: none;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.donate-pill:hover {
+    background: #a93226;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .donate-pill {
+        right: 10px;
+        bottom: 84px;
+
+        padding: 7px 11px;
+
+        font-size: 12px;
+
+        opacity: 0.9;
+    }
+}
+
+
+/* ---------- Khung cuối chương ---------- */
+
+.donate-box {
+    max-width: 640px;
+
+    margin: 28px auto 0;
+    padding: 16px;
+
+    border: 1px solid rgba(192, 57, 43, 0.35);
+    border-radius: 12px;
+
+    background: rgba(192, 57, 43, 0.07);
+
+    text-align: center;
+}
+
+.donate-box p {
+    margin: 0 0 10px;
+
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.donate-box .donate-link {
+    padding: 10px 18px;
+    font-size: 14px;
+}
+
+
+/* ---------- Trang ủng hộ ---------- */
+
+.donate-card {
+    max-width: 460px;
+
+    margin: 0 auto 18px;
+    padding: 16px;
+
+    border: 1px solid #e4dfd3;
+    border-radius: 12px;
+
+    background: #fff;
+    color: #222;
+
+    text-align: center;
+}
+
+.donate-card img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.donate-card dl {
+    margin: 12px 0 0;
+
+    text-align: left;
+    font-size: 15px;
+}
+
+.donate-card dt {
+    margin-top: 8px;
+
+    color: #777;
+    font-size: 12px;
+}
+
+.donate-card dd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    margin: 0;
+
+    font-weight: 600;
+}
+
+.donate-card button {
+    padding: 4px 10px;
+
+    border: 1px solid #e4dfd3;
+    border-radius: 6px;
+
+    background: #faf7f0;
+    color: #222;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.donate-hint {
+    color: #777;
+    font-size: 13px;
+}

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /truyen-doc/admin.html
 
-Sitemap: https://meohoang2225.github.io/sitemap.xml
+Sitemap: https://truyen.meohoang.app/sitemap.xml
