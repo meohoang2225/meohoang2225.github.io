@@ -9,6 +9,17 @@
 
     const DESKTOP_BREAKPOINT = 768;
 
+    const AD_CLIENT = "ca-pub-6349630685078292";
+
+    // Dán ID đơn vị quảng cáo (10 chữ số) tạo trong AdSense > Quảng cáo > Theo đơn vị quảng cáo.
+    const AD_SLOTS = {
+        "desktop-top": "",
+        "desktop-left": "",
+        "desktop-right": "",
+        "mobile-bottom": "5260056687",
+        "mid-content": "4796635213"
+    };
+
 
     // ==========================================
     // HELPERS
@@ -192,6 +203,14 @@
         container.innerHTML = "";
 
 
+        const slot = AD_SLOTS[position.replace(/-\d+$/, "")];
+
+        // Chưa có mã đơn vị quảng cáo thì không vẽ khung trống.
+        if (!slot) {
+            return;
+        }
+
+
         const wrapper =
             document.createElement("div");
 
@@ -220,11 +239,30 @@
             position;
 
 
+        const ins = document.createElement("ins");
+
+        ins.className = "adsbygoogle";
+        ins.style.display = "block";
+        ins.dataset.adClient = AD_CLIENT;
+        ins.dataset.adSlot = slot;
+        ins.dataset.adFormat = "auto";
+        ins.dataset.fullWidthResponsive = "true";
+
+        adContainer.appendChild(ins);
+
+
         wrapper.appendChild(label);
 
         wrapper.appendChild(adContainer);
 
         container.appendChild(wrapper);
+
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+            // AdSense chưa tải hoặc bị chặn.
+        }
     }
 
 
