@@ -8,7 +8,7 @@
       "url": ""
     },
     "ads": {
-      "enabled": false
+      "enabled": true
     }
   }
 }
