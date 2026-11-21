@@ -13,9 +13,9 @@
 
     // Dán ID đơn vị quảng cáo (10 chữ số) tạo trong AdSense > Quảng cáo > Theo đơn vị quảng cáo.
     const AD_SLOTS = {
-        "desktop-top": "",
-        "desktop-left": "",
-        "desktop-right": "",
+        "desktop-top": "8688838252",
+        "desktop-left": "9403154122",
+        "desktop-right": "6776990782",
         "mobile-bottom": "5260056687",
         "mid-content": "4796635213"
     };
@@ -25,8 +25,16 @@
     const AD_LAYOUTS = {
         // Thanh dính đáy màn hình: banner cố định 320x50.
         "mobile-bottom": { width: 320, height: 50 },
-        "mid-content": { format: "rectangle" }
+        "mid-content": { format: "rectangle" },
+        // Thanh dính phía trên desktop chỉ chừa ~80px nên dùng banner thấp 468x60.
+        "desktop-top": { width: 468, height: 60 },
+        // Cột bên rộng 120px (160px từ 1200px) nên dùng 120x240.
+        "desktop-left": { width: 120, height: 240 },
+        "desktop-right": { width: 120, height: 240 }
     };
+
+    // Hai cột quảng cáo bên cạnh chỉ hiện khi cửa sổ đủ rộng để không đè lên khung đọc.
+    const DESKTOP_SIDE_ADS_MIN_WIDTH = 1100;
 
 
     // ==========================================
@@ -314,6 +322,12 @@
                 top,
                 "desktop-top"
             );
+        }
+
+
+        // Cửa sổ hẹp thì bỏ hai cột bên (CSS vẫn đặt chúng cố định sát mép).
+        if (window.innerWidth < DESKTOP_SIDE_ADS_MIN_WIDTH) {
+            return;
         }
 
 
