@@ -20,6 +20,14 @@
         "mid-content": "4796635213"
     };
 
+    // Kích thước quảng cáo theo vị trí. Không khai báo thì để Google tự chọn (auto),
+    // và định dạng auto trên mobile có thể ra khung vuông ~375px che gần hết màn hình.
+    const AD_LAYOUTS = {
+        // Thanh dính đáy màn hình: banner cố định 320x50.
+        "mobile-bottom": { width: 320, height: 50 },
+        "mid-content": { format: "rectangle" }
+    };
+
 
     // ==========================================
     // HELPERS
@@ -203,7 +211,11 @@
         container.innerHTML = "";
 
 
-        const slot = AD_SLOTS[position.replace(/-\d+$/, "")];
+        const key = position.replace(/-\d+$/, "");
+
+        const slot = AD_SLOTS[key];
+
+        const layout = AD_LAYOUTS[key] || {};
 
         // Chưa có mã đơn vị quảng cáo thì không vẽ khung trống.
         if (!slot) {
@@ -242,13 +254,26 @@
         const ins = document.createElement("ins");
 
         ins.className = "adsbygoogle";
-        ins.style.display = "block";
-        // .ad-container là flex nên thẻ rỗng co về rộng 0; AdSense báo "No slot size for availableWidth=0".
-        ins.style.width = "100%";
         ins.dataset.adClient = AD_CLIENT;
         ins.dataset.adSlot = slot;
-        ins.dataset.adFormat = "auto";
-        ins.dataset.fullWidthResponsive = "true";
+
+        if (layout.width && layout.height) {
+
+            // Cỡ cố định: bỏ data-ad-format để Google dùng đúng width/height này.
+            ins.style.display = "inline-block";
+            ins.style.width = layout.width + "px";
+            ins.style.height = layout.height + "px";
+
+        } else {
+
+            ins.style.display = "block";
+
+            // .ad-container là flex nên thẻ rỗng co về rộng 0; AdSense báo "No slot size for availableWidth=0".
+            ins.style.width = "100%";
+
+            ins.dataset.adFormat = layout.format || "auto";
+            ins.dataset.fullWidthResponsive = layout.format ? "false" : "true";
+        }
 
         adContainer.appendChild(ins);
 
