@@ -243,6 +243,8 @@
 
         ins.className = "adsbygoogle";
         ins.style.display = "block";
+        // .ad-container là flex nên thẻ rỗng co về rộng 0; AdSense báo "No slot size for availableWidth=0".
+        ins.style.width = "100%";
         ins.dataset.adClient = AD_CLIENT;
         ins.dataset.adSlot = slot;
         ins.dataset.adFormat = "auto";
@@ -397,16 +399,17 @@
                 "ad-slot ad-mid-content";
 
 
+            // Phải gắn vào trang trước: AdSense bỏ qua thẻ ins chưa nằm trong DOM.
+            paragraph.insertAdjacentElement(
+                "afterend",
+                adSlot
+            );
+
+
             renderAd(
                 adSlot,
                 "mid-content-" +
                 (insertedCount + 1)
-            );
-
-
-            paragraph.insertAdjacentElement(
-                "afterend",
-                adSlot
             );
 
 

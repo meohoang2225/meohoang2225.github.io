@@ -259,16 +259,9 @@ $(document).ready(function () {
 
             const chapter =
                 await response.json();
-                
-            if (window.ReaderMonetization) {
 
-               ReaderMonetization.render(
-                    chapter.monetization || {}
-                );
-            
-            }
-                
-                        /* =================================================
+
+            /* =================================================
                SEO
             ================================================= */
             
