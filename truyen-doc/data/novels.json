@@ -2184,5 +2184,37 @@
       "Hài hước",
       "Đô thị"
     ]
+  },
+  {
+    "id": "su-quan-giau-sach",
+    "title": "Sử Quan Giấu Sách",
+    "author": "Mèo Hoang",
+    "description": "Lão Tổng tài Quốc Sử Viện chết vào đúng đêm trao cho biên tu Phạm Cảnh Dư một chiếc chìa khóa và một câu đố. Cuốn sử thật về cái chết của Thái tử đã bị xé làm mười hai mảnh, giấu trong mười hai ngôi chùa quanh kinh thành. Theo manh mối là bài thơ của người cha bị xử trảm oan, Cảnh Dư cùng công chúa Thanh Hòa cải trang thư đồng chạy đua với Thái sư quyền lực để đưa sự thật ra trước Thái Miếu vào ngày Lễ Hiến Sử.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 22,
+    "latestChapter": "022",
+    "updatedAt": "2026-11-20",
+    "genres": [
+      "Cổ trang",
+      "Mưu quyền",
+      "Bí ẩn"
+    ]
+  },
+  {
+    "id": "tiem-vang-pho-hang-bac",
+    "title": "Tiệm Vàng Phố Hàng Bạc",
+    "author": "Mèo Hoang",
+    "description": "Mười chín thỏi vàng của tiệm Kim Long Thành bị phát hiện có lõi vonfram, video lan khắp mạng, ông chủ đột quỵ. Vũ Minh Châu, nhà thiết kế trang sức bỏ nhà sáu năm, bay từ Florence về phố cổ Hà Nội và chạm vào một cánh cửa giấu sau bàn thờ gia tiên: căn hầm giữ vàng của mười bảy gia đình đã ra đi từ năm 1979. Giữa một người anh đang trốn, một tập đoàn muốn mua lại thương hiệu và một người đàn bà mang mối oán bốn mươi bảy năm, Châu phải học cách nghe tiếng vàng để biết ai đang nói thật.",
+    "cover": "",
+    "status": "Hoàn thành",
+    "chapterCount": 22,
+    "latestChapter": "022",
+    "updatedAt": "2026-11-21",
+    "genres": [
+      "Gia đình",
+      "Thương trường",
+      "Tâm lý"
+    ]
   }
 ]
