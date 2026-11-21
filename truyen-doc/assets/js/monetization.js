@@ -390,10 +390,8 @@
             );
 
 
-        if (
-            paragraphs.length <
-            MID_AD_AFTER_PARAGRAPHS
-        ) {
+        // Chương không có nội dung thì không hiện quảng cáo.
+        if (paragraphs.length === 0) {
             return;
         }
 
@@ -439,6 +437,29 @@
 
 
             insertedCount++;
+        }
+
+
+        // Chương ngắn, chưa đủ đoạn để chèn giữa chương:
+        // đặt một quảng cáo ở cuối nội dung.
+        if (insertedCount === 0) {
+
+            const endSlot =
+                document.createElement("div");
+
+
+            // Dùng chung class ad-mid-content để lần render sau tự xóa.
+            endSlot.className =
+                "ad-slot ad-mid-content";
+
+
+            content.appendChild(endSlot);
+
+
+            renderAd(
+                endSlot,
+                "mid-content-1"
+            );
         }
     }
 
