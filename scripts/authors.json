@@ -1,0 +1,35 @@
+{
+  "_note": "Mỗi tác giả phụ trách một nhóm thể loại. Tác giả của truyện được xác định theo THỂ LOẠI ĐẦU TIÊN (genres[0]). Sửa file này khi thêm tác giả/thể loại, rồi chạy: node scripts/assign-authors.js",
+  "authors": [
+    {
+      "name": "Lạc Thanh Phong",
+      "genres": ["Trinh thám", "Bí ẩn", "Đấu trí"]
+    },
+    {
+      "name": "Dạ Vũ Lam",
+      "genres": ["Kinh dị"]
+    },
+    {
+      "name": "Trần Thiên Lộc",
+      "genres": ["Cổ trang", "Cung đấu", "Mưu quyền", "Chiến trường"]
+    },
+    {
+      "name": "Tiêu Mặc Trần",
+      "genres": ["Huyền huyễn", "Tu tiên", "Xuyên không", "Trọng sinh"]
+    },
+    {
+      "name": "Hạ Vân Khê",
+      "genres": ["Ngôn tình", "Tình cảm", "Tình yêu", "Học đường"]
+    },
+    {
+      "name": "Phương Minh Nguyệt",
+      "genres": ["Gia đình", "Tâm lý", "Đô thị", "Hiện đại"]
+    },
+    {
+      "name": "Ngô Khải Hưng",
+      "genres": ["Thương trường", "Hài hước"]
+    }
+  ],
+  "fallbackAuthor": "Phương Minh Nguyệt",
+  "overrides": {}
+}
