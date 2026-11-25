@@ -1650,3 +1650,8 @@ body.dark-mode .filter-label {
 body.dark-mode .ad-label {
     color: #666;
 }
+
+/* Google không trả quảng cáo: ẩn cả khung và nhãn "Quảng cáo" */
+.ad-slot:has(ins[data-ad-status="unfilled"]) {
+    display: none;
+}

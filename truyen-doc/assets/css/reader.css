@@ -1118,33 +1118,14 @@ body.affiliate-popup-open {
 @media (min-width: 768px) {
 
     /* -----------------------------------------
-       Sticky top ad
+       Top ad: nằm trong trang, cuộn cùng nội dung.
+       Không ghim cố định vì header (sticky) sẽ che mất quảng cáo.
        ----------------------------------------- */
 
     .ad-desktop-top {
         display: block;
 
-        position: fixed;
-
-        top: 0;
-        left: 0;
-
-        width: 100%;
-
-        z-index: 900;
-
-        background: rgba(
-            255,
-            255,
-            255,
-            0.96
-        );
-
-        border-bottom:
-            1px solid #e5e7eb;
-
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
+        margin-bottom: 16px;
     }
 
     .ad-desktop-top .ad-container {
@@ -1184,15 +1165,15 @@ body.affiliate-popup-open {
     .ad-desktop-side .ad-container {
         min-height: 250px;
     }
+}
 
 
-    /* -----------------------------------------
-       Chừa khoảng cho sticky top
-       ----------------------------------------- */
+/* =========================================================
+   Google không trả quảng cáo: ẩn cả khung và nhãn "Quảng cáo"
+   ========================================================= */
 
-    .reader {
-        margin-top: 80px;
-    }
+.ad-slot:has(ins[data-ad-status="unfilled"]) {
+    display: none;
 }
 
 
