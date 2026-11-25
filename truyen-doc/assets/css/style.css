@@ -1589,3 +1589,43 @@ body.dark-mode .filter-label {
     }
 
 }
+
+/* =========================================================
+   QUẢNG CÁO (màn hình danh sách truyện)
+========================================================= */
+
+.ad-slot {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ad-inner {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ad-label {
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ad-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.ad-list-inline {
+    margin: 28px 0 8px;
+}
+
+body.dark-mode .ad-label {
+    color: #666;
+}

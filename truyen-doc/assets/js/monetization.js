@@ -17,7 +17,10 @@
         "desktop-left": "9403154122",
         "desktop-right": "6776990782",
         "mobile-bottom": "5260056687",
-        "mid-content": "4796635213"
+        "mid-content": "4796635213",
+        // Màn hình danh sách truyện. Đang dùng chung đơn vị mid-content;
+        // tạo đơn vị riêng trong AdSense rồi dán mã vào đây nếu muốn tách báo cáo.
+        "list-inline": "4796635213"
     };
 
     // Kích thước quảng cáo theo vị trí. Không khai báo thì để Google tự chọn (auto),
@@ -30,7 +33,9 @@
         "desktop-top": { width: 468, height: 60 },
         // Cột bên rộng 120px (160px từ 1200px) nên dùng 120x240.
         "desktop-left": { width: 120, height: 240 },
-        "desktop-right": { width: 120, height: 240 }
+        "desktop-right": { width: 120, height: 240 },
+        // Dưới lưới truyện: banner ngang, trên mobile Google tự chọn cỡ thấp (~100px).
+        "list-inline": { format: "horizontal" }
     };
 
     // Hai cột quảng cáo bên cạnh chỉ hiện khi cửa sổ đủ rộng để không đè lên khung đọc.

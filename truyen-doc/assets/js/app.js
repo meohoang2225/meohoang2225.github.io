@@ -501,6 +501,14 @@
             render();
 
 
+            /*
+             * Quảng cáo dưới danh sách: chỉ yêu cầu một lần
+             * khi tải trang, không làm mới mỗi lần lọc/phân trang.
+             */
+
+            renderListAd();
+
+
         } catch (error) {
 
             console.error(
@@ -522,6 +530,37 @@
 
         }
 
+    }
+
+
+    /* =====================================================
+       LIST AD
+    ====================================================== */
+
+    let listAdRequested = false;
+
+    function renderListAd() {
+
+        if (listAdRequested) {
+            return;
+        }
+
+        const slot =
+            document.getElementById("adListInline");
+
+        if (
+            !slot ||
+            !window.ReaderMonetization
+        ) {
+            return;
+        }
+
+        listAdRequested = true;
+
+        window.ReaderMonetization.renderAd(
+            slot,
+            "list-inline"
+        );
     }
 
 
@@ -733,6 +772,16 @@
         renderPagination(
             totalPages
         );
+
+
+        // Không để quảng cáo đứng một mình khi không có truyện nào hiển thị.
+        const listAdSlot =
+            document.getElementById("adListInline");
+
+        if (listAdSlot) {
+            listAdSlot.style.display =
+                filtered.length ? "" : "none";
+        }
 
 
         renderContinueReading();
