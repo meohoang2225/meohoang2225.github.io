@@ -1034,6 +1034,18 @@
 
                         </a>
 
+                        <a
+                            href="${getNovelUrl(
+                                novel.id,
+                                linkChapter
+                            )}&audio=1"
+                            class="novel-audio-button"
+                            title="Nghe truyện"
+                            aria-label="Nghe truyện ${escapeHtml(
+                                novel.title
+                            )}"
+                        >🎧 Nghe</a>
+
                     </article>
                 `;
 

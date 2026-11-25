@@ -239,6 +239,13 @@ function renderCard(novel) {
 
             </a>
 
+            <a
+                href="${getNovelUrl(novel.id, "")}&audio=1"
+                class="novel-audio-button"
+                title="Nghe truyện"
+                aria-label="Nghe truyện ${escapeHtml(novel.title)}"
+            >🎧 Nghe</a>
+
         </article>
     `;
 }

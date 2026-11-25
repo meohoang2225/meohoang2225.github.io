@@ -33,6 +33,13 @@ $(document).ready(function () {
        HELPERS
     ========================================================= */
 
+    function emitReaderEvent(name, detail) {
+
+        document.dispatchEvent(
+            new CustomEvent(name, { detail: detail })
+        );
+    }
+
     function normalizeText(text) {
 
         return String(text || "")
@@ -230,6 +237,11 @@ $(document).ready(function () {
         currentChapterIndex = index;
         chapterId = String(id);
 
+        emitReaderEvent("reader:chapterLoading", {
+            novelId: novelId,
+            chapterId: String(id)
+        });
+
 
         try {
 
@@ -370,6 +382,17 @@ $(document).ready(function () {
 
                 window.scrollTo(0, 0);
             }
+
+
+            /* AUDIO HOOK */
+
+            emitReaderEvent("reader:chapterLoaded", {
+                novelId: novelId,
+                novel: novel,
+                chapters: chapters,
+                index: index,
+                chapter: chapter
+            });
 
 
         } catch (error) {
@@ -941,6 +964,23 @@ $(document).ready(function () {
             }
         }
     );
+
+
+    /* =========================================================
+       API CHO MODULE AUDIO
+    ========================================================= */
+
+    window.ReaderAPI = {
+        goNext: goNextChapter,
+        goPrevious: goPreviousChapter,
+        hasNext: function () {
+            return currentChapterIndex > -1 &&
+                currentChapterIndex < chapters.length - 1;
+        },
+        hasPrevious: function () {
+            return currentChapterIndex > 0;
+        }
+    };
 
 
     /* =========================================================
